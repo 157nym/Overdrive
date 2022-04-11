@@ -10,6 +10,8 @@ public class CharacterMovement : MonoBehaviour
 
     private int desireLane = 1;
     public float laneDistance = 4f;
+    public float jumpForce;
+    public float gravity = -20;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,20 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         direction.z = forwardSpeed;
+
+
+        if(controller.isGrounded)
+        {
+            //direction.y = -1f;
+            if(Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Jump();
+            }
+        }
+        else
+        {
+            direction.y += gravity * Time.deltaTime;
+        }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -58,5 +74,10 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
+    }
+
+    private void Jump()
+    {
+        direction.y = jumpForce;
     }
 }
