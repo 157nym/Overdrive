@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpotlightMat
+  m_Shader: {fileID: -6465566751694194690, guid: 43f6f95d65cbe134686d14f52ca3058b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - SpotLight_Alpha: 1
+    - SpotLight_Base_Size: 0
+    - SpotLight_Length: 0
+    - SpotLight_Size: 0
+    - Vector1_6aafff9e72bf4ad1b3d58357ccb226ef: 0
+    - Vector1_6dbe7ca50582466e888ab931fd659d2a: 1.75
+    - Vector1_7e65eddcbf734ed29e6fb5ef4828c89e: -0.388
+    m_Colors:
+    - Color_843da8dc5ba44a7ab6f0d78fccd7866f: {r: 0, g: 0.34509805, b: 4, a: 0}
+    - SpotLight_Color: {r: 0, g: 0.6901961, b: 8, a: 0}
+  m_BuildTextureStacks: []

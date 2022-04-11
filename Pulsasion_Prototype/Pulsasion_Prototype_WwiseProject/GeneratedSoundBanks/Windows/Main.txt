@@ -1,0 +1,41 @@
+Event	ID	Name			Wwise Object Path	Notes
+	621108255	Step			\Default Work Unit\Character\Movement\Step	
+	1942692385	Dash			\Default Work Unit\Character\Movement\Dash	
+	3244792144	Jump_Start			\Default Work Unit\Character\Movement\Jump_Start	
+	3419686739	Jump_Land			\Default Work Unit\Character\Movement\Jump_Land	
+	3991942870	Music			\Default Work Unit\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4171319444	Current_Music			\Default Work Unit\Current_Music	
+
+Switch	ID	Name	Switch Group			Notes
+	508837813	Music_2	Current_Music			
+	508837814	Music_1	Current_Music			
+	3282784734	Eurobeat	Current_Music			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Default Work Unit\Speed	
+	2537816454	Music_Speed			\Default Work Unit\Music_Speed	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	35820724	Steps_1	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_1		57492
+	72558453	Steps_4	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_4		49204
+	91684125	Steps_3	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_3		65432
+	103633773	Jump_3	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Start\Jump_3		71852
+	187440752	130bpm	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\130bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Switch\Music 1\130bpm\130bpm		325728
+	192137717	Eurobeat	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Eurobeat_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Switch\Eurobeat\Eurobeat\Eurobeat		46515736
+	198003048	Jump_Land_1	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_Land_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Land\Jump_Land_1		70388
+	367030736	Dash_PH2	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Dash_PH2_790229D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Dash_PH2		182776
+	509372932	90bpm	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\90bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Switch\Music 2\90bpm\90bpm		470464
+	559428338	Jump_Land_2	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_Land_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Land\Jump_Land_2		44304
+	670819307	Jump_4	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Start\Jump_4		85036
+	702801996	Small_Steps_1	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Small_Steps_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Small Steps\Small_Steps_1		42676
+	758385541	Small_Steps_4	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Small_Steps_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Small Steps\Small_Steps_4		51544
+	760270284	Steps_6	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_6		45540
+	763339263	Steps_5	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_5		60288
+	833733921	Small_Steps_3	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Small_Steps_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Small Steps\Small_Steps_3		53456
+	935784084	Small_Steps_2	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Small_Steps_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Small Steps\Small_Steps_2		57268
+	970348063	Jump_2	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_2_641B69B6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Start\Jump_2		54272
+	1002216757	Jump_1	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Jump_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Jump\Jump_Start\Jump_1		68920
+	1064747355	Steps_2	C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\Steps_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Movement\Steps\Normal_Steps\Steps_2		56860
+

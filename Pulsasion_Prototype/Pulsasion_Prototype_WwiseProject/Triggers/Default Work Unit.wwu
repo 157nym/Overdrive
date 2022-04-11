@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" SchemaVersion="103">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Dash" ID="{76912EF6-403C-4CF7-97E3-1CC3DA01D5E7}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

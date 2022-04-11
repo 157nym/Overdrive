@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{05DA9C43-1045-440B-89C5-59928575C7F9}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{05DA9C43-1045-440B-89C5-59928575C7F9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music" ID="{05534BD5-E675-4B78-87D1-FD3AE1675015}">
+					<ChildrenList>
+						<Action Name="" ID="{5EB0D259-4045-44A7-B84B-5E348F137106}" ShortID="644044445">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Switch" ID="{DCE40A2C-6F81-45C3-B8FE-C53A9A0DE9D5}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Character" ID="{CDEF2BB1-55B1-4D1D-9EE0-C1765E934716}" ShortID="904769893">
+					<ChildrenList>
+						<Folder Name="Movement" ID="{BAA77824-0B47-443A-987F-7083AC4C9598}" ShortID="407402144">
+							<ChildrenList>
+								<Event Name="Step" ID="{FF018EC3-7CD9-4F2E-9E30-99E8D0486832}">
+									<ChildrenList>
+										<Action Name="" ID="{ED3B83B2-D90D-4BBB-8FB7-F7DFCC5979DB}" ShortID="529893183">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Normal_Steps" ID="{7B8C1F8F-7144-44F6-AE0C-8C09501C4783}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EB2D1ECB-FEB1-43F7-AC82-FA1E47B7E8B0}" ShortID="84862622">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Small Steps" ID="{21AA8FA3-755C-4103-9543-B57C85049083}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Jump_Start" ID="{D592E107-1772-40C7-A623-052073E9504F}">
+									<ChildrenList>
+										<Action Name="" ID="{22BE1689-9311-4A8E-81CA-CD6BECF278BF}" ShortID="641521869">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Jump_Start" ID="{E1B346DB-36E3-4194-A98C-C68C5872FF7A}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Jump_Land" ID="{E49031D0-A91D-4292-86E8-77A6809AA549}">
+									<ChildrenList>
+										<Action Name="" ID="{8244B2BC-D79E-43FB-A93C-5497932305EB}" ShortID="348402678">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Jump_Land" ID="{4B61C8D5-3474-4142-94FA-A293E2FF3ED3}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dash" ID="{7C6A94D3-FEA6-41F5-90F5-5F12AFCAD6D4}">
+									<ChildrenList>
+										<Action Name="" ID="{5916AC0C-8C5E-4305-BAA7-DDC11510D2AF}" ShortID="721540654">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Dash_PH2" ID="{3637C2DA-7B04-4F91-BDBC-6F1E7DBAE06F}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Skill" ID="{F9721F63-7854-4D6F-AC49-F53AD78D8D57}" ShortID="87607384"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

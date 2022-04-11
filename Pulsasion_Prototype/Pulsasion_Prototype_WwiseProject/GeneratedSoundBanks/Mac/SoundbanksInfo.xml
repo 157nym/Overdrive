@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Project\Pulsation\Pulsasion_Prototype\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4238615841">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="629169139">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Character\Movement\Dash" DurationType="OneShot" DurationMin="0.847801" DurationMax="1.068163">
+					<IncludedMemoryFiles>
+						<File Id="367030736" Language="SFX">
+							<ShortName>Dash_PH2.wav</ShortName>
+							<Path>SFX\Dash_PH2_790229D9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3419686739" Name="Jump_Land" ObjectPath="\Events\Default Work Unit\Character\Movement\Jump_Land" DurationType="OneShot" DurationMin="0.250794" DurationMax="0.489113">
+					<IncludedMemoryFiles>
+						<File Id="198003048" Language="SFX">
+							<ShortName>Jump_Land_1.wav</ShortName>
+							<Path>SFX\Jump_Land_1_10C4C929.wem</Path>
+						</File>
+						<File Id="559428338" Language="SFX">
+							<ShortName>Jump_Land_2.wav</ShortName>
+							<Path>SFX\Jump_Land_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3244792144" Name="Jump_Start" ObjectPath="\Events\Default Work Unit\Character\Movement\Jump_Start" DurationType="OneShot" DurationMin="0.207243" DurationMax="0.510344">
+					<IncludedMemoryFiles>
+						<File Id="103633773" Language="SFX">
+							<ShortName>Jump_3.wav</ShortName>
+							<Path>SFX\Jump_3_10C4C929.wem</Path>
+						</File>
+						<File Id="670819307" Language="SFX">
+							<ShortName>Jump_4.wav</ShortName>
+							<Path>SFX\Jump_4_10C4C929.wem</Path>
+						</File>
+						<File Id="970348063" Language="SFX">
+							<ShortName>Jump_2.wav</ShortName>
+							<Path>SFX\Jump_2_641B69B6.wem</Path>
+						</File>
+						<File Id="1002216757" Language="SFX">
+							<ShortName>Jump_1.wav</ShortName>
+							<Path>SFX\Jump_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="187440752" Language="SFX">
+							<ShortName>130bpm.wav</ShortName>
+							<Path>SFX\130bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="192137717" Language="SFX">
+							<ShortName>Eurobeat.wav</ShortName>
+							<Path>SFX\Eurobeat_D79FB2B7.wem</Path>
+						</File>
+						<File Id="509372932" Language="SFX">
+							<ShortName>90bpm.wav</ShortName>
+							<Path>SFX\90bpm_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{ABD103F5-759E-49E4-A3DE-14BFE281B678}">
+							<Media>
+								<File Id="187440752"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B7CBE09E-6648-44D1-BDE9-76C9D7FACCAD}">
+							<Media>
+								<File Id="509372932"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{ECD54282-4682-49D3-BBE4-F3EDF42F9745}">
+							<Media>
+								<File Id="192137717"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="621108255" Name="Step" ObjectPath="\Events\Default Work Unit\Character\Movement\Step" DurationType="OneShot" DurationMin="0.216783" DurationMax="0.440681">
+					<IncludedMemoryFiles>
+						<File Id="35820724" Language="SFX">
+							<ShortName>Steps_1.wav</ShortName>
+							<Path>SFX\Steps_1_10C4C929.wem</Path>
+						</File>
+						<File Id="72558453" Language="SFX">
+							<ShortName>Steps_4.wav</ShortName>
+							<Path>SFX\Steps_4_10C4C929.wem</Path>
+						</File>
+						<File Id="91684125" Language="SFX">
+							<ShortName>Steps_3.wav</ShortName>
+							<Path>SFX\Steps_3_10C4C929.wem</Path>
+						</File>
+						<File Id="702801996" Language="SFX">
+							<ShortName>Small_Steps_1.wav</ShortName>
+							<Path>SFX\Small_Steps_1_10C4C929.wem</Path>
+						</File>
+						<File Id="758385541" Language="SFX">
+							<ShortName>Small_Steps_4.wav</ShortName>
+							<Path>SFX\Small_Steps_4_10C4C929.wem</Path>
+						</File>
+						<File Id="760270284" Language="SFX">
+							<ShortName>Steps_6.wav</ShortName>
+							<Path>SFX\Steps_6_10C4C929.wem</Path>
+						</File>
+						<File Id="763339263" Language="SFX">
+							<ShortName>Steps_5.wav</ShortName>
+							<Path>SFX\Steps_5_10C4C929.wem</Path>
+						</File>
+						<File Id="833733921" Language="SFX">
+							<ShortName>Small_Steps_3.wav</ShortName>
+							<Path>SFX\Small_Steps_3_10C4C929.wem</Path>
+						</File>
+						<File Id="935784084" Language="SFX">
+							<ShortName>Small_Steps_2.wav</ShortName>
+							<Path>SFX\Small_Steps_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1064747355" Language="SFX">
+							<ShortName>Steps_2.wav</ShortName>
+							<Path>SFX\Steps_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="640949982" Name="Speed" ObjectPath="\Game Parameters\Default Work Unit\Speed"/>
+				<GameParameter Id="2537816454" Name="Music_Speed" ObjectPath="\Game Parameters\Default Work Unit\Music_Speed"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="4171319444" Name="Current_Music" ObjectPath="\Switches\Default Work Unit\Current_Music" GUID="{F3EFF8E6-1BAA-4D8C-813E-79B92E6970D8}">
+					<Switches>
+						<Switch Id="508837814" Name="Music_1" ObjectPath="\Switches\Default Work Unit\Current_Music\Music_1" GUID="{ABD103F5-759E-49E4-A3DE-14BFE281B678}"/>
+						<Switch Id="508837813" Name="Music_2" ObjectPath="\Switches\Default Work Unit\Current_Music\Music_2" GUID="{B7CBE09E-6648-44D1-BDE9-76C9D7FACCAD}"/>
+						<Switch Id="3282784734" Name="Eurobeat" ObjectPath="\Switches\Default Work Unit\Current_Music\Eurobeat" GUID="{ECD54282-4682-49D3-BBE4-F3EDF42F9745}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

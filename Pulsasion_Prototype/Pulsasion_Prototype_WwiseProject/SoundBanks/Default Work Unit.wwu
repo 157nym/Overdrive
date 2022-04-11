@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2F5AB6C4-E203-4D0E-AA08-BFFA01139EBD}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{2F5AB6C4-E203-4D0E-AA08-BFFA01139EBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{BE1FBBEA-380D-4222-8280-4A61E4E1D8A2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Jump_Start" ID="{D592E107-1772-40C7-A623-052073E9504F}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dash" ID="{7C6A94D3-FEA6-41F5-90F5-5F12AFCAD6D4}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump_Land" ID="{E49031D0-A91D-4292-86E8-77A6809AA549}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{05534BD5-E675-4B78-87D1-FD3AE1675015}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Step" ID="{FF018EC3-7CD9-4F2E-9E30-99E8D0486832}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
