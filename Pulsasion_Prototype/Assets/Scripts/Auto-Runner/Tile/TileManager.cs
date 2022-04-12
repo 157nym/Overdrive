@@ -9,12 +9,15 @@ public class TileManager : MonoBehaviour
     public float zSpawn = 50;
 
     public float tileLenght = 30;
+
+    public int numberOfTiles = 5;
     // Start is called before the first frame update
     void Start()
     {
-        SpawnTile(0);
-        SpawnTile(1);
-        SpawnTile(2);
+        for (int i = 0; i < numberOfTiles; i++)
+        {
+            SpawnTile(Random.Range(0, tilePrefabs.Length));
+        }
     }
 
     // Update is called once per frame

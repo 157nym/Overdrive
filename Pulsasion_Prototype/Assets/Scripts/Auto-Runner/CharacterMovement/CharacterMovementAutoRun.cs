@@ -12,6 +12,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
     public float laneDistance = 4f;
     public float jumpForce;
     public float gravity = -20;
+    public float DuréeSlide;
 
     public Animator animator;
     // Start is called before the first frame update
@@ -92,7 +93,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
     {
         animator.SetBool("IsSliding", true);
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(DuréeSlide);
         
         animator.SetBool("IsSliding", false);
     }

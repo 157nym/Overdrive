@@ -235,10 +235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 6
+  forwardSpeed: 12
   laneDistance: 2
   jumpForce: 10
   gravity: -20
+  "Dur\xE9eSlide": 0.3
   animator: {fileID: 79762749}
 --- !u!143 &79762748
 CharacterController:
@@ -513,7 +514,8 @@ MonoBehaviour:
   - {fileID: 2417945860337544854, guid: 43996ab6a9c1d3c49a0a458547923490, type: 3}
   - {fileID: 8865018166442060817, guid: d64230a42fe5b3a41903e0bf17876c3f, type: 3}
   zSpawn: 15
-  tileLenght: 15
+  tileLenght: 30
+  numberOfTiles: 5
 --- !u!4 &337143084
 Transform:
   m_ObjectHideFlags: 0
