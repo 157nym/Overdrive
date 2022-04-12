@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovementAutoRun : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 direction;
@@ -12,6 +12,8 @@ public class CharacterMovement : MonoBehaviour
     public float laneDistance = 4f;
     public float jumpForce;
     public float gravity = -20;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,10 @@ public class CharacterMovement : MonoBehaviour
     {
         direction.z = forwardSpeed;
 
-
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            StartCoroutine(Slide());
+        }
         if(controller.isGrounded)
         {
             //direction.y = -1f;
@@ -35,6 +40,7 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             direction.y += gravity * Time.deltaTime;
+            animator.SetBool("IsJumping", false);
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -79,5 +85,15 @@ public class CharacterMovement : MonoBehaviour
     private void Jump()
     {
         direction.y = jumpForce;
+        animator.SetBool("IsJumping", true);
+    }
+
+    private IEnumerator Slide()
+    {
+        animator.SetBool("IsSliding", true);
+
+        yield return new WaitForSeconds(0.8f);
+        
+        animator.SetBool("IsSliding", false);
     }
 }
