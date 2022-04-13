@@ -13,6 +13,8 @@ public class TileManager : MonoBehaviour
     public int numberOfTiles = 5;
 
     public Transform playerTransform;
+
+    private List<GameObject> activeTiles = new List<GameObject>(); 
     // Start is called before the first frame update
     void Start()
     {
@@ -33,15 +35,23 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z > zSpawn-(numberOfTiles * tileLenght))
+        if (playerTransform.position.z - 35 > zSpawn-(numberOfTiles * tileLenght))
         {
             SpawnTile(Random.Range(0, tilePrefabs.Length));
+            DeleteTile();
         }
     }
 
     public void SpawnTile(int tileIndex)
     {
-        Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        GameObject go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        activeTiles.Add(go);
         zSpawn += tileLenght;
+    }
+
+    private void DeleteTile()
+    {
+        Destroy(activeTiles[0]);
+        activeTiles.RemoveAt(0);
     }
 }

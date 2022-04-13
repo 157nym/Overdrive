@@ -13,6 +13,8 @@ public class CharacterMovementAutoRun : MonoBehaviour
     public float jumpForce;
     public float gravity = -20;
     public float DuréeSlide;
+    public float speedAugmentation;
+    public float speedMax;
 
     public Animator animator;
     // Start is called before the first frame update
@@ -24,6 +26,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (forwardSpeed < speedMax)
+        {
+            forwardSpeed += speedAugmentation * Time.deltaTime;
+        }
+        
         direction.z = forwardSpeed;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
