@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3204160199762536932}
   - component: {fileID: 6966141067133288620}
   - component: {fileID: 7415443538748416748}
+  - component: {fileID: 8667470504682204965}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -90,11 +91,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2190832762080204150}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8667470504682204965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190832762080204150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8c79f2c1db5b44eb05eb6eb5200d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2205139280454447585
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +120,7 @@ GameObject:
   - component: {fileID: 8357918197557824950}
   - component: {fileID: 4115543593487681616}
   - component: {fileID: 4774306731859268590}
+  - component: {fileID: 3100210586407928999}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -185,11 +199,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2205139280454447585}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3100210586407928999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2205139280454447585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8c79f2c1db5b44eb05eb6eb5200d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5463460708405970860
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,14 +404,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5052277783139427058, guid: 866b51ecdd8d27c4984ba4c1a4b0518c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5734589363562261035, guid: 866b51ecdd8d27c4984ba4c1a4b0518c, type: 3}
       propertyPath: m_Name
       value: BloquePied
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866b51ecdd8d27c4984ba4c1a4b0518c, type: 3}
+--- !u!1 &6968258440027806877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5734589363562261035, guid: 866b51ecdd8d27c4984ba4c1a4b0518c, type: 3}
+  m_PrefabInstance: {fileID: 3396101719017731766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3479779584653103195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2264124915185788653, guid: 866b51ecdd8d27c4984ba4c1a4b0518c, type: 3}
   m_PrefabInstance: {fileID: 3396101719017731766}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7676020202186737347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6968258440027806877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8c79f2c1db5b44eb05eb6eb5200d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

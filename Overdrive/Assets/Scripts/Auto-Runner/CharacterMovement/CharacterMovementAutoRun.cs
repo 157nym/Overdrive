@@ -112,7 +112,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
             targetPosition += Vector3.right * laneDistance;
         }
 
-        transform.position = Vector3.Lerp(transform.position,targetPosition, 50 * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position,targetPosition, 20 * Time.deltaTime);
     }
 
     private void FixedUpdate()

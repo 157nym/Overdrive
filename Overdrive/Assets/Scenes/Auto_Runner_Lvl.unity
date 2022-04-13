@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 79762749}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,12 +235,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 20
+  forwardSpeed: 15
   laneDistance: 2
   jumpForce: 6
   gravity: -20
   "Dur\xE9eSlide": 0.3
-  speedAugmentation: 0.5
+  speedAugmentation: 0.2
   speedMax: 100
   animator: {fileID: 79762749}
 --- !u!143 &79762748
@@ -290,9 +290,9 @@ GameObject:
   m_Component:
   - component: {fileID: 153739287}
   - component: {fileID: 153739286}
+  - component: {fileID: 153739285}
   - component: {fileID: 153739289}
   - component: {fileID: 153739288}
-  - component: {fileID: 153739285}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
