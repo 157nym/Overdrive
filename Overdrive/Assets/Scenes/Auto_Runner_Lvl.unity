@@ -239,7 +239,7 @@ MonoBehaviour:
   laneDistance: 3
   jumpForce: 6
   gravity: -20
-  "Dur\xE9eSlide": 0.5
+  "Dur\xE9eSlide": 0.2
   speedAugmentation: 0.2
   speedMax: 100
   animator: {fileID: 79762749}
