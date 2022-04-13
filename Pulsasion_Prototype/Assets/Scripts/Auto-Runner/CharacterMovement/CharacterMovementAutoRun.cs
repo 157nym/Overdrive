@@ -37,10 +37,22 @@ public class CharacterMovementAutoRun : MonoBehaviour
         {
             StartCoroutine(Slide());
         }
+        
+        if (SwipeManager.swipeDown)
+        {
+            StartCoroutine(Slide());
+        }
+        
         if(controller.isGrounded)
         {
             //direction.y = -1f;
             if(Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Jump();
+            }
+            
+            //direction.y = -1f;
+            if(SwipeManager.swipeUp)
             {
                 Jump();
             }
@@ -66,6 +78,24 @@ public class CharacterMovementAutoRun : MonoBehaviour
             if(desireLane == -1)
             {
                     desireLane =0;    
+            }
+        }
+        
+        if(SwipeManager.swipeRight)
+        {
+            desireLane ++;
+            if(desireLane == 3)
+            {
+                desireLane =2;    
+            }
+        }
+
+        if(SwipeManager.swipeLeft)
+        {
+            desireLane --;
+            if(desireLane == -1)
+            {
+                desireLane =0;    
             }
         }
 
