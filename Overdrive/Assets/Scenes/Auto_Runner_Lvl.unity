@@ -500,6 +500,7 @@ MonoBehaviour:
   - {fileID: 8865018166442060817, guid: d64230a42fe5b3a41903e0bf17876c3f, type: 3}
   - {fileID: 5463460708405970860, guid: f0dffa04e5d0a4849bb0f5816cad10a1, type: 3}
   - {fileID: 1325556395833257119, guid: 881665caa81eba844957a40ec91ab645, type: 3}
+  - {fileID: 5149936030631682017, guid: fbb53f38c70230543903c23ed22d2ffb, type: 3}
   zSpawn: 15
   tileLenght: 30
   numberOfTiles: 5
