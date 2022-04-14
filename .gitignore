@@ -10,13 +10,13 @@
 # Unity portion based on https://github.com/github/gitignore/blob/master/Unity.gitignore
 
 # unity stuff
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Logs/
-Assets/AssetStoreTools*
+*/[Ll]ibrary/
+*/[Tt]emp/
+*/[Oo]bj/
+*/[Bb]uild/
+*/[Bb]uilds/
+*/Logs/
+*/Assets/AssetStoreTools*
 
 *.log
 
@@ -99,17 +99,18 @@ WwiseUnityIntegration_*_Src.zip
 *.wsetting
 *.log
 *.validationcache
-Pulsasion_Prototype\Logs\
+*\Logs\
 *.log
 
 ----------------
-.cache
+*.cache
 *.akd
 *.prof
 *.validationcache
 */Assets/Wwise/Editor/ProjectData/*
 ----------------
-Pulsasion_Prototype/Assets/Wwise.meta
-Pulsasion_Prototype/Assets/Wwise/Editor.meta
-Pulsasion_Prototype/Assets/Wwise/Editor/ProjectData.meta
-Pulsasion_Prototype/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll
+*/Assets/Wwise.meta
+*/Assets/Wwise/Editor.meta
+*/Assets/Wwise/Editor/ProjectData.meta
+*/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll
+*/Assets/Wwise/API/Runtime/Plugins/iOS
