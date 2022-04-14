@@ -713,7 +713,7 @@ MonoBehaviour:
   forwardSpeed: 15
   laneDistance: 3
   jumpForce: 6
-  gravity: -20
+  gravity: -1000
   "Dur\xE9eAnim": 0
   speedAugmentation: 0.2
   speedMax: 100
