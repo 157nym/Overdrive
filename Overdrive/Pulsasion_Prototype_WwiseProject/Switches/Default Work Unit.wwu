@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" PersistMode="Standalone">
-			<ChildrenList>
-				<SwitchGroup Name="Current_Music" ID="{F3EFF8E6-1BAA-4D8C-813E-79B92E6970D8}">
-					<ChildrenList>
-						<Switch Name="Music_1" ID="{ABD103F5-759E-49E4-A3DE-14BFE281B678}"/>
-						<Switch Name="Music_2" ID="{B7CBE09E-6648-44D1-BDE9-76C9D7FACCAD}"/>
-						<Switch Name="Eurobeat" ID="{ECD54282-4682-49D3-BBE4-F3EDF42F9745}"/>
-					</ChildrenList>
-				</SwitchGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" PersistMode="Standalone"/>
 	</Switches>
 </WwiseDocument>
