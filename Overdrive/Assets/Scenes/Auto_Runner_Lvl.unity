@@ -500,7 +500,7 @@ MonoBehaviour:
   - {fileID: 8865018166442060817, guid: d64230a42fe5b3a41903e0bf17876c3f, type: 3}
   - {fileID: 5463460708405970860, guid: f0dffa04e5d0a4849bb0f5816cad10a1, type: 3}
   - {fileID: 1325556395833257119, guid: 881665caa81eba844957a40ec91ab645, type: 3}
-  zSpawn: 0
+  zSpawn: 15
   tileLenght: 30
   numberOfTiles: 5
   playerTransform: {fileID: 79762746}
@@ -651,12 +651,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 960798696}
+  - component: {fileID: 960798693}
   - component: {fileID: 960798695}
   - component: {fileID: 960798694}
-  - component: {fileID: 960798693}
   m_Layer: 0
   m_Name: PlayerObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,10 +714,10 @@ MonoBehaviour:
   laneDistance: 3
   jumpForce: 6
   gravity: -20
-  "Dur\xE9eSlide": 0.2
+  "Dur\xE9eAnim": 0
   speedAugmentation: 0.2
   speedMax: 100
-  animator: {fileID: 0}
+  animator: {fileID: 960798694}
 --- !u!4 &960798696
 Transform:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960798692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 79762746}
