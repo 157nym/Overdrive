@@ -12,7 +12,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
     public float laneDistance = 4f;
     public float jumpForce;
     public float gravity = -20;
-    public float DuréeSlide;
+    public float DuréeAnim;
     public float speedAugmentation;
     public float speedMax;
 
@@ -28,19 +28,23 @@ public class CharacterMovementAutoRun : MonoBehaviour
     {
         if (forwardSpeed < speedMax)
         {
+            DuréeAnim += speedAugmentation * Time.deltaTime;
             forwardSpeed += speedAugmentation * Time.deltaTime;
+            animator.SetFloat("AnimSpeed", DuréeAnim);
         }
         
         direction.z = forwardSpeed;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            StartCoroutine(Slide());
+            Slide();
+            //StartCoroutine(Slide());
         }
         
         if (SwipeManager.swipeDown)
         {
-            StartCoroutine(Slide());
+            Slide();
+            //StartCoroutine(Slide());
         }
         
         if(controller.isGrounded)
@@ -122,16 +126,16 @@ public class CharacterMovementAutoRun : MonoBehaviour
 
     private void Jump()
     {
-        direction.y = jumpForce;
+        //direction.y = jumpForce;
         animator.SetBool("IsJumping", true);
     }
 
-    private IEnumerator Slide()
+    private void Slide()
     {
         animator.SetBool("IsSliding", true);
-
-        yield return new WaitForSeconds(DuréeSlide);
-        
-        animator.SetBool("IsSliding", false);
+        //
+        // yield return new WaitForSeconds(DuréeAnim);
+        //
+        // animator.SetBool("IsSliding", false);
     }
 }
