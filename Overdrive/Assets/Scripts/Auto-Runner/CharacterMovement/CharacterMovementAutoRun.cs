@@ -10,7 +10,6 @@ public class CharacterMovementAutoRun : MonoBehaviour
 
     private int desireLane = 1;
     public float laneDistance = 4f;
-    public float jumpForce;
     public float gravity = -20;
     public float DuréeAnim;
     public float speedAugmentation;
@@ -28,8 +27,8 @@ public class CharacterMovementAutoRun : MonoBehaviour
     {
         if (forwardSpeed < speedMax)
         {
-            DuréeAnim += speedAugmentation  * Time.deltaTime;
-            forwardSpeed += speedAugmentation * Time.deltaTime;
+            DuréeAnim += speedAugmentation * Time.deltaTime;
+            forwardSpeed += speedAugmentation * 10 * Time.deltaTime;
             animator.SetFloat("AnimSpeed", DuréeAnim);
         }
         

@@ -755,12 +755,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 15
+  forwardSpeed: 17
   laneDistance: 3
-  jumpForce: 6
-  gravity: -1000
-  "Dur\xE9eAnim": 0
-  speedAugmentation: 0.2
+  gravity: -500
+  "Dur\xE9eAnim": 0.3
+  speedAugmentation: 0.001
   speedMax: 100
   animator: {fileID: 960798694}
 --- !u!4 &960798696
