@@ -127,12 +127,12 @@ public class CharacterMovementAutoRun : MonoBehaviour
     private void Jump()
     {
         //direction.y = jumpForce;
-        animator.SetBool("IsJumping", true);
+        animator.SetTrigger("Jumping");
     }
 
     private void Slide()
     {
-        animator.SetBool("IsSliding", true);
+        animator.SetTrigger("Sliding");
         //
         // yield return new WaitForSeconds(DuréeAnim);
         //
