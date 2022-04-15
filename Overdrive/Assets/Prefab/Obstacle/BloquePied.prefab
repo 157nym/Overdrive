@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2264124915185788653}
   - component: {fileID: 3884238316317765454}
   - component: {fileID: 788939797300431597}
-  - component: {fileID: 5052277783139427058}
   - component: {fileID: 7676020202186737347}
+  - component: {fileID: 5052277783139427058}
   m_Layer: 0
   m_Name: BloquePied
   m_TagString: Untagged
@@ -83,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5052277783139427058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5734589363562261035}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7676020202186737347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,3 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8c79f2c1db5b44eb05eb6eb5200d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5052277783139427058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734589363562261035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.2689739, z: 1}
+  m_Center: {x: 0, y: -0.36551306, z: 0}
