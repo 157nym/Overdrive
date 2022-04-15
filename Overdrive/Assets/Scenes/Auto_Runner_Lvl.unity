@@ -794,18 +794,8 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< Updated upstream
   m_IsActive: 1
 --- !u!4 &2062176169
-=======
-<<<<<<< HEAD
-  m_IsActive: 0
---- !u!4 &1085617209
-=======
-  m_IsActive: 1
---- !u!4 &2062176169
->>>>>>> 37aa7d32acddb77f19d594d4c43526fc9844edb4
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -826,16 +816,8 @@ ParticleSystemRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1085617208}
-  m_Enabled: 0
-=======
->>>>>>> Stashed changes
   m_GameObject: {fileID: 2062176168}
   m_Enabled: 1
->>>>>>> 37aa7d32acddb77f19d594d4c43526fc9844edb4
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

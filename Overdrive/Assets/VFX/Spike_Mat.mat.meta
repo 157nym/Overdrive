@@ -1,17 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Overdrive/Assets/VFX/Spike_Mat.mat.meta
 guid: fa6ec8093c063bd44a1c1ade0e2423f2
 NativeFormatImporter:
-=======
-guid: 65dd7c24ae7bf614fa069152cd1306ea
-folderAsset: yes
-DefaultImporter:
->>>>>>> Stashed changes:Overdrive/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Android.meta
-=======
-guid: fa6ec8093c063bd44a1c1ade0e2423f2
-NativeFormatImporter:
->>>>>>> Stashed changes
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
