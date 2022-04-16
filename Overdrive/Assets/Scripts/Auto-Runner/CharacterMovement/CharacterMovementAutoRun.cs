@@ -36,8 +36,8 @@ public class CharacterMovementAutoRun : MonoBehaviour
         
         direction.z = forwardSpeed;
 
-        //if(EventSystem.current.IsPointerOverGameObject())
-            //return;
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
