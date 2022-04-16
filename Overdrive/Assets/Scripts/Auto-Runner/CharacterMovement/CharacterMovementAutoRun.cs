@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CharacterMovementAutoRun : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (forwardSpeed < speedMax)
         {
             DuréeAnim += speedAugmentation * Time.deltaTime;
@@ -34,27 +36,28 @@ public class CharacterMovementAutoRun : MonoBehaviour
         
         direction.z = forwardSpeed;
 
+        //if(EventSystem.current.IsPointerOverGameObject())
+            //return;
+
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Slide();
-            //StartCoroutine(Slide());
         }
         
         if (SwipeManager.swipeDown)
         {
             Slide();
-            //StartCoroutine(Slide());
         }
         
         if(controller.isGrounded)
         {
-            //direction.y = -1f;
+
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
                 Jump();
             }
             
-            //direction.y = -1f;
+
             if(SwipeManager.swipeUp)
             {
                 Jump();
@@ -63,7 +66,6 @@ public class CharacterMovementAutoRun : MonoBehaviour
         else
         {
             direction.y += gravity * Time.deltaTime;
-            //animator.SetBool("IsJumping", false);
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -101,8 +103,6 @@ public class CharacterMovementAutoRun : MonoBehaviour
                 desireLane =0;    
             }
         }
-
-
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
 
         if(desireLane ==0)
@@ -125,16 +125,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
 
     private void Jump()
     {
-        //direction.y = jumpForce;
         animator.SetTrigger("Jumping");
     }
 
     private void Slide()
     {
         animator.SetTrigger("Sliding");
-        //
-        // yield return new WaitForSeconds(DuréeAnim);
-        //
-        // animator.SetBool("IsSliding", false);
     }
 }
