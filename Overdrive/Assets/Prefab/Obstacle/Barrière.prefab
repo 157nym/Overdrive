@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8868100849981060050}
   - component: {fileID: 4494268593355903337}
   - component: {fileID: 3269029363738898936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8977625720055221729}
   - component: {fileID: 8197440361308379508}
   - component: {fileID: 7501163865157342829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 1211840395752183371}
   - component: {fileID: 3427889108162955420}
   - component: {fileID: 454926387912322854}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "Barri\xE8re"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 7204227153881039404}
   - component: {fileID: 4256460463920361030}
   - component: {fileID: 4019974780533701108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
