@@ -14,8 +14,8 @@ public class OutsideBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 c1 = mainCanvas.worldCamera.ScreenToWorldPoint(Vector3.zero);
-        Vector3 c2 = mainCanvas.worldCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+        Vector3 c1 = Camera.main.ScreenToWorldPoint(Vector3.zero);
+        Vector3 c2 = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
  
         Rect canvasRect = new Rect( c1, new Vector2(c2.x-c1.x, c2.y-c1.y));  
 
@@ -27,6 +27,7 @@ public class OutsideBox : MonoBehaviour
  
         if (!rec.Overlaps(canvasRect))
         {
+            Debug.Log("destroy");
             Destroy(gameObject);
         }
     }
