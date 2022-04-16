@@ -63,7 +63,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
         else
         {
             direction.y += gravity * Time.deltaTime;
-            animator.SetBool("IsJumping", false);
+            //animator.SetBool("IsJumping", false);
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
