@@ -20,6 +20,7 @@ public class Restart : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collide with " + other.name);
         if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(scene.name);
