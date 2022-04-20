@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class OutsideBox : MonoBehaviour
 {
-    public Canvas mainCanvas;
+    public Canvas canvas;
 
     public float MaxPosY,MaxPosX,MinPosY,MinPosX;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
     }
 
     // Update is called once per frame

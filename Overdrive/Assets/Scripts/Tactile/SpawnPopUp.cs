@@ -10,10 +10,12 @@ public class SpawnPopUp : MonoBehaviour
     public Transform target;
 
     public Canvas canvas;
+
+    public float SpawnRate;
     // Update is called once per frame
     void Update()
     {
-        Invoke("PopUp",3);
+        InvokeRepeating("PopUp",3,SpawnRate);
     }
 
     void PopUp()
