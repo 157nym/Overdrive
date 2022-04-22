@@ -38,13 +38,11 @@ public class TileManager : MonoBehaviour
                 
                 if(Verif == 5)
                 {
-                    //Debug.Log("Je Monte");
                     Hauteur += 1;
                 }
 
-                if(Verif == 1)
+                if(Verif == 6)
                 {
-                    //Debug.Log("Je Descend");
                     Hauteur -= 1;
                 }
             }
@@ -62,17 +60,15 @@ public class TileManager : MonoBehaviour
                 
                 if(Verif == 5)
                 {
-                    //Debug.Log("Je Monte");
                     Hauteur += 1;
                 }
 
                 if(Verif == 6)
                 {
-                    //Debug.Log("Je Descend");
                     Hauteur -= 1;
                 }
-
-            DeleteTile();
+            
+                DeleteTile();
         }
     }
 
