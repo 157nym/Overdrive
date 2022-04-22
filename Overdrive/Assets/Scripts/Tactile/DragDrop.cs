@@ -2,30 +2,37 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour
+public class DragDrop : EventTrigger
 {
     [SerializeField]
     private Canvas canvas;
+
+    private bool startDragging;
 
     private void Start()
     {
         canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
     }
 
-    // Update is called once per frame
-    public void DragHandler(BaseEventData data)
+    void Update()
     {
-        PointerEventData pointerData = (PointerEventData)data;
+        if (startDragging)
+        {
+            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        }
+    }
 
-        Vector2 position;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            (RectTransform)canvas.transform,
-            pointerData.position,
-            canvas.worldCamera,
-            out position);
-
-        transform.position = canvas.transform.TransformPoint(position);    
+    // Update is called once per frame
+    public override void OnPointerDown(PointerEventData eventData)
+    {
+        startDragging = true;
+    }
+    
+    public override void OnPointerUp(PointerEventData eventData)
+    {
+        startDragging = false;
     }
 }

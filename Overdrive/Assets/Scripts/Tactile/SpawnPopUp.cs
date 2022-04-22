@@ -13,7 +13,7 @@ public class SpawnPopUp : MonoBehaviour
 
     public float SpawnRate;
     // Update is called once per frame
-    void Update()
+    void Start()
     {
         InvokeRepeating("PopUp",3,SpawnRate);
     }
