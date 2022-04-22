@@ -28,6 +28,7 @@ public class Restart : MonoBehaviour
         {
             Debug.Log("Spawn");
             StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
+            other.gameObject.GetComponentInChildren<Animation>().Play();
         }
     }
 
