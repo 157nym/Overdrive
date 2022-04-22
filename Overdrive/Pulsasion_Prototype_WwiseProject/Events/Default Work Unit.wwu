@@ -8,6 +8,7 @@
 						<Event Name="Run" ID="{1F50E8CD-2497-4591-BD25-7162D29BDA4C}"/>
 						<Event Name="Slide" ID="{0D5B2697-6AFB-41EE-BC13-FEE48384278E}"/>
 						<Event Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}"/>
+						<Event Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" ShortID="643725625">
