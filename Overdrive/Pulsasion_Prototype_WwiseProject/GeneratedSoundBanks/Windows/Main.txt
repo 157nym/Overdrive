@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	712161704	Run			\Default Work Unit\Character\Run	
+	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
+	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
+	3686556480	Slide			\Default Work Unit\Character\Slide	
+	3710956116	BlockJump			\Default Work Unit\LD\BlockJump	
+	3833651337	Jump			\Default Work Unit\Character\Jump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	331802635	BlockWall_Ambient	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\BlockWall_Ambient_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Ambient		352864
+	910189331	BlockWall_Spawn	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Windows\SFX\BlockWall_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Spawn		176464
+

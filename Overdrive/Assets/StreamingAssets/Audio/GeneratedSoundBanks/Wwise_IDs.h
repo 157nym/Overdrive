@@ -11,6 +11,16 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID BLOCKJUMP = 3710956116U;
+        static const AkUniqueID BLOCKSLIDE = 764666183U;
+        static const AkUniqueID BLOCKWALL = 3327154252U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID RUN = 712161704U;
+        static const AkUniqueID SLIDE = 3686556480U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d584c14bb10af0409aae373e65b4a17, type: 3}
-  m_Name: FF018EC3-7CD9-4F2E-9E30-99E8D0486832
+  m_Name: 02337623-FA92-4AFA-AEC7-6389BC3C0BC7
   m_EditorClassIdentifier: 
-  objectName: Step
-  id: 621108255
-  guid: FF018EC3-7CD9-4F2E-9E30-99E8D0486832
+  objectName: BlockWall
+  id: 3327154252
+  guid: 02337623-FA92-4AFA-AEC7-6389BC3C0BC7
