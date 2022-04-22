@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 100232133763249340}
-  - component: {fileID: 100232133763249341}
   - component: {fileID: 100232133763249342}
   m_Layer: 0
   m_Name: Music Manager
@@ -32,38 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &100232133763249341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100232133763249339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 907ac9161c09c4a49a89441bf8ce6d7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Music:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7443cbdd92a1c1541994c2514d49f6d9, type: 2}
-  Music2:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8ec083c8e087a734c8befd7ea3dd78a6, type: 2}
-  MusicEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3370cc013c1d44e4094430377164b00f, type: 2}
-  Speed_Modifier:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e7a47a0a6e973e14e90421687cc5cb1f, type: 2}
 --- !u!114 &100232133763249342
 MonoBehaviour:
   m_ObjectHideFlags: 0

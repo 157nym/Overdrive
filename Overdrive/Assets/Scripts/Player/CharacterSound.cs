@@ -32,7 +32,7 @@ public class CharacterSound : MonoBehaviour
 
     public void Jump()
     {
-        if (jumping)
+        if (!jumping)
         {
             Jump_Start.Post(gameObject);
             jumping = true;
@@ -41,7 +41,7 @@ public class CharacterSound : MonoBehaviour
 
     void BackRunning()
     {
-        if (!jumping)
+        if (jumping)
         {
             Jump_End.Post(gameObject);
             jumping = false;
