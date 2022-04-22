@@ -30,8 +30,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}"/>
-						<Event Name="BlockJump" ID="{112C1D34-173D-4C9E-BFE1-7DC5C42B12B6}"/>
+						<Event Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}">
+							<ChildrenList>
+								<Action Name="" ID="{325222DC-69A4-49A5-A044-9E9AD7C651DC}" ShortID="844953230">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockSlide" ID="{DBE8276B-D93F-4CC7-BE41-0BDE27CBA407}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BlockJump" ID="{112C1D34-173D-4C9E-BFE1-7DC5C42B12B6}">
+							<ChildrenList>
+								<Action Name="" ID="{58E05196-B8BE-4E83-8CDC-94D0BF94D5CA}" ShortID="388302558">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockJump" ID="{AD6009B5-2CC4-4F11-BED9-24B84D81A060}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

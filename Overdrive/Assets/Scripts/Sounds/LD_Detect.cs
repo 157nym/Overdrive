@@ -5,26 +5,14 @@ using AK.Wwise;
 
 public class LD_Detect : MonoBehaviour
 {
-    public AK.Wwise.Event BlockWall;
-    public AK.Wwise.Event BlockJump;
-    public AK.Wwise.Event BlockSlide;
+    public AK.Wwise.Event BlockEvent;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BlockWall"))
+        if (other.gameObject.CompareTag("SoundBarrier"))
         {
-            BlockWall.Post(other.gameObject);
+            BlockEvent.Post(gameObject);
             print("Wall");
-        }
-
-        if (other.CompareTag("BlockJump"))
-        {
-            BlockJump.Post(other.gameObject);
-        }
-
-        if (other.CompareTag("BlockSlide"))
-        {
-            BlockSlide.Post(other.gameObject);
         }
     }
 

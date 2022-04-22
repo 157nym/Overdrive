@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 788939797300431597}
   - component: {fileID: 5052277783139427058}
   - component: {fileID: 7676020202186737347}
+  - component: {fileID: 8935987544555375058}
   m_Layer: 9
   m_Name: BloquePied
   m_TagString: BlockJump
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8c79f2c1db5b44eb05eb6eb5200d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8935987544555375058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734589363562261035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 533bccfdf2917394fbcbdcf2387c6d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 794e06fa7e9afc34d9a5fac71e3b9949, type: 2}

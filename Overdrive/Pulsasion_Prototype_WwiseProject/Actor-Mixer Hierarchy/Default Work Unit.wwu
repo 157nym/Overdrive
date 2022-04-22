@@ -12,18 +12,19 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BlockSlide" ID="{0F7D7D1A-238B-406D-8F8A-CFF342A4D739}">
+							<Language>SFX</Language>
+							<AudioFile>BlockSlide.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="60891981"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
 					<ObjectLists/>
-				</Sound>
-				<Sound Name="BlockJump" ID="{3F025033-E5EC-4C9E-BD77-76C93FF52969}" ShortID="495961544">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="BlockSlide" ID="{0F7D7D1A-238B-406D-8F8A-CFF342A4D739}" Platform="Linked"/>
+					</ActiveSourceList>
 				</Sound>
 				<Sound Name="BlockWall_Spawn" ID="{70BA90B5-7677-4B86-8B54-AF53B450614F}" ShortID="698740219">
 					<ReferenceList>
@@ -51,11 +52,60 @@
 				<Sound Name="BlockWall_Ambient" ID="{D4723D39-78E0-47D4-9032-450C7626C851}" ShortID="180457376">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="83"/>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{7A65AFE3-AB9C-4E30-804C-E339ACAB9CF2}" ShortID="771780901">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{578DF31E-0423-431F-9F0A-B4054B32B2CC}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
 						</Reference>
@@ -77,6 +127,111 @@
 						<ActiveSource Name="BlockWall_Ambient" ID="{C01E1EA8-993F-4BB4-9946-181CD525732A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="BlockJump" ID="{AD6009B5-2CC4-4F11-BED9-24B84D81A060}" ShortID="912453636">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BlockJump_2" ID="{6587A176-82A1-41E5-9C39-49ECAE80DAB8}" ShortID="771910770">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BlockJump_2" ID="{17F7928E-467E-438F-97EB-77AE1B0736EE}">
+									<Language>SFX</Language>
+									<AudioFile>BlockJump_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="61290083"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="BlockJump_2" ID="{17F7928E-467E-438F-97EB-77AE1B0736EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BlockJump_3" ID="{0F914CF2-6027-4EDD-9EE9-55F5A41FF493}" ShortID="869541282">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BlockJump_3" ID="{3F5E3D9C-4916-4CDC-82FA-4278151182C1}">
+									<Language>SFX</Language>
+									<AudioFile>BlockJump_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="483038182"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="BlockJump_3" ID="{3F5E3D9C-4916-4CDC-82FA-4278151182C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BlockJump_4" ID="{3DEB7A1B-B28D-40E3-9329-D9C6FA56F6C8}" ShortID="355084101">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BlockJump_4" ID="{0F0E3A7B-78FA-48EE-95E0-D20BDB274C5C}">
+									<Language>SFX</Language>
+									<AudioFile>BlockJump_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="751915489"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="BlockJump_4" ID="{0F0E3A7B-78FA-48EE-95E0-D20BDB274C5C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BlockJump_5" ID="{15860E50-05C6-4EA9-94C4-BCCB5F4A58D6}" ShortID="836585781">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BlockJump_5" ID="{D70683EE-8DAC-4BAC-AB98-10A81359749B}">
+									<Language>SFX</Language>
+									<AudioFile>BlockJump_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="409881086"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="BlockJump_5" ID="{D70683EE-8DAC-4BAC-AB98-10A81359749B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

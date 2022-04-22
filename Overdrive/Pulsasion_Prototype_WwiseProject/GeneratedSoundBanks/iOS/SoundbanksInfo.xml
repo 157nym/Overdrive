@@ -16,18 +16,44 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4208880528">
+		<SoundBank Id="3161908922" Language="SFX" Hash="547762292">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="6." DurationMax="6.">
+					<IncludedMemoryFiles>
+						<File Id="61290083" Language="SFX">
+							<ShortName>BlockJump_2.wav</ShortName>
+							<Path>SFX\BlockJump_2_10C4C929.wem</Path>
+						</File>
+						<File Id="409881086" Language="SFX">
+							<ShortName>BlockJump_5.wav</ShortName>
+							<Path>SFX\BlockJump_5_10C4C929.wem</Path>
+						</File>
+						<File Id="483038182" Language="SFX">
+							<ShortName>BlockJump_3.wav</ShortName>
+							<Path>SFX\BlockJump_3_10C4C929.wem</Path>
+						</File>
+						<File Id="751915489" Language="SFX">
+							<ShortName>BlockJump_4.wav</ShortName>
+							<Path>SFX\BlockJump_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="60891981" Language="SFX">
+							<ShortName>BlockSlide.wav</ShortName>
+							<Path>SFX\BlockSlide_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" DurationType="OneShot" DurationMin="2." DurationMax="2.">
 					<IncludedMemoryFiles>
 						<File Id="331802635" Language="SFX">
 							<ShortName>BlockWall_Ambient.wav</ShortName>
-							<Path>SFX\BlockWall_Ambient_D79FB2B7.wem</Path>
+							<Path>SFX\BlockWall_Ambient_10C4C929.wem</Path>
 						</File>
 						<File Id="910189331" Language="SFX">
 							<ShortName>BlockWall_Spawn.wav</ShortName>

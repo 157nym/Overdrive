@@ -10,6 +10,8 @@ TagManager:
   - BlockSlide
   - BlockWall
   - BlockJump
+  - MainCanvas
+  - SoundBarrier
   layers:
   - Default
   - TransparentFX
