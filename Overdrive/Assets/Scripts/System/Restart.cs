@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class Restart : MonoBehaviour
 {
     private Scene scene;
+
+    private GameObject PopUpManager;
     // Start is called before the first frame update
     void Start()
     {
         scene = SceneManager.GetActiveScene();
+        PopUpManager = GameObject.FindGameObjectWithTag("PopUpManager");
+
     }
 
     // Update is called once per frame
@@ -20,10 +24,10 @@ public class Restart : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collide with " + other.name);
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(scene.name);
+            Debug.Log("Spawn");
+            StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
         }
     }
 

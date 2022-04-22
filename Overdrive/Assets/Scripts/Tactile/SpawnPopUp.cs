@@ -13,13 +13,10 @@ public class SpawnPopUp : MonoBehaviour
 
     public float SpawnRate;
     // Update is called once per frame
-    void Start()
-    {
-        InvokeRepeating("PopUp",3,SpawnRate);
-    }
 
-    void PopUp()
+    public IEnumerator SpawnPop()
     {
-        RawImage Spawn = Instantiate(popUp[0], target.position,target.rotation);
+        RawImage Spawn = Instantiate(popUp[0], target.position,target.rotation, canvas.transform);
+        yield return new WaitForSeconds(SpawnRate);
     }
 }
