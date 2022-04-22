@@ -27,7 +27,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1857442195378638336}
+  - {fileID: 6483303118861530990}
   - {fileID: 3479779584653103195}
   - {fileID: 1633980036690519693}
   - {fileID: 2467229560258080027}
@@ -151,11 +151,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tilesv2
       objectReference: {fileID: 0}
+    - target: {fileID: 4693786418784210746, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693786418784210746, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693786418784210746, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
---- !u!4 &1857442195378638336 stripped
+--- !u!4 &6483303118861530990 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 79949762935027284, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4693786418784210746, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
   m_PrefabInstance: {fileID: 1791021115620194388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3396101719017731766
