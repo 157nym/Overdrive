@@ -6,6 +6,8 @@ public class TileManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
 
+    private GameObject[] TileNombre;
+
     public float zSpawn = 50;
 
     public float tileLenght = 30;
@@ -20,22 +22,31 @@ public class TileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < maxTile; i++)
+
+        for (int i = 0; i <= maxTile; i++)
         {
             if (i == 0)
             {
                 SpawnTile(0);
             }
 
-            else if (i == 5)
-            {
-                SpawnTile(5);
-                Hauteur += 1 ;
-            }
-
             else
             {
-                SpawnTile(Random.Range(0, tilePrefabs.Length - 1));
+                int Verif = Random.Range(0,tilePrefabs.Length);
+
+                SpawnTile(Verif);
+                
+                if(Verif == 5)
+                {
+                    //Debug.Log("Je Monte");
+                    Hauteur += 1;
+                }
+
+                if(Verif == 1)
+                {
+                    //Debug.Log("Je Descend");
+                    Hauteur -= 1;
+                }
             }
         }
     }
@@ -43,10 +54,24 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (playerTransform.position.z - 35 > zSpawn-(tilePrefabs.Length* tileLenght))
+        if (playerTransform.position.z - 35 > zSpawn-(tilePrefabs.Length * tileLenght))
         {
-            SpawnTile(Random.Range(0, tilePrefabs.Length - 1));
+                int Verif = Random.Range(0,tilePrefabs.Length);
+
+                SpawnTile(Verif);
+                
+                if(Verif == 5)
+                {
+                    //Debug.Log("Je Monte");
+                    Hauteur += 1;
+                }
+
+                if(Verif == 6)
+                {
+                    //Debug.Log("Je Descend");
+                    Hauteur -= 1;
+                }
+
             DeleteTile();
         }
     }
