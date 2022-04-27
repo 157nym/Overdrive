@@ -6,45 +6,77 @@ public class TileManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
 
+    private GameObject[] TileNombre;
+
     public float zSpawn = 50;
 
     public float tileLenght = 30;
 
-    public int numberOfTiles = 5;
-
     public Transform playerTransform;
+
+    public int Hauteur = 0;
+
+    public int maxTile;
 
     private List<GameObject> activeTiles = new List<GameObject>(); 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < numberOfTiles; i++)
+
+        for (int i = 0; i <= maxTile; i++)
         {
             if (i == 0)
             {
                 SpawnTile(0);
             }
+
             else
             {
-                SpawnTile(Random.Range(0, tilePrefabs.Length));
-            }
+                int Verif = Random.Range(0,tilePrefabs.Length);
 
+                SpawnTile(Verif);
+                
+                if(Verif == 5)
+                {
+                    Hauteur += 1;
+                }
+
+                if(Verif == 6)
+                {
+                    Hauteur -= 1;
+                }
+            }
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z - 35 > zSpawn-(numberOfTiles * tileLenght))
+        if (playerTransform.position.z - 35 > zSpawn-(tilePrefabs.Length * tileLenght))
         {
-            SpawnTile(Random.Range(0, tilePrefabs.Length));
-            DeleteTile();
+                int Verif = Random.Range(0,tilePrefabs.Length);
+
+                SpawnTile(Verif);
+                
+                if(Verif == 5)
+                {
+                    Hauteur += 1;
+                }
+
+                if(Verif == 6)
+                {
+                    Hauteur -= 1;
+                }
+            
+                DeleteTile();
         }
     }
 
     public void SpawnTile(int tileIndex)
     {
-        GameObject go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        Vector3 pos = transform.forward * zSpawn;
+        pos.y = Hauteur * 10;
+        GameObject go = Instantiate(tilePrefabs[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
     }
