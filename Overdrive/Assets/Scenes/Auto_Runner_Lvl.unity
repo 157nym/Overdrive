@@ -6210,3 +6210,4 @@ MonoBehaviour:
   target: {fileID: 555687700}
   canvas: {fileID: 104267287}
   SpawnRate: 3
+  rt: {fileID: 555687700}

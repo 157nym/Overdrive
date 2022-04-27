@@ -1,17 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
+	2752223339	Jump_End			\Default Work Unit\Character\Jump_End	
 	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
 	3686556480	Slide			\Default Work Unit\Character\Slide	
 	3710956116	BlockJump			\Default Work Unit\LD\BlockJump	
 	3833651337	Jump			\Default Work Unit\Character\Jump	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	60891981	BlockSlide	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockSlide_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockSlide		176464
-	61290083	BlockJump_2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_2		1058464
-	331802635	BlockWall_Ambient	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockWall_Ambient_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Ambient		352864
-	409881086	BlockJump_5	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_5		1058464
-	483038182	BlockJump_3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_3		1058464
-	751915489	BlockJump_4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_4		1058464
-	910189331	BlockWall_Spawn	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockWall_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Spawn		176464
+	60891981	BlockSlide	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockSlide_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockSlide		176464
+	61290083	BlockJump_2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_2		1058464
+	331802635	BlockWall_Ambient	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockWall_Ambient_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Ambient		352864
+	409881086	BlockJump_5	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_5		1058464
+	483038182	BlockJump_3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_3		1058464
+	751915489	BlockJump_4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockJump_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockJump\BlockJump_4		1058464
+	910189331	BlockWall_Spawn	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\BlockWall_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BlockWall_Spawn		176464
 

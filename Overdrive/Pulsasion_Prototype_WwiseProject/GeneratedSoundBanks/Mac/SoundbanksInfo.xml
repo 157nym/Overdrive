@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2392246069">
+		<SoundBank Id="3161908922" Language="SFX" Hash="598975832">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="6." DurationMax="6.">
+				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" MaxAttenuation="100." DurationType="OneShot" DurationMin="6." DurationMax="6.">
 					<IncludedMemoryFiles>
 						<File Id="61290083" Language="SFX">
 							<ShortName>BlockJump_2.wav</ShortName>
@@ -41,7 +41,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" MaxAttenuation="100." DurationType="OneShot" DurationMin="1." DurationMax="1.">
 					<IncludedMemoryFiles>
 						<File Id="60891981" Language="SFX">
 							<ShortName>BlockSlide.wav</ShortName>
@@ -49,7 +49,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" MaxAttenuation="100." DurationType="OneShot" DurationMin="2." DurationMax="2.">
 					<IncludedMemoryFiles>
 						<File Id="331802635" Language="SFX">
 							<ShortName>BlockWall_Ambient.wav</ShortName>
@@ -62,6 +62,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2752223339" Name="Jump_End" ObjectPath="\Events\Default Work Unit\Character\Jump_End" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3686556480" Name="Slide" ObjectPath="\Events\Default Work Unit\Character\Slide" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
