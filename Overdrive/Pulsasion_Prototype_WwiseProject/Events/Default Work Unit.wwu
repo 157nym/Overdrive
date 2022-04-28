@@ -5,10 +5,21 @@
 			<ChildrenList>
 				<Folder Name="Character" ID="{CDEF2BB1-55B1-4D1D-9EE0-C1765E934716}" ShortID="904769893">
 					<ChildrenList>
-						<Event Name="Run" ID="{1F50E8CD-2497-4591-BD25-7162D29BDA4C}"/>
+						<Event Name="Run" ID="{1F50E8CD-2497-4591-BD25-7162D29BDA4C}">
+							<ChildrenList>
+								<Action Name="" ID="{DD1853F6-11A7-4654-BFCC-03EB79D29827}" ShortID="86214303">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{627F77B2-F0A5-4311-B3B8-62F0B3FE4A0A}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Slide" ID="{0D5B2697-6AFB-41EE-BC13-FEE48384278E}"/>
 						<Event Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}"/>
 						<Event Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}"/>
+						<Event Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" ShortID="643725625">
@@ -36,7 +47,7 @@
 								<Action Name="" ID="{325222DC-69A4-49A5-A044-9E9AD7C651DC}" ShortID="844953230">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BlockSlide" ID="{DBE8276B-D93F-4CC7-BE41-0BDE27CBA407}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="BlockSlide" ID="{808BC4D8-FD42-4579-A078-6561C994B07F}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -48,6 +59,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="BlockJump" ID="{AD6009B5-2CC4-4F11-BED9-24B84D81A060}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Kick" ID="{86DF8600-581F-4A50-A5CD-A10B9E1E68A5}">
+							<ChildrenList>
+								<Action Name="" ID="{6F0BCCD3-B7F7-4B44-87BE-0DCAEF096DF1}" ShortID="127686394">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Kick" ID="{82E88978-AD6E-4C24-86E2-C136FBB16450}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HiHat" ID="{CD969372-A3B7-42A5-BCC9-99A643C2ED82}">
+							<ChildrenList>
+								<Action Name="" ID="{CCD671E2-9ED3-4C8A-8527-CE9AB78660ED}" ShortID="462713997">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HiHat" ID="{478E051D-FFF6-4880-8C5C-59FD6E608FFB}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

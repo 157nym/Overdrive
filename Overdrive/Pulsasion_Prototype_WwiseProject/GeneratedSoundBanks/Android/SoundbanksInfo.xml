@@ -16,36 +16,48 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="598975832">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2863895853">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" MaxAttenuation="100." DurationType="OneShot" DurationMin="6." DurationMax="6.">
+				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" MaxAttenuation="100." DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
-						<File Id="61290083" Language="SFX">
-							<ShortName>BlockJump_2.wav</ShortName>
-							<Path>SFX\BlockJump_2_10C4C929.wem</Path>
+						<File Id="65596134" Language="SFX">
+							<ShortName>Jump 1.wav</ShortName>
+							<Path>SFX\Jump 1_10C4C929.wem</Path>
 						</File>
-						<File Id="409881086" Language="SFX">
-							<ShortName>BlockJump_5.wav</ShortName>
-							<Path>SFX\BlockJump_5_10C4C929.wem</Path>
+						<File Id="106000749" Language="SFX">
+							<ShortName>Jump 3.wav</ShortName>
+							<Path>SFX\Jump 3_10C4C929.wem</Path>
 						</File>
-						<File Id="483038182" Language="SFX">
-							<ShortName>BlockJump_3.wav</ShortName>
-							<Path>SFX\BlockJump_3_10C4C929.wem</Path>
+						<File Id="393747136" Language="SFX">
+							<ShortName>Jump 4.wav</ShortName>
+							<Path>SFX\Jump 4_10C4C929.wem</Path>
 						</File>
-						<File Id="751915489" Language="SFX">
-							<ShortName>BlockJump_4.wav</ShortName>
-							<Path>SFX\BlockJump_4_10C4C929.wem</Path>
+						<File Id="713869215" Language="SFX">
+							<ShortName>Jump 2.wav</ShortName>
+							<Path>SFX\Jump 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" MaxAttenuation="100." DurationType="OneShot" DurationMin="1." DurationMax="1.">
+				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" MaxAttenuation="100." DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
-						<File Id="60891981" Language="SFX">
-							<ShortName>BlockSlide.wav</ShortName>
-							<Path>SFX\BlockSlide_10C4C929.wem</Path>
+						<File Id="207134929" Language="SFX">
+							<ShortName>Slide 4.wav</ShortName>
+							<Path>SFX\Slide 4_10C4C929.wem</Path>
+						</File>
+						<File Id="342425969" Language="SFX">
+							<ShortName>Slide 1.wav</ShortName>
+							<Path>SFX\Slide 1_10C4C929.wem</Path>
+						</File>
+						<File Id="720586667" Language="SFX">
+							<ShortName>Slide 3.wav</ShortName>
+							<Path>SFX\Slide 3_10C4C929.wem</Path>
+						</File>
+						<File Id="925500205" Language="SFX">
+							<ShortName>Slide 2.wav</ShortName>
+							<Path>SFX\Slide 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -61,9 +73,61 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1786804762" Name="Damage" ObjectPath="\Events\Default Work Unit\Character\Damage" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3437592667" Name="HiHat" ObjectPath="\Events\Default Work Unit\LD\HiHat" DurationType="OneShot" DurationMin="0.092585" DurationMax="0.092585">
+					<IncludedMemoryFiles>
+						<File Id="579471983" Language="SFX">
+							<ShortName>HiHat.wav</ShortName>
+							<Path>SFX\HiHat_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2752223339" Name="Jump_End" ObjectPath="\Events\Default Work Unit\Character\Jump_End" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2181839183" Name="Kick" ObjectPath="\Events\Default Work Unit\LD\Kick" DurationType="OneShot" DurationMin="0.185147" DurationMax="0.185147">
+					<IncludedMemoryFiles>
+						<File Id="629085646" Language="SFX">
+							<ShortName>Kick.wav</ShortName>
+							<Path>SFX\Kick_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="97273257" Language="SFX">
+							<ShortName>Step 7.wav</ShortName>
+							<Path>SFX\Step 7_10C4C929.wem</Path>
+						</File>
+						<File Id="276369476" Language="SFX">
+							<ShortName>Step 2.wav</ShortName>
+							<Path>SFX\Step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="340134608" Language="SFX">
+							<ShortName>Step 6.wav</ShortName>
+							<Path>SFX\Step 6_10C4C929.wem</Path>
+						</File>
+						<File Id="541716826" Language="SFX">
+							<ShortName>Step 4.wav</ShortName>
+							<Path>SFX\Step 4_10C4C929.wem</Path>
+						</File>
+						<File Id="562334561" Language="SFX">
+							<ShortName>Step 3.wav</ShortName>
+							<Path>SFX\Step 3_10C4C929.wem</Path>
+						</File>
+						<File Id="673947512" Language="SFX">
+							<ShortName>Step 8.wav</ShortName>
+							<Path>SFX\Step 8_10C4C929.wem</Path>
+						</File>
+						<File Id="855193881" Language="SFX">
+							<ShortName>Step 1.wav</ShortName>
+							<Path>SFX\Step 1_10C4C929.wem</Path>
+						</File>
+						<File Id="900021930" Language="SFX">
+							<ShortName>Step 5.wav</ShortName>
+							<Path>SFX\Step 5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3686556480" Name="Slide" ObjectPath="\Events\Default Work Unit\Character\Slide" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
