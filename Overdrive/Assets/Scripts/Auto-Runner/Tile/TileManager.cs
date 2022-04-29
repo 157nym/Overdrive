@@ -39,11 +39,21 @@ public class TileManager : MonoBehaviour
                 if(Verif == 5)
                 {
                     Hauteur += 1;
+                    int ram = Random.Range(0,4);
+                    SpawnTile(ram);
                 }
 
                 if(Verif == 6)
                 {
                     Hauteur -= 1;
+                    int ram = Random.Range(0,4);
+                    SpawnTile(ram);
+                }
+                
+                if (Verif == 7)
+                {
+                    Hauteur += 1;
+                    Split(1);
                 }
             }
         }
@@ -57,17 +67,26 @@ public class TileManager : MonoBehaviour
                 int Verif = Random.Range(0,tilePrefabs.Length);
 
                 SpawnTile(Verif);
-                
+
                 if(Verif == 5)
                 {
                     Hauteur += 1;
+                    int ram = Random.Range(0,4);
+                    SpawnTile(ram);
                 }
 
                 if(Verif == 6)
                 {
                     Hauteur -= 1;
+                    int ram = Random.Range(0,4);
+                    SpawnTile(ram);
                 }
-            
+
+                if (Verif == 7)
+                {
+                    Hauteur += 1;
+                    Split(1);
+                }
                 DeleteTile();
         }
     }
@@ -78,6 +97,20 @@ public class TileManager : MonoBehaviour
         pos.y = Hauteur * 10;
         GameObject go = Instantiate(tilePrefabs[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
+        zSpawn += tileLenght;
+    }
+
+    public void Split(int tileIndex)
+    {
+        Vector3 pos = transform.forward * zSpawn;
+        pos.y = Hauteur * 10;
+        GameObject go = Instantiate(tilePrefabs[tileIndex], pos, transform.rotation);
+        activeTiles.Add(go);
+
+        Vector3 pos2 = transform.forward;
+        pos.y = Hauteur;
+        GameObject go2 = Instantiate(tilePrefabs[tileIndex], pos2, transform.rotation);
+        activeTiles.Add(go2);
         zSpawn += tileLenght;
     }
 
