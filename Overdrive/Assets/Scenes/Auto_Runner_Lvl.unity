@@ -648,7 +648,6 @@ MonoBehaviour:
   - {fileID: 1325556395833257119, guid: 881665caa81eba844957a40ec91ab645, type: 3}
   - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
   - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
-  - {fileID: 9212145614554117781, guid: d089055af11e64f49b12cfebc162d210, type: 3}
   zSpawn: 0
   tileLenght: 30
   playerTransform: {fileID: 960798696}
@@ -1040,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 40
+  forwardSpeed: 20
   laneDistance: 3
   gravity: -500
   "Dur\xE9eAnim": 0.3
