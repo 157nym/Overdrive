@@ -28,6 +28,8 @@ public class TileManager : MonoBehaviour
             if (i == 0)
             {
                 SpawnTile(0);
+                SpawnTile(0);
+                SpawnTile(0);
             }
 
             else
