@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class CharacterMovementAutoRun : MonoBehaviour
@@ -17,10 +18,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
     public float DuréeAnim;
     public float speedAugmentation;
     public float speedMax;
-
     public int NbrPop;
-
     public Animator animator;
+    public Text scoreTxt;
+    private float score = 1;
+    public float PointPerSecond;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PointPerSecond += speedAugmentation;
+        
+        score += PointPerSecond * Time.deltaTime;
+
+        scoreTxt.text = "Score : " + Mathf.RoundToInt(score);
         
         if(NbrPop >= 10)
         {
