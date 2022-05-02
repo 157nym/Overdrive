@@ -986,7 +986,7 @@ GameObject:
   - component: {fileID: 960798697}
   m_Layer: 0
   m_Name: PlayerObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1046,6 +1046,7 @@ MonoBehaviour:
   "Dur\xE9eAnim": 0.3
   speedAugmentation: 0.001
   speedMax: 100
+  NbrPop: 0
   animator: {fileID: 960798694}
 --- !u!4 &960798696
 Transform:
