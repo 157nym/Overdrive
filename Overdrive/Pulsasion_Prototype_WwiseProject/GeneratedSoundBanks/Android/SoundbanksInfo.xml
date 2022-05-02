@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="882632422">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2243275360">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -73,7 +73,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1786804762" Name="Damage" ObjectPath="\Events\Default Work Unit\Character\Damage" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1786804762" Name="Damage" ObjectPath="\Events\Default Work Unit\Character\Damage" DurationType="OneShot" DurationMin="0.847551" DurationMax="0.847551">
+					<IncludedMemoryFiles>
+						<File Id="1072476667" Language="SFX">
+							<ShortName>Damage SFX.wav</ShortName>
+							<Path>SFX\Damage SFX_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3437592667" Name="HiHat" ObjectPath="\Events\Default Work Unit\LD\HiHat" DurationType="OneShot" DurationMin="0.092585" DurationMax="0.092585">
 					<IncludedMemoryFiles>
 						<File Id="579471983" Language="SFX">

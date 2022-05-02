@@ -533,7 +533,17 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Steps" ID="{627F77B2-F0A5-4311-B3B8-62F0B3FE4A0A}" ShortID="580251821">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>13</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -555,6 +565,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098" ID="{9EE06DB7-EA13-421D-B1DB-745994996E1A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.015728582866293"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098.wav</AudioFile>
 											<MediaIDList>
@@ -578,6 +592,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 1" ID="{0E6FDDE1-5EBD-4A46-9532-14D50F73A4F2}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0132525020016013"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 1.wav</AudioFile>
 											<MediaIDList>
@@ -601,6 +619,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 2" ID="{BF368C4E-052A-42CA-9126-9131435E3AB5}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0275250200160128"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 2.wav</AudioFile>
 											<MediaIDList>
@@ -624,6 +646,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 3" ID="{D8BAA4FC-FCD4-4B27-B07E-510B112B9726}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0162570556445156"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 3.wav</AudioFile>
 											<MediaIDList>
@@ -647,6 +673,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 4" ID="{E46DCB04-28A6-4065-89AC-F5643EF123E6}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.00567964371497198"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 4.wav</AudioFile>
 											<MediaIDList>
@@ -670,6 +700,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 5" ID="{E1C8010F-FAE4-49E6-A53F-4A1C1223DE3F}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0492619595676541"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 5.wav</AudioFile>
 											<MediaIDList>
@@ -986,6 +1020,29 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Damage SFX" ID="{D757E4DC-B926-44BD-B7E0-B9F6B781A412}" ShortID="771147052">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Damage SFX" ID="{9B1C44C9-7B5D-4863-B32C-318BDC2BB7FC}">
+									<Language>SFX</Language>
+									<AudioFile>Damage SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1072476667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Damage SFX" ID="{9B1C44C9-7B5D-4863-B32C-318BDC2BB7FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

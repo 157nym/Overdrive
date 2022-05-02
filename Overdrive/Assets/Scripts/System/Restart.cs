@@ -12,6 +12,7 @@ public class Restart : MonoBehaviour
     private CharacterMovementAutoRun playerInfo;
 
     private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,8 @@ public class Restart : MonoBehaviour
             Debug.Log("Spawn");
             StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
             other.gameObject.GetComponentInChildren<Animation>().Play();
-            playerInfo.NbrPop ++;
+            playerInfo.NbrPop ++; 
+            AkSoundEngine.PostEvent("Damage", player.gameObject);
         }
     }
 

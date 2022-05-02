@@ -49,7 +49,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}"/>
+						<Event Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}">
+							<ChildrenList>
+								<Action Name="" ID="{B45B5172-4597-46A8-8BF5-DCCA5D158F9C}" ShortID="873325478">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Damage SFX" ID="{D757E4DC-B926-44BD-B7E0-B9F6B781A412}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" ShortID="643725625">
