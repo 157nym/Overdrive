@@ -13,8 +13,6 @@ public class CharacterSound : MonoBehaviour
 
     private PlayerMouvement Player;
 
-    bool jumping = false;
-
     private void Start()
     {
         if(Player == null) Player = GetComponent<PlayerMouvement>();
@@ -32,19 +30,11 @@ public class CharacterSound : MonoBehaviour
 
     public void Jump()
     {
-        if (!jumping)
-        {
-            Jump_Start.Post(gameObject);
-            jumping = true;
-        }
+        Jump_Start.Post(gameObject);
     }
 
     void BackRunning()
     {
-        if (jumping)
-        {
-            Jump_End.Post(gameObject);
-            jumping = false;
-        }
+        Jump_End.Post(gameObject);
     }
 }

@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3756116011">
+		<SoundBank Id="3161908922" Language="SFX" Hash="882632422">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -82,8 +82,50 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2752223339" Name="Jump_End" ObjectPath="\Events\Default Work Unit\Character\Jump_End" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" DurationType="OneShot" DurationMin="0.203786" DurationMax="0.346098">
+					<IncludedMemoryFiles>
+						<File Id="564923823" Language="SFX">
+							<ShortName>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1.wav</ShortName>
+							<Path>SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1_10C4C929.wem</Path>
+						</File>
+						<File Id="795317107" Language="SFX">
+							<ShortName>Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2.wav</ShortName>
+							<Path>SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2_10C4C929.wem</Path>
+						</File>
+						<File Id="822150662" Language="SFX">
+							<ShortName>Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1.wav</ShortName>
+							<Path>SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1_10C4C929.wem</Path>
+						</File>
+						<File Id="833489615" Language="SFX">
+							<ShortName>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468.wav</ShortName>
+							<Path>SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2752223339" Name="Jump_End" ObjectPath="\Events\Default Work Unit\Character\Jump_End" DurationType="OneShot" DurationMin="0.252146" DurationMax="0.401708">
+					<IncludedMemoryFiles>
+						<File Id="109075288" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Surface, Jump On SND62097.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Surface, Jump On SND62097_10C4C929.wem</Path>
+						</File>
+						<File Id="394819386" Language="SFX">
+							<ShortName>Footsteps, Human, Tile, Jump, Land SND62091 3.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Tile, Jump, Land SND62091 3_10C4C929.wem</Path>
+						</File>
+						<File Id="498025622" Language="SFX">
+							<ShortName>Footsteps, Human, Tile, Jump, Land SND62091 2.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Tile, Jump, Land SND62091 2_10C4C929.wem</Path>
+						</File>
+						<File Id="906194001" Language="SFX">
+							<ShortName>Footsteps, Human, Tile, Jump, Land SND62091 4.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Tile, Jump, Land SND62091 4_10C4C929.wem</Path>
+						</File>
+						<File Id="1035504593" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Surface, Jump On SND62097 1.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Surface, Jump On SND62097 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2181839183" Name="Kick" ObjectPath="\Events\Default Work Unit\LD\Kick" DurationType="OneShot" DurationMin="0.185147" DurationMax="0.185147">
 					<IncludedMemoryFiles>
 						<File Id="629085646" Language="SFX">
@@ -92,39 +134,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" DurationType="OneShot" DurationMin="0.356229" DurationMax="0.500229">
 					<IncludedMemoryFiles>
-						<File Id="97273257" Language="SFX">
-							<ShortName>Step 7.wav</ShortName>
-							<Path>SFX\Step 7_10C4C929.wem</Path>
+						<File Id="272046355" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098 2.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem</Path>
 						</File>
-						<File Id="276369476" Language="SFX">
-							<ShortName>Step 2.wav</ShortName>
-							<Path>SFX\Step 2_10C4C929.wem</Path>
+						<File Id="426764607" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098 1.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1_10C4C929.wem</Path>
 						</File>
-						<File Id="340134608" Language="SFX">
-							<ShortName>Step 6.wav</ShortName>
-							<Path>SFX\Step 6_10C4C929.wem</Path>
+						<File Id="604411401" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098 4.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 4_10C4C929.wem</Path>
 						</File>
-						<File Id="541716826" Language="SFX">
-							<ShortName>Step 4.wav</ShortName>
-							<Path>SFX\Step 4_10C4C929.wem</Path>
+						<File Id="653879077" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098 3.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 3_10C4C929.wem</Path>
 						</File>
-						<File Id="562334561" Language="SFX">
-							<ShortName>Step 3.wav</ShortName>
-							<Path>SFX\Step 3_10C4C929.wem</Path>
+						<File Id="837860218" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098_10C4C929.wem</Path>
 						</File>
-						<File Id="673947512" Language="SFX">
-							<ShortName>Step 8.wav</ShortName>
-							<Path>SFX\Step 8_10C4C929.wem</Path>
-						</File>
-						<File Id="855193881" Language="SFX">
-							<ShortName>Step 1.wav</ShortName>
-							<Path>SFX\Step 1_10C4C929.wem</Path>
-						</File>
-						<File Id="900021930" Language="SFX">
-							<ShortName>Step 5.wav</ShortName>
-							<Path>SFX\Step 5_10C4C929.wem</Path>
+						<File Id="1015557130" Language="SFX">
+							<ShortName>Footsteps, Human, Rock, Run, Isolated Steps SND62098 5.wav</ShortName>
+							<Path>SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

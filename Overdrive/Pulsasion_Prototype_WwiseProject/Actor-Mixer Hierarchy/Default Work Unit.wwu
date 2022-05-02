@@ -544,7 +544,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Step 1" ID="{78271F1B-7AF4-476C-A6C8-B18CC712D932}" ShortID="810875278">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098" ID="{11846498-1B5C-45E6-B9AA-532DEEC6DF55}" ShortID="39022332">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -554,20 +554,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 1" ID="{D6D7FD51-1962-4584-B7C8-FDC40023BD03}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098" ID="{9EE06DB7-EA13-421D-B1DB-745994996E1A}">
 											<Language>SFX</Language>
-											<AudioFile>Step 1.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="855193881"/>
+												<MediaID ID="837860218"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 1" ID="{D6D7FD51-1962-4584-B7C8-FDC40023BD03}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098" ID="{9EE06DB7-EA13-421D-B1DB-745994996E1A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Step 2" ID="{D20E72B9-C8B4-452A-B0B0-009E3FE1B54D}" ShortID="138214083">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 1" ID="{3CA5512F-FC8F-4541-94C8-0A3279A198AC}" ShortID="884015802">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -577,20 +577,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 2" ID="{2BD2FB2A-CCB8-43EC-8B0C-65BB7184C977}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 1" ID="{0E6FDDE1-5EBD-4A46-9532-14D50F73A4F2}">
 											<Language>SFX</Language>
-											<AudioFile>Step 2.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 1.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="276369476"/>
+												<MediaID ID="426764607"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 2" ID="{2BD2FB2A-CCB8-43EC-8B0C-65BB7184C977}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 1" ID="{0E6FDDE1-5EBD-4A46-9532-14D50F73A4F2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Step 3" ID="{B46F4C3E-9C7B-4414-A1B2-294FA4D505D5}" ShortID="518828946">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 2" ID="{7A7C2DF9-8248-4100-9210-35843F90AC0A}" ShortID="983356459">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -600,20 +600,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 3" ID="{C4A753BA-6A35-4971-8975-D904957260AE}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 2" ID="{BF368C4E-052A-42CA-9126-9131435E3AB5}">
 											<Language>SFX</Language>
-											<AudioFile>Step 3.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="562334561"/>
+												<MediaID ID="272046355"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 3" ID="{C4A753BA-6A35-4971-8975-D904957260AE}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 2" ID="{BF368C4E-052A-42CA-9126-9131435E3AB5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Step 4" ID="{65D5A756-D9D0-4956-89C2-7240FE51CDD3}" ShortID="916777667">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 3" ID="{DE95E0CF-4CEC-4FC7-B94E-DE225AF671AD}" ShortID="1072578390">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -623,20 +623,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 4" ID="{225B41F0-AF18-43AE-AAB7-7B15AA7424B7}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 3" ID="{D8BAA4FC-FCD4-4B27-B07E-510B112B9726}">
 											<Language>SFX</Language>
-											<AudioFile>Step 4.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 3.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="541716826"/>
+												<MediaID ID="653879077"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 4" ID="{225B41F0-AF18-43AE-AAB7-7B15AA7424B7}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 3" ID="{D8BAA4FC-FCD4-4B27-B07E-510B112B9726}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Step 5" ID="{888DF5F7-6ED9-4A2B-8F3A-C9DF24158E6E}" ShortID="925641110">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 4" ID="{C3C50A07-30A3-497F-B21C-1AD14AA57506}" ShortID="284271556">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -646,20 +646,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 5" ID="{A3719512-1713-44F7-A3D4-C18152CCC5A4}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 4" ID="{E46DCB04-28A6-4065-89AC-F5643EF123E6}">
 											<Language>SFX</Language>
-											<AudioFile>Step 5.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 4.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="900021930"/>
+												<MediaID ID="604411401"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 5" ID="{A3719512-1713-44F7-A3D4-C18152CCC5A4}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 4" ID="{E46DCB04-28A6-4065-89AC-F5643EF123E6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Step 6" ID="{5F79B339-F778-4308-BB81-6E797A473742}" ShortID="89016355">
+								<Sound Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 5" ID="{0A76B1EF-BDFE-48DB-8ABA-06CBEDD6B5FC}" ShortID="1067476312">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -669,63 +669,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Step 6" ID="{A94DE7BD-3A97-4B7C-826C-B9EE283059E1}">
+										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 5" ID="{E1C8010F-FAE4-49E6-A53F-4A1C1223DE3F}">
 											<Language>SFX</Language>
-											<AudioFile>Step 6.wav</AudioFile>
+											<AudioFile>Footsteps, Human, Rock, Run, Isolated Steps SND62098 5.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="340134608"/>
+												<MediaID ID="1015557130"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Step 6" ID="{A94DE7BD-3A97-4B7C-826C-B9EE283059E1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Step 7" ID="{DD10C353-32EF-4929-B2AE-28380D160A9E}" ShortID="821342330">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Step 7" ID="{8F6BE52D-BACD-439C-9AA9-2153EAFFBF7A}">
-											<Language>SFX</Language>
-											<AudioFile>Step 7.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="97273257"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Step 7" ID="{8F6BE52D-BACD-439C-9AA9-2153EAFFBF7A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Step 8" ID="{873021D7-767F-4DFA-99C4-A36F446716CB}" ShortID="556988496">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Step 8" ID="{82080C27-5D28-49C9-B9BF-4791C4DED7EE}">
-											<Language>SFX</Language>
-											<AudioFile>Step 8.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="673947512"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Step 8" ID="{82080C27-5D28-49C9-B9BF-4791C4DED7EE}" Platform="Linked"/>
+										<ActiveSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 5" ID="{E1C8010F-FAE4-49E6-A53F-4A1C1223DE3F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -769,7 +723,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Sliding" ID="{16732B0A-7806-49E9-AF2E-2C0F3D8BAA40}"/>
-										<CustomState Name="" ID="{B2819375-452B-4C79-B702-78B9F5648042}" ShortID="694398205"/>
+										<CustomState Name="" ID="{B2819375-452B-4C79-B702-78B9F5648042}" ShortID="694398205">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-13"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -778,6 +736,256 @@
 								<ActiveSource Name="Slide SFX" ID="{7D2914E3-D5C6-4F91-B6A0-C281E9806C0C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Jump_Land" ID="{7423235D-F313-41EF-8E04-78A3DBAFE92E}" ShortID="217094348">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footsteps, Human, Tile, Jump, Land SND62091 2" ID="{69D28464-E524-43C1-B9A9-B46B062EDA87}" ShortID="454076340">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Tile, Jump, Land SND62091 2" ID="{647D8462-FF76-4AEF-9B0B-3A3DBD2F34BD}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Tile, Jump, Land SND62091 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="498025622"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Tile, Jump, Land SND62091 2" ID="{647D8462-FF76-4AEF-9B0B-3A3DBD2F34BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Tile, Jump, Land SND62091 3" ID="{6C707937-A524-4DCB-A3D8-7DF5ADDE371D}" ShortID="222562259">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Tile, Jump, Land SND62091 3" ID="{4B10C114-0344-4BE3-96BF-575BB5ADA167}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Tile, Jump, Land SND62091 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="394819386"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Tile, Jump, Land SND62091 3" ID="{4B10C114-0344-4BE3-96BF-575BB5ADA167}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Tile, Jump, Land SND62091 4" ID="{91C1FA4D-E850-4790-A2A2-BFDCEAE64307}" ShortID="157572380">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Tile, Jump, Land SND62091 4" ID="{36128668-6FDE-4645-B318-D8D0B35FB9E7}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Tile, Jump, Land SND62091 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906194001"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Tile, Jump, Land SND62091 4" ID="{36128668-6FDE-4645-B318-D8D0B35FB9E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Rock, Surface, Jump On SND62097" ID="{47F9D004-2488-4D09-B6D3-07ECE71B96EC}" ShortID="414571438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Rock, Surface, Jump On SND62097" ID="{5EB32925-9E2A-4019-A024-F720C3459BFD}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Rock, Surface, Jump On SND62097.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="109075288"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Rock, Surface, Jump On SND62097" ID="{5EB32925-9E2A-4019-A024-F720C3459BFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Rock, Surface, Jump On SND62097 1" ID="{558A6EA3-1D5A-490B-AF1C-376A1589E5C1}" ShortID="847386427">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Rock, Surface, Jump On SND62097 1" ID="{ED5F8ABA-4330-4470-8B38-1BBECD02AF8E}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Rock, Surface, Jump On SND62097 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1035504593"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Rock, Surface, Jump On SND62097 1" ID="{ED5F8ABA-4330-4470-8B38-1BBECD02AF8E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="JumpStart" ID="{892DDB29-818E-4530-9CBA-8B031A2BCF67}" ShortID="25009035">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>32</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-80</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1" ID="{1CEB6A6F-4582-49CD-8265-69F3616B24B2}" ShortID="581143775">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1" ID="{B5A51E8C-3239-48C0-9666-AF1A6B20D6D3}">
+											<Language>SFX</Language>
+											<AudioFile>Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="822150662"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1" ID="{B5A51E8C-3239-48C0-9666-AF1A6B20D6D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2" ID="{6A4F502A-93A6-4015-B637-FC702FC7855B}" ShortID="453200840">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2" ID="{BA383ABD-823C-44F8-B048-612BA211AE97}">
+											<Language>SFX</Language>
+											<AudioFile>Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="795317107"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2" ID="{BA383ABD-823C-44F8-B048-612BA211AE97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468" ID="{9B868374-FFD1-438F-B13F-63FA5D70C8A8}" ShortID="307703885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468" ID="{28B77389-352F-4F27-BE95-AA4373D4191F}">
+											<Language>SFX</Language>
+											<AudioFile>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="833489615"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468" ID="{28B77389-352F-4F27-BE95-AA4373D4191F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1" ID="{C8157687-069D-45D4-9A1F-766AC130C2B3}" ShortID="999295772">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1" ID="{B293E261-9483-48EE-8140-52ECF54F0004}">
+											<Language>SFX</Language>
+											<AudioFile>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="564923823"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1" ID="{B293E261-9483-48EE-8140-52ECF54F0004}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

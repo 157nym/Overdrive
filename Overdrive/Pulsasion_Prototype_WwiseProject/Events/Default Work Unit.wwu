@@ -27,8 +27,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}"/>
-						<Event Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}"/>
+						<Event Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}">
+							<ChildrenList>
+								<Action Name="" ID="{6E9EB1FF-C9DA-4A9D-ACE6-A6A899EF8031}" ShortID="632631433">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="JumpStart" ID="{892DDB29-818E-4530-9CBA-8B031A2BCF67}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}">
+							<ChildrenList>
+								<Action Name="" ID="{5DD2B180-91FA-4C7E-BB0F-8C70A9FFE249}" ShortID="1041475407">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump_Land" ID="{7423235D-F313-41EF-8E04-78A3DBAFE92E}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}"/>
 					</ChildrenList>
 				</Folder>
