@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="764651370">
+		<SoundBank Id="1355168291" Language="SFX" Hash="832384388">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2863895853">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3756116011">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -128,7 +128,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3686556480" Name="Slide" ObjectPath="\Events\Default Work Unit\Character\Slide" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3686556480" Name="Slide" ObjectPath="\Events\Default Work Unit\Character\Slide" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="876530420" Language="SFX">
+							<ShortName>Slide SFX.wav</ShortName>
+							<Path>SFX\Slide SFX_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

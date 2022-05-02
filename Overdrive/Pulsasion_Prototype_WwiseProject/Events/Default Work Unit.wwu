@@ -16,7 +16,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Slide" ID="{0D5B2697-6AFB-41EE-BC13-FEE48384278E}"/>
+						<Event Name="Slide" ID="{0D5B2697-6AFB-41EE-BC13-FEE48384278E}">
+							<ChildrenList>
+								<Action Name="" ID="{68F2CD0E-9427-4182-BC63-E95DC165DAC9}" ShortID="605547451">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slide SFX" ID="{DE59115C-972C-4374-BF8F-657ABAA2E567}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}"/>
 						<Event Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}"/>
 						<Event Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}"/>

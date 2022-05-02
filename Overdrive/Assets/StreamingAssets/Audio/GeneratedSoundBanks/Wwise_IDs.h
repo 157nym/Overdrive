@@ -25,6 +25,22 @@ namespace AK
         static const AkUniqueID SLIDE = 3686556480U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace SLIDE
+        {
+            static const AkUniqueID GROUP = 3686556480U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RUNNING = 3863236874U;
+                static const AkUniqueID SLIDING = 472853913U;
+            } // namespace STATE
+        } // namespace SLIDE
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID SPEED = 640949982U;

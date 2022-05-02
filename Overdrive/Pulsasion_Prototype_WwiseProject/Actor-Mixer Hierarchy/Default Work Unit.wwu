@@ -731,6 +731,53 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Slide SFX" ID="{DE59115C-972C-4374-BF8F-657ABAA2E567}" ShortID="243772471">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Slide SFX" ID="{7D2914E3-D5C6-4F91-B6A0-C281E9806C0C}">
+									<Language>SFX</Language>
+									<AudioFile>Slide SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="876530420"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Slide" ID="{0AAACDC8-46BE-40A3-ABBF-9FCA9CA1A594}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
+										<CustomState Name="" ID="{C1AEB173-74AC-466E-A96A-8B409BC06BA8}" ShortID="651340830">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Sliding" ID="{16732B0A-7806-49E9-AF2E-2C0F3D8BAA40}"/>
+										<CustomState Name="" ID="{B2819375-452B-4C79-B702-78B9F5648042}" ShortID="694398205"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Slide SFX" ID="{7D2914E3-D5C6-4F91-B6A0-C281E9806C0C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
