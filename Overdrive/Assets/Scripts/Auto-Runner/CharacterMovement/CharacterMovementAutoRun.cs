@@ -63,13 +63,13 @@ public class CharacterMovementAutoRun : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
-                Jump();
+                StartCoroutine(Jump(1f));
             }
             
 
             if(SwipeManager.swipeUp)
             {
-                Jump();
+                StartCoroutine(Jump(1f));
             }
         }
         else
@@ -132,9 +132,12 @@ public class CharacterMovementAutoRun : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
     }
 
-    private void Jump()
+    IEnumerator Jump(float JumpReset)
     {
+        Debug.Log("Jumping");
         animator.SetTrigger("Jumping");
+        yield return new WaitForSeconds(JumpReset);
+        animator.ResetTrigger("Jumping");
     }
 
     private void Slide()
