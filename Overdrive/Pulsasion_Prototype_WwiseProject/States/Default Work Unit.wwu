@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Slide" ID="{0AAACDC8-46BE-40A3-ABBF-9FCA9CA1A594}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2075F066-7BBD-4BE3-9CC5-C3EEA7D981C6}"/>
+						<State Name="Sliding" ID="{16732B0A-7806-49E9-AF2E-2C0F3D8BAA40}"/>
+						<State Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

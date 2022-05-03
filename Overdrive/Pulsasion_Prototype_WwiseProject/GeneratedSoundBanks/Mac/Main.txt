@@ -1,0 +1,55 @@
+Event	ID	Name			Wwise Object Path	Notes
+	712161704	Run			\Default Work Unit\Character\Run	
+	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
+	1786804762	Damage			\Default Work Unit\Character\Damage	
+	2181839183	Kick			\Default Work Unit\LD\Kick	
+	2752223339	Jump_End			\Default Work Unit\Character\Jump_End	
+	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
+	3437592667	HiHat			\Default Work Unit\LD\HiHat	
+	3686556480	Slide			\Default Work Unit\Character\Slide	
+	3710956116	BlockJump			\Default Work Unit\LD\BlockJump	
+	3833651337	Jump			\Default Work Unit\Character\Jump	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3686556480	Slide			\Default Work Unit\Slide	
+
+State	ID	Name	State Group			Notes
+	472853913	Sliding	Slide			
+	748895195	None	Slide			
+	3863236874	Running	Slide			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	651340830	Running	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
+	694398205	Sliding	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	65596134	Jump 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 1		705664
+	106000749	Jump 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 3		705664
+	109075288	Footsteps, Human, Rock, Surface, Jump On SND62097	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Surface, Jump On SND62097_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Rock, Surface, Jump On SND62097		37330
+	207134929	Slide 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 4		705664
+	272046355	Footsteps, Human, Rock, Run, Isolated Steps SND62098 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2		39354
+	331802635	BlockWall_Ambient	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\BlockWall_Ambient_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockWall_Ambient		352864
+	342425969	Slide 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 1		705664
+	393747136	Jump 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 4		705664
+	394819386	Footsteps, Human, Tile, Jump, Land SND62091 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 3		38628
+	426764607	Footsteps, Human, Rock, Run, Isolated Steps SND62098 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1		37898
+	498025622	Footsteps, Human, Tile, Jump, Land SND62091 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 2		24270
+	564923823	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1		63512
+	579471983	HiHat	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\HiHat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\HiHat		16396
+	604411401	Footsteps, Human, Rock, Run, Isolated Steps SND62098 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 4		37898
+	629085646	Kick	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Kick_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\Kick		32724
+	653879077	Footsteps, Human, Rock, Run, Isolated Steps SND62098 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 3		34262
+	713869215	Jump 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 2		705664
+	720586667	Slide 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 3		705664
+	795317107	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2		57708
+	822150662	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1		37424
+	833489615	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468		44476
+	837860218	Footsteps, Human, Rock, Run, Isolated Steps SND62098	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098		39354
+	876530420	Slide SFX	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide SFX_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		352864
+	906194001	Footsteps, Human, Tile, Jump, Land SND62091 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 4		26320
+	910189331	BlockWall_Spawn	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\BlockWall_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockWall_Spawn		176464
+	925500205	Slide 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 2		705664
+	1015557130	Footsteps, Human, Rock, Run, Isolated Steps SND62098 5	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 5		48086
+	1035504593	Footsteps, Human, Rock, Surface, Jump On SND62097 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Surface, Jump On SND62097 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Rock, Surface, Jump On SND62097 1		28110
+	1072476667	Damage SFX	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Damage SFX_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Damage SFX		149572
+
