@@ -17,6 +17,13 @@
 */[Bb]uilds/
 */Logs/
 */Assets/AssetStoreTools*
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Logs/
+/Assets/AssetStoreTools*
 
 *.log
 
@@ -114,3 +121,4 @@ WwiseUnityIntegration_*_Src.zip
 */Assets/Wwise/Editor/ProjectData.meta
 */Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll
 */Assets/Wwise/API/Runtime/Plugins/iOS
+Library/Artifacts/03/035aa18cea843093dc506f388c77aac8
