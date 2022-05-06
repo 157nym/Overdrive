@@ -17,6 +17,8 @@
 */[Bb]uilds/
 */Logs/
 */Assets/AssetStoreTools*
+/[Ll]ibrary/
+/Logs/
 
 *.log
 
