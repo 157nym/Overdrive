@@ -9,6 +9,7 @@ TagManager:
   - wall
   - MainCanvas
   - PopUpManager
+  - GameManager
   layers:
   - Default
   - TransparentFX
