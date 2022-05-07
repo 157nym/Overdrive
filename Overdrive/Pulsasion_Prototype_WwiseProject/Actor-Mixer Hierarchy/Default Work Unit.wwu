@@ -14,6 +14,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -204,6 +205,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -312,6 +314,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -394,6 +397,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -586,7 +590,7 @@
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -767,6 +771,11 @@
 						<Sound Name="Slide SFX" ID="{DE59115C-972C-4374-BF8F-657ABAA2E567}" ShortID="243772471">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -816,6 +825,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Jump_Land" ID="{7423235D-F313-41EF-8E04-78A3DBAFE92E}" ShortID="217094348">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -953,11 +969,6 @@
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-80</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1105,7 +1116,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1166,7 +1177,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
