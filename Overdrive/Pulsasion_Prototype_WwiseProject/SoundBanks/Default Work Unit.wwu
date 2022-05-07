@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{BE1FBBEA-380D-4222-8280-4A61E4E1D8A2}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Character" ID="{CDEF2BB1-55B1-4D1D-9EE0-C1765E934716}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PopUp" ID="{F8755671-762D-4DBA-A226-CB5B1C16C4D2}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

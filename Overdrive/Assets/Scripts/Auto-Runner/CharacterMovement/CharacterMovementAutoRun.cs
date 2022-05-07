@@ -41,8 +41,8 @@ public class CharacterMovementAutoRun : MonoBehaviour
 
         if (forwardSpeed < speedMax)
         {
-            DuréeAnim += speedAugmentation * Time.deltaTime;
             forwardSpeed += speedAugmentation * 10 * Time.deltaTime;
+            DuréeAnim = (forwardSpeed*4)/30;
             animator.SetFloat("AnimSpeed", DuréeAnim);
         }
         

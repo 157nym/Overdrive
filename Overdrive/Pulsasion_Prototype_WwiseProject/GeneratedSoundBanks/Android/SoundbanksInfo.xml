@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="351771183">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1249675789">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1291433344" Name="Bass" ObjectPath="\Events\Default Work Unit\LD\Bass" DurationType="OneShot" DurationMin="2.844467" DurationMax="2.844467">
+					<IncludedMemoryFiles>
+						<File Id="953925162" Language="SFX">
+							<ShortName>Bass.wav</ShortName>
+							<Path>SFX\Bass_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
 						<File Id="65596134" Language="SFX">
@@ -70,6 +78,34 @@
 						<File Id="910189331" Language="SFX">
 							<ShortName>BlockWall_Spawn.wav</ShortName>
 							<Path>SFX\BlockWall_Spawn_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\PopUp\Click" DurationType="OneShot" DurationMin="0.296292" DurationMax="0.555562">
+					<IncludedMemoryFiles>
+						<File Id="9032660" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1_10C4C929.wem</Path>
+						</File>
+						<File Id="63739832" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3_10C4C929.wem</Path>
+						</File>
+						<File Id="339796614" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 4.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 4_10C4C929.wem</Path>
+						</File>
+						<File Id="402939866" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312_10C4C929.wem</Path>
+						</File>
+						<File Id="580818240" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 2.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 2_10C4C929.wem</Path>
+						</File>
+						<File Id="1027541020" Language="SFX">
+							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5.wav</ShortName>
+							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,6 +182,14 @@
 						<File Id="122599344" Language="SFX">
 							<ShortName>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3.wav</ShortName>
 							<Path>SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="416742853" Name="PopUp_Spawn" ObjectPath="\Events\Default Work Unit\PopUp\PopUp_Spawn" DurationType="OneShot" DurationMin="1.217868" DurationMax="1.217868">
+					<IncludedMemoryFiles>
+						<File Id="540113067" Language="SFX">
+							<ShortName>WinError.wav</ShortName>
+							<Path>SFX\WinError_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -137,6 +137,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Bass" ID="{06027C0F-11AD-48ED-B88B-DE6D87B7DBDF}">
+							<ChildrenList>
+								<Action Name="" ID="{36C5098B-5E1C-4F5D-9AD0-41028E6C1613}" ShortID="434535223">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bass" ID="{8325D8C2-5E5B-4FC1-BE44-33A479A469F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PopUp" ID="{F8755671-762D-4DBA-A226-CB5B1C16C4D2}" ShortID="111176483">
+					<ChildrenList>
+						<Event Name="PopUp_Spawn" ID="{EEABE0E5-FDF0-4F0D-A03A-0837F2AE5504}">
+							<ChildrenList>
+								<Action Name="" ID="{9A0E431B-1A8F-479C-8BDE-2EAEE24C1A47}" ShortID="228988303">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WinError" ID="{51B49524-68DB-4B27-9ABB-DABFC0057F43}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Click" ID="{9110269E-3E45-4269-94BC-523276A41559}">
+							<ChildrenList>
+								<Action Name="" ID="{BFD6F9B5-E85C-40D0-8D6C-3A7819C52D55}" ShortID="352475748">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clicks" ID="{9213D330-3DE6-40AA-91AA-44F948163BC7}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
