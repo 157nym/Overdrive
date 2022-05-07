@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3541215933">
+		<SoundBank Id="3161908922" Language="SFX" Hash="471604973">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -31,10 +31,6 @@
 				</Event>
 				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
-						<File Id="65596134" Language="SFX">
-							<ShortName>Jump 1.wav</ShortName>
-							<Path>SFX\Jump 1_10C4C929.wem</Path>
-						</File>
 						<File Id="106000749" Language="SFX">
 							<ShortName>Jump 3.wav</ShortName>
 							<Path>SFX\Jump 3_10C4C929.wem</Path>

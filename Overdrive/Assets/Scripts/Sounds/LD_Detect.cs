@@ -23,7 +23,7 @@ public class LD_Detect : MonoBehaviour
                 anim.SetTrigger("Flash");
             }
             BlockEvent.Post(gameObject);
-            print(BlockEvent.Name);
+            //print(BlockEvent.Name);
         }
     }
 
