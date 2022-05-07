@@ -6,6 +6,7 @@ using UnityEngine;
 public class CharacterSound : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event Steps;
+    public AK.Wwise.Event LaneSwitch;
     [SerializeField] private AK.Wwise.Event Jump_Start;
     [SerializeField] private AK.Wwise.Event Jump_End;
     [SerializeField] private AK.Wwise.Event Slide;

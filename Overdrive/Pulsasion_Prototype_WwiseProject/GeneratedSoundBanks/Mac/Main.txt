@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	699052971	LaneSwitch			\Default Work Unit\Character\LaneSwitch	
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
 	1786804762	Damage			\Default Work Unit\Character\Damage	
@@ -26,6 +27,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	65596134	Jump 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 1		705664
 	106000749	Jump 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 3		705664
 	109075288	Footsteps, Human, Rock, Surface, Jump On SND62097	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Surface, Jump On SND62097_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Rock, Surface, Jump On SND62097		37330
+	122599344	Lane change	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Lane change		95768
 	207134929	Slide 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 4		705664
 	272046355	Footsteps, Human, Rock, Run, Isolated Steps SND62098 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2		39354
 	331802635	BlockWall_Ambient	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\BlockWall_Ambient_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockWall_Ambient		352864

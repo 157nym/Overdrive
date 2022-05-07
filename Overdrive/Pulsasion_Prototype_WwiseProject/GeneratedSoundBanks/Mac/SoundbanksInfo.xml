@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2243275360">
+		<SoundBank Id="3161908922" Language="SFX" Hash="677669810">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" MaxAttenuation="100." DurationType="OneShot" DurationMin="4." DurationMax="4.">
+				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
 						<File Id="65596134" Language="SFX">
 							<ShortName>Jump 1.wav</ShortName>
@@ -41,7 +41,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" MaxAttenuation="100." DurationType="OneShot" DurationMin="4." DurationMax="4.">
+				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" DurationType="OneShot" DurationMin="4." DurationMax="4.">
 					<IncludedMemoryFiles>
 						<File Id="207134929" Language="SFX">
 							<ShortName>Slide 4.wav</ShortName>
@@ -61,7 +61,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" MaxAttenuation="100." DurationType="OneShot" DurationMin="2." DurationMax="2.">
+				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" DurationType="OneShot" DurationMin="2." DurationMax="2.">
 					<IncludedMemoryFiles>
 						<File Id="331802635" Language="SFX">
 							<ShortName>BlockWall_Ambient.wav</ShortName>
@@ -138,6 +138,14 @@
 						<File Id="629085646" Language="SFX">
 							<ShortName>Kick.wav</ShortName>
 							<Path>SFX\Kick_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="699052971" Name="LaneSwitch" ObjectPath="\Events\Default Work Unit\Character\LaneSwitch" DurationType="OneShot" DurationMin="0.336158" DurationMax="0.620446">
+					<IncludedMemoryFiles>
+						<File Id="122599344" Language="SFX">
+							<ShortName>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3.wav</ShortName>
+							<Path>SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

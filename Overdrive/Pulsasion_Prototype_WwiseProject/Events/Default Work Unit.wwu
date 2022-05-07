@@ -60,6 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="LaneSwitch" ID="{2020863F-F20E-4CA0-8BCD-A95A4E593827}">
+							<ChildrenList>
+								<Action Name="" ID="{15C08231-F6B1-4E2D-B2B1-106922ECA01D}" ShortID="697870350">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lane change" ID="{E1CB61A8-1D65-4D5B-947B-80FEE098D489}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" ShortID="643725625">

@@ -12,7 +12,7 @@ public class LD_Detect : MonoBehaviour
         if (other.gameObject.CompareTag("SoundBarrier"))
         {
             BlockEvent.Post(gameObject);
-            print("Wall");
+            print(other.name);
         }
     }
 

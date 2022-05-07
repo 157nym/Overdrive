@@ -5,16 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{BE1FBBEA-380D-4222-8280-4A61E4E1D8A2}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Slide" ID="{0D5B2697-6AFB-41EE-BC13-FEE48384278E}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="HiHat" ID="{CD969372-A3B7-42A5-BCC9-99A643C2ED82}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Jump" ID="{68A14310-3C4B-4328-AF47-BA48F6568854}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Jump_End" ID="{CD430C5A-3A77-4382-B591-37CAC9ECDD60}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Damage" ID="{BFEFC847-F135-43E0-9E23-D289825DFA48}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Run" ID="{1F50E8CD-2497-4591-BD25-7162D29BDA4C}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Kick" ID="{86DF8600-581F-4A50-A5CD-A10B9E1E68A5}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BlockWall" ID="{02337623-FA92-4AFA-AEC7-6389BC3C0BC7}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BlockJump" ID="{112C1D34-173D-4C9E-BFE1-7DC5C42B12B6}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Character" ID="{CDEF2BB1-55B1-4D1D-9EE0-C1765E934716}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LD" ID="{9AD37F7C-0A7A-4E5C-91BD-957230B623B7}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

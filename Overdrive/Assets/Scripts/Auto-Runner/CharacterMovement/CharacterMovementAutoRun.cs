@@ -11,6 +11,8 @@ public class CharacterMovementAutoRun : MonoBehaviour
     private Vector3 direction;
     public float forwardSpeed;
 
+    CharacterSound sound;
+
     private int desireLane = 1;
     public float laneDistance = 4f;
     public float gravity = -20;
@@ -25,6 +27,7 @@ public class CharacterMovementAutoRun : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        sound = GetComponent<CharacterSound>();
     }
 
     // Update is called once per frame
@@ -82,7 +85,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane ++;
             if(desireLane == 3)
             {
-                    desireLane =2;    
+                    desireLane =2;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
 
@@ -91,7 +98,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane --;
             if(desireLane == -1)
             {
-                    desireLane =0;    
+                    desireLane =0;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
         
@@ -100,7 +111,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane ++;
             if(desireLane == 3)
             {
-                desireLane =2;    
+                desireLane =2;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
 
@@ -109,7 +124,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane --;
             if(desireLane == -1)
             {
-                desireLane =0;    
+                desireLane =0;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
