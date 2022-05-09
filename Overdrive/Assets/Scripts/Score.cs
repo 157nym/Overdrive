@@ -23,7 +23,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         
-        vitesse.text = "Score Corpo = " + vitessejoueur.ToString("f1") + " pts";
+        vitesse.text = "Score Corpo = " + vitessejoueur.ToString("f1");
 
         vitessejoueur = vitessejoueur + 1f*Time.deltaTime;
     }
