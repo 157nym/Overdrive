@@ -5,34 +5,39 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragDrop : EventTrigger
+public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField]
     private Canvas canvas;
+    private CanvasGroup canvasGroup;
 
-    private bool startDragging;
+    private RectTransform rectTransform;
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+    }
 
     private void Start()
     {
-        canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
+        canvas = GetComponentInParent<Canvas>();
     }
 
-    void Update()
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        if (startDragging)
-        {
-            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        }
+        canvasGroup.alpha = 0.6f;
+        //canvasGroup.blocksRaycasts = false;
     }
 
-    // Update is called once per frame
-    public override void OnPointerDown(PointerEventData eventData)
+    public void OnDrag(PointerEventData eventData)
     {
-        startDragging = true;
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
-    
-    public override void OnPointerUp(PointerEventData eventData)
+
+    public void OnEndDrag(PointerEventData eventData)
     {
-        startDragging = false;
+        canvasGroup.alpha = 1f;
+        //canvasGroup.blocksRaycasts = true;
     }
 }
