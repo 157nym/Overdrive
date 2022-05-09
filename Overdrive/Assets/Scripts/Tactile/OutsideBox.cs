@@ -12,7 +12,7 @@ public class OutsideBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
+        canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>(); 
         MyRect = GetComponent<RectTransform>();
     }
 

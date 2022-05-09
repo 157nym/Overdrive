@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 7410204175822939188}
   - component: {fileID: 7410204175822939186}
   - component: {fileID: 7410204175822939185}
+  - component: {fileID: 6268874777871768212}
   m_Layer: 5
   m_Name: PopUp_2
   m_TagString: Untagged
@@ -268,7 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85abf2c6dfb727742b673e741be77d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
   canvas: {fileID: 0}
 --- !u!114 &7410204175822939185
 MonoBehaviour:
@@ -287,3 +287,15 @@ MonoBehaviour:
   MaxPosX: 1.2
   MinPosY: -2.65
   MinPosX: -1.2
+--- !u!225 &6268874777871768212
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410204175822939183}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
