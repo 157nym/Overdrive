@@ -12,12 +12,6 @@ public class CharacterSound : MonoBehaviour
     [SerializeField] private AK.Wwise.Event Slide;
     public AK.Wwise.RTPC Speed;
 
-    private PlayerMouvement Player;
-
-    private void Start()
-    {
-        if(Player == null) Player = GetComponent<PlayerMouvement>();
-    }
 
     public void Step()
     {
