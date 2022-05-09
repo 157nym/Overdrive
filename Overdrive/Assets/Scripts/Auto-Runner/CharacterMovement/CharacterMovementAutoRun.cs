@@ -2,40 +2,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+
 
 public class CharacterMovementAutoRun : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 direction;
     public float forwardSpeed;
+
+    CharacterSound sound;
+
     private int desireLane = 1;
     public float laneDistance = 4f;
     public float gravity = -20;
     public float DuréeAnim;
     public float speedAugmentation;
     public float speedMax;
-    public Animator animator;
 
+    public int NbrPop;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        sound = GetComponent<CharacterSound>();
     }
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        
+        if(NbrPop >= 10)
+        {
+            SceneManager.LoadScene("Auto_Runner_Lvl");
+        }
+
         if (forwardSpeed < speedMax)
         {
-            DuréeAnim += speedAugmentation * Time.deltaTime;
             forwardSpeed += speedAugmentation * 10 * Time.deltaTime;
+            DuréeAnim = (forwardSpeed*4)/30;
             animator.SetFloat("AnimSpeed", DuréeAnim);
         }
         
         direction.z = forwardSpeed;
 
-        if (EventSystem.current.IsPointerOverGameObject())
-             return;
+        //if (EventSystem.current.IsPointerOverGameObject())
+        //     return;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -49,14 +63,16 @@ public class CharacterMovementAutoRun : MonoBehaviour
         
         if(controller.isGrounded)
         {
+
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
-                Jump();
+                StartCoroutine(Jump(1f));
             }
             
+
             if(SwipeManager.swipeUp)
             {
-                Jump();
+                StartCoroutine(Jump(1f));
             }
         }
         else
@@ -69,7 +85,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane ++;
             if(desireLane == 3)
             {
-                    desireLane =2;    
+                    desireLane =2;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
 
@@ -78,7 +98,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane --;
             if(desireLane == -1)
             {
-                    desireLane =0;    
+                    desireLane =0;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
         
@@ -87,7 +111,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane ++;
             if(desireLane == 3)
             {
-                desireLane =2;    
+                desireLane =2;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
 
@@ -96,7 +124,11 @@ public class CharacterMovementAutoRun : MonoBehaviour
             desireLane --;
             if(desireLane == -1)
             {
-                desireLane =0;    
+                desireLane =0;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
             }
         }
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -119,9 +151,12 @@ public class CharacterMovementAutoRun : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
     }
 
-    private void Jump()
+    IEnumerator Jump(float JumpReset)
     {
+        Debug.Log("Jumping");
         animator.SetTrigger("Jumping");
+        yield return new WaitForSeconds(JumpReset);
+        animator.ResetTrigger("Jumping");
     }
 
     private void Slide()

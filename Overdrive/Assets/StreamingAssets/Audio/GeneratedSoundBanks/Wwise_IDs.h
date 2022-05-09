@@ -11,6 +11,50 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID BASS = 1291433344U;
+        static const AkUniqueID BLOCKJUMP = 3710956116U;
+        static const AkUniqueID BLOCKSLIDE = 764666183U;
+        static const AkUniqueID BLOCKWALL = 3327154252U;
+        static const AkUniqueID CLICK = 1584507803U;
+        static const AkUniqueID DAMAGE = 1786804762U;
+        static const AkUniqueID HIHAT = 3437592667U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID JUMP_END = 2752223339U;
+        static const AkUniqueID KICK = 2181839183U;
+        static const AkUniqueID LANESWITCH = 699052971U;
+        static const AkUniqueID POPUP_SPAWN = 416742853U;
+        static const AkUniqueID RUN = 712161704U;
+        static const AkUniqueID SLIDE = 3686556480U;
+    } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace SLIDE
+        {
+            static const AkUniqueID GROUP = 3686556480U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RUNNING = 3863236874U;
+                static const AkUniqueID SLIDING = 472853913U;
+            } // namespace STATE
+        } // namespace SLIDE
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SPEED = 640949982U;
+    } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID JUMP = 3833651337U;
+    } // namespace TRIGGERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
