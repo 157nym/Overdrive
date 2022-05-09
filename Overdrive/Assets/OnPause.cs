@@ -15,7 +15,6 @@ public class OnPause : MonoBehaviour
     public void OnClick()
     {
         Paused = !Paused;
-
     }
 
     private void Update()
