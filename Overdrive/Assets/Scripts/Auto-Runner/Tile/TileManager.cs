@@ -30,6 +30,7 @@ public class TileManager : MonoBehaviour
                 SpawnTile(0);
                 SpawnTile(0);
                 SpawnTile(0);
+                Debug.Log("start");
             }
 
             else
