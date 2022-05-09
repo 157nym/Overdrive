@@ -1195,7 +1195,7 @@ MonoBehaviour:
   laneDistance: 3
   gravity: -500
   "Dur\xE9eAnim": 0.3
-  speedAugmentation: 0.001
+  speedAugmentation: 0.0001
   speedMax: 100
   NbrPop: 0
   animator: {fileID: 960798694}
@@ -1340,17 +1340,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252098826}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0117110405, w: 0.99993145}
+  m_LocalRotation: {x: -0, y: -0, z: -0.023007974, w: 0.9997353}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 104267288}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.342}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.637}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 444, y: -127}
+  m_AnchoredPosition: {x: 535, y: -154}
   m_SizeDelta: {x: 700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252098829
@@ -1564,7 +1564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 446, y: 111}
+  m_AnchoredPosition: {x: 497, y: 130}
   m_SizeDelta: {x: 700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789109836

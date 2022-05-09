@@ -16,8 +16,7 @@ public class speedcounter : MonoBehaviour
     {
 
         vitesse = GetComponent<Text>();
-        vitessejoueur = 10
-            ;
+        vitessejoueur = 10;
     }
 
     // Update is called once per frame
