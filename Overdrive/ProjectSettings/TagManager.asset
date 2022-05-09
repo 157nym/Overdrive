@@ -7,11 +7,9 @@ TagManager:
   - RunnableWall
   - camera
   - wall
-  - BlockSlide
-  - BlockWall
-  - BlockJump
   - MainCanvas
-  - SoundBarrier
+  - PopUpManager
+  - GameManager
   layers:
   - Default
   - TransparentFX

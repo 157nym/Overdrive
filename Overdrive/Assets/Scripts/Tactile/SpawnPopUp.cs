@@ -7,6 +7,7 @@ public class SpawnPopUp : MonoBehaviour
 {
     public RawImage[] popUp;
 
+    public List<RawImage> popUpPresent;
     public Transform target;
 
     public Canvas canvas;
@@ -16,9 +17,13 @@ public class SpawnPopUp : MonoBehaviour
      public RectTransform rt;
     // Update is called once per frame
 
-    public void Start()
+    public void update()
     {
-
+        popUpPresent = new List<RawImage>();
+        foreach (RawImage child in target.transform)
+        {
+            popUpPresent.Add(child);
+        }
     }
 
     public IEnumerator SpawnPop()

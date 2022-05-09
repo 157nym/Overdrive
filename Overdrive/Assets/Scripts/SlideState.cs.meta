@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Overdrive/Assets/GameManager.cs.meta
+guid: f9e47fcbeaa0117498650f0b38e0a649
+========
 guid: d9ae181209d980f44a542a23b2aaab4f
+>>>>>>>> origin/Guigui:Overdrive/Assets/SlideState.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

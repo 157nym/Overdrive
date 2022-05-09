@@ -51,6 +51,11 @@ public class TileManager : MonoBehaviour
                     int ram = Random.Range(0,4);
                     SpawnTile(ram);
                 }
+                
+                if (Verif == 7)
+                {
+                    Hauteur += 1;
+                }
             }
         }
     }
@@ -58,7 +63,7 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z - 200 > zSpawn-(tilePrefabs.Length * tileLenght))
+        if (playerTransform.position.z - 35 > zSpawn-(tilePrefabs.Length * tileLenght))
         {
                 int Verif = Random.Range(0,tilePrefabs.Length);
 
@@ -78,6 +83,10 @@ public class TileManager : MonoBehaviour
                     SpawnTile(ram);
                 }
 
+                if (Verif == 7)
+                {
+                    Hauteur += 1;
+                }
                 DeleteTile();
         }
     }

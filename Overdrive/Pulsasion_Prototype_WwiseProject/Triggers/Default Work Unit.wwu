@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" SchemaVersion="103">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" PersistMode="Standalone">
-			<ChildrenList>
-				<Trigger Name="Jump" ID="{F788043B-D498-44B0-96A1-20B6FFD7C5E8}"/>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" PersistMode="Standalone"/>
 	</Triggers>
 </WwiseDocument>
