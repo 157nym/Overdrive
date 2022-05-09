@@ -4,28 +4,11 @@ using UnityEngine;
 
 public class OnPause : MonoBehaviour
 {
-    public bool Paused;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameManager Manager;
 
     // Update is called once per frame
     public void OnClick()
     {
-        Paused = !Paused;
-    }
-
-    private void Update()
-    {
-        if (Paused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
+        Manager.PauseGame();
     }
 }
