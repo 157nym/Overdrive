@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool Paused = false;
-    public GameObject Continue, Menu, Option;
+    public GameObject Continue, Menu, Option, PopUpManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +20,21 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        Debug.Log("ifdrs");
         Paused = !Paused;
 
         Continue.SetActive(Paused);
         Menu.SetActive(Paused);
         Option.SetActive(Paused);
+        PopUpManager.SetActive(!Paused);
+
+        if(Paused)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
 
     }
 }
