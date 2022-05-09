@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    public GameObject[] tilePrefabs;
+    public GameObject[] tileListeEasy;
 
-    private GameObject[] TileNombre;
+    public GameObject[] tileListeMedium;
+
+    public GameObject[] tileListeHard;
+
+    public GameObject[] tileListeCalm;
+
+    public GameObject[] tileListeHeight;
+
+    private GameObject[] tableauListeActuel;
 
     public float zSpawn = 50;
 
@@ -18,7 +26,10 @@ public class TileManager : MonoBehaviour
 
     public int maxTile;
 
+    private int phase = 1;
+
     private List<GameObject> activeTiles = new List<GameObject>(); 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +41,11 @@ public class TileManager : MonoBehaviour
                 SpawnTile(0);
                 SpawnTile(0);
                 SpawnTile(0);
-                Debug.Log("start");
             }
 
             else
             {
-                int Verif = Random.Range(0,tilePrefabs.Length);
+                int Verif = Random.Range(0,tableauListeActuel.Length);
 
                 SpawnTile(Verif);
                 
@@ -59,9 +69,34 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z - 200 > zSpawn-(tilePrefabs.Length * tileLenght))
+        if(phase == 1)
         {
-                int Verif = Random.Range(0,tilePrefabs.Length);
+            tableauListeActuel = tileListeEasy;
+        }
+
+        if (phase == 2)
+        {
+            tableauListeActuel = tileListeMedium;
+        }
+
+        if (phase == 3)
+        {
+            tableauListeActuel = tileListeHard;
+        }
+
+        if (phase == 4)
+        {
+            tableauListeActuel = tileListeHeight;
+        }
+
+        if (phase == 5)
+        {
+            tableauListeActuel = tileListeCalm;
+        }
+
+        if (playerTransform.position.z - 200 > zSpawn-(tableauListeActuel.Length * tileLenght))
+        {
+                int Verif = Random.Range(0,tableauListeActuel.Length);
 
                 SpawnTile(Verif);
 
@@ -87,7 +122,7 @@ public class TileManager : MonoBehaviour
     {
         Vector3 pos = transform.forward * zSpawn;
         pos.y = Hauteur * 10;
-        GameObject go = Instantiate(tilePrefabs[tileIndex], pos, transform.rotation);
+        GameObject go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
     }

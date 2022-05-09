@@ -773,26 +773,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068e47e2b374fb94bb144fd316ccb670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePrefabs:
-  - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
+  tileListeEasy:
   - {fileID: 2417945860337544854, guid: 43996ab6a9c1d3c49a0a458547923490, type: 3}
   - {fileID: 8865018166442060817, guid: d64230a42fe5b3a41903e0bf17876c3f, type: 3}
-  - {fileID: 7747828928893271371, guid: f0dffa04e5d0a4849bb0f5816cad10a1, type: 3}
   - {fileID: 4060689631977845950, guid: 881665caa81eba844957a40ec91ab645, type: 3}
-  - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
-  - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
+  - {fileID: 7747828928893271371, guid: f0dffa04e5d0a4849bb0f5816cad10a1, type: 3}
   - {fileID: 2788413365015441279, guid: d8a7f098d53a7d8478fce1379c495681, type: 3}
-  - {fileID: 5617240767137465560, guid: 81857f3bb28675249918545b2ffeef7e, type: 3}
-  - {fileID: 987914178147973396, guid: bc5fc5c134919c442ad75747e5e9f91a, type: 3}
-  - {fileID: 6631980401689938465, guid: f1512e9c82df8ac47b17d092c7847faf, type: 3}
-  - {fileID: 4352559728051388323, guid: 91a0b486919a63948ab83e59c4345e49, type: 3}
-  - {fileID: 8402549307054059728, guid: 7b15efc839ff4564ab485a5fa139b0c9, type: 3}
   - {fileID: 1684762589704650700, guid: b90beb1547397704c8524f0e67328de5, type: 3}
   - {fileID: 8737702447422453155, guid: 22e3fe3d9089d754597b11c2eb36cc4b, type: 3}
   - {fileID: 1925604169175082223, guid: 71bdc783176a8aa4b80b3a3cc793258d, type: 3}
   - {fileID: 4938746990108193487, guid: e4cd68e533296bf44805dfbd7bc68bd6, type: 3}
-  - {fileID: 4078914765045592599, guid: ea3034f202dec7d47a0e9f4cfbb4d7ee, type: 3}
-  - {fileID: 7355481151301737287, guid: 609de6a5a8682544699d280fb00218b1, type: 3}
+  tileListeCalm:
+  - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
+  - {fileID: 0}
+  tileListeHeight:
+  - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
+  - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
   zSpawn: -30
   tileLenght: 30
   playerTransform: {fileID: 960798696}
