@@ -6758,6 +6758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp:
+  - {fileID: 7410204175822939188, guid: b11b4282a242f7d48ae0d8363c00b755, type: 3}
   - {fileID: 7410204175822939188, guid: b4f9ab3ac5b75ea40a23e2f25d78f324, type: 3}
   target: {fileID: 204695655}
   canvas: {fileID: 104267287}
