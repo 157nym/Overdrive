@@ -175,11 +175,11 @@ MonoBehaviour:
   PopUp:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a6509faa1bbd4d44bb936555683c8156, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7d77b7f4f573858449752761330fdb63, type: 2}
   Click:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35d1043d7d4f6f14cb1aac7d5a6bd291, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 45fbf501ac1128c4ba6d3381267db558, type: 2}
 --- !u!1 &7410204175822939183
 GameObject:
   m_ObjectHideFlags: 0

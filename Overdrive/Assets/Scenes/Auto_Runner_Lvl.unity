@@ -432,6 +432,8 @@ GameObject:
   - component: {fileID: 153739289}
   - component: {fileID: 153739288}
   - component: {fileID: 153739290}
+  - component: {fileID: 153739292}
+  - component: {fileID: 153739291}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -580,6 +582,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 769532252}
+--- !u!114 &153739291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153739284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3bf528f07d02d4d84cab61d0047128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &153739292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153739284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b96c18a0fc616f44abec9f72f2aed23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &168177962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,27 +1316,27 @@ MonoBehaviour:
   Steps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 04aa9738ecb520c4db058463118da0fe, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a4b289b5637760148ba326e9af38f2c7, type: 2}
   LaneSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7d63828f0aac36343a20a4c9d0757ce2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a90854f285a3a6a4a9ac096e96ba6925, type: 2}
   Jump_Start:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b3a173b71454cc24d8b3e88ec26f86c8, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 037cb63caff85c343b1594ca9fac0c56, type: 2}
   Jump_End:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fb2f75d61c8803141a11b01386804db7, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b1944349f2e18ce44a50ed7418cdafb1, type: 2}
   Slide:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 63f346a5de5d0324089810d2456485c2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ac27ba64298be384fa4b1dae6aa66ffc, type: 2}
   Speed:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1887e88a435d59343ac7a88f59b8183f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 690385bbc3de2464fa6385e4e5d8d855, type: 2}
 --- !u!1 &980486917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1399,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &1110021475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110021477}
+  - component: {fileID: 1110021476}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1110021476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110021475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb9f2f3b3a825546824e354c1a85d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 91ffa0d2c9f5eb04fbd5c29d18f1b162, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1110021477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110021475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1252098826
 GameObject:
   m_ObjectHideFlags: 0

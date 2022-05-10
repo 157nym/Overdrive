@@ -61,4 +61,4 @@ MonoBehaviour:
   BlockEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: afcb5a4c099c7e149ac38948f7a406af, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 6ac7d3bb95f3c3d42a66a0223a2063e8, type: 2}

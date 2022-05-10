@@ -105,6 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18020bf4d55378f4a9a86af5f6cf8251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PopUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7d77b7f4f573858449752761330fdb63, type: 2}
   speed: 2
   Parent: {fileID: 7410204175822939183}
 --- !u!114 &1864779115149914207

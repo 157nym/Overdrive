@@ -8,6 +8,8 @@ public class PopUp_Slider : MonoBehaviour
     private Slider slider;
     private bool selected;
 
+    public AK.Wwise.Event PopUp;
+
     public float speed;
 
     public GameObject Parent;
@@ -15,6 +17,8 @@ public class PopUp_Slider : MonoBehaviour
     private void Start()
     {
         slider = GetComponent<Slider>();
+
+        PopUp.Post(gameObject);
     }
 
     private void Update()
