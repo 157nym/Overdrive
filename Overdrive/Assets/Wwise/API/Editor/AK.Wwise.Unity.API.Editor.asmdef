@@ -1,5 +1,6 @@
 {
     "name": "AK.Wwise.Unity.API.Editor",
+    "rootNamespace": "",
     "references": [
         "AK.Wwise.Unity.API",
         "AK.Wwise.Unity.API.WwiseTypes",
@@ -7,7 +8,11 @@
         "Ak.Wwise.Api.WAAPI"
     ],
     "includePlatforms": [
-        "Editor"
+        "Android",
+        "Editor",
+        "iOS",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
