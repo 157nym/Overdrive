@@ -14,7 +14,7 @@ public class TileManager : MonoBehaviour
 
     public GameObject[] tileListeHeight;
 
-    private GameObject[] tableauListeActuel;
+    public GameObject[] tableauListeActuel;
 
     public float zSpawn = 50;
 
@@ -49,17 +49,19 @@ public class TileManager : MonoBehaviour
 
                 SpawnTile(Verif);
                 
-                if(Verif == 5)
+                if(Verif == 0 && phase == 4)
                 {
                     Hauteur += 1;
-                    int ram = Random.Range(0,4);
+                    phase = 1;
+                    int ram = Random.Range(0,tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
 
-                if(Verif == 6)
+                if(Verif == 1 && phase == 4)
                 {
                     Hauteur -= 1;
-                    int ram = Random.Range(0,4);
+                    phase = 1;
+                    int ram = Random.Range(0,tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
             }
@@ -94,26 +96,27 @@ public class TileManager : MonoBehaviour
             tableauListeActuel = tileListeCalm;
         }
 
-        if (playerTransform.position.z - 200 > zSpawn-(tableauListeActuel.Length * tileLenght))
+        if (playerTransform.position.z + 10 > zSpawn-(tableauListeActuel.Length * tileLenght))
         {
                 int Verif = Random.Range(0,tableauListeActuel.Length);
 
                 SpawnTile(Verif);
 
-                if(Verif == 5)
+                if(Verif == 0 && phase == 4)
                 {
                     Hauteur += 1;
-                    int ram = Random.Range(0,4);
+                    phase = 1;
+                    int ram = Random.Range(0,tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
 
-                if(Verif == 6)
+                if(Verif == 1 && phase == 4)
                 {
                     Hauteur -= 1;
-                    int ram = Random.Range(0,4);
+                    phase = 1;
+                    int ram = Random.Range(0,tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
-
                 DeleteTile();
         }
     }

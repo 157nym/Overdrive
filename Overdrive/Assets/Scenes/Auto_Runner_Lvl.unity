@@ -783,13 +783,16 @@ MonoBehaviour:
   - {fileID: 8737702447422453155, guid: 22e3fe3d9089d754597b11c2eb36cc4b, type: 3}
   - {fileID: 1925604169175082223, guid: 71bdc783176a8aa4b80b3a3cc793258d, type: 3}
   - {fileID: 4938746990108193487, guid: e4cd68e533296bf44805dfbd7bc68bd6, type: 3}
+  tileListeMedium: []
+  tileListeHard: []
   tileListeCalm:
   - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
   - {fileID: 0}
   tileListeHeight:
   - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
   - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
-  zSpawn: -30
+  tableauListeActuel: []
+  zSpawn: 0
   tileLenght: 30
   playerTransform: {fileID: 960798696}
   Hauteur: 0
@@ -1321,8 +1324,8 @@ GameObject:
   - component: {fileID: 960798696}
   - component: {fileID: 960798693}
   - component: {fileID: 960798695}
-  - component: {fileID: 960798694}
   - component: {fileID: 960798697}
+  - component: {fileID: 960798694}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Player
@@ -1396,7 +1399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960798692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1804,7 +1807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -47.5, y: -47.5}
+  m_AnchoredPosition: {x: -48, y: -47.5}
   m_SizeDelta: {x: 95, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740695453
