@@ -28,12 +28,13 @@ public class TileManager : MonoBehaviour
 
     private int phase = 1;
 
+    public float posMax;
+
     private List<GameObject> activeTiles = new List<GameObject>(); 
 
     // Start is called before the first frame update
     void Start()
     {
-
         for (int i = 0; i <= maxTile; i++)
         {
             if (i == 0)
@@ -96,7 +97,7 @@ public class TileManager : MonoBehaviour
             tableauListeActuel = tileListeCalm;
         }
 
-        if (playerTransform.position.z + 10 > zSpawn-(tableauListeActuel.Length * tileLenght))
+        if (playerTransform.position.z < posMax)
         {
                 int Verif = Random.Range(0,tableauListeActuel.Length);
 
@@ -117,8 +118,14 @@ public class TileManager : MonoBehaviour
                     int ram = Random.Range(0,tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
-                DeleteTile();
         }
+        else
+        {
+            DeleteTile();
+            posMax = playerTransform.position.z + 30;
+        }
+
+
     }
 
     public void SpawnTile(int tileIndex)
@@ -130,7 +137,7 @@ public class TileManager : MonoBehaviour
         zSpawn += tileLenght;
     }
 
-    private void DeleteTile()
+    void DeleteTile()
     {
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
