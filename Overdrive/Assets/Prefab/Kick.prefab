@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7936880894555362493}
   - component: {fileID: -6369295557183137141}
-  - component: {fileID: -4824296217322394627}
+  - component: {fileID: 8656274240717585178}
   m_Layer: 9
   m_Name: Kick
   m_TagString: wall
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -46,7 +46,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 20, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4824296217322394627
+--- !u!114 &8656274240717585178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,4 +61,4 @@ MonoBehaviour:
   BlockEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6ac7d3bb95f3c3d42a66a0223a2063e8, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a4b289b5637760148ba326e9af38f2c7, type: 2}

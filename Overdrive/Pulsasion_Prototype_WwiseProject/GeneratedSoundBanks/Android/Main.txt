@@ -18,13 +18,17 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3686556480	Slide			\Default Work Unit\Slide	
 
 State	ID	Name	State Group			Notes
+	68157183	Jumping	Slide			
 	472853913	Sliding	Slide			
 	748895195	None	Slide			
 	3863236874	Running	Slide			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	568187671	Jumping	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps		
 	651340830	Running	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
 	694398205	Sliding	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
+	878156248	Sliding	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps		
+	1054761411	Jumping	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9032660	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1		35620
