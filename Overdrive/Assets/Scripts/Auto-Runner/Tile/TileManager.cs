@@ -30,7 +30,7 @@ public class TileManager : MonoBehaviour
 
     public float posMax;
 
-    private List<GameObject> activeTiles = new List<GameObject>(); 
+    public List<GameObject> activeTiles = new List<GameObject>(); 
 
     // Start is called before the first frame update
     void Start()
@@ -39,18 +39,18 @@ public class TileManager : MonoBehaviour
         {
             if (i == 0)
             {
-                SpawnTile(0);
-                SpawnTile(0);
-                SpawnTile(0);
+                StartCoroutine("SpawnTile", 0);
+                StartCoroutine("SpawnTile", 0);
+                StartCoroutine("SpawnTile", 0);
             }
 
             else
             {
                 int Verif = Random.Range(0,tableauListeActuel.Length);
 
-                SpawnTile(Verif);
-                
-                if(Verif == 0 && phase == 4)
+                StartCoroutine("SpawnTile", Verif);
+
+                if (Verif == 0 && phase == 4)
                 {
                     Hauteur += 1;
                     phase = 1;
@@ -97,11 +97,11 @@ public class TileManager : MonoBehaviour
             tableauListeActuel = tileListeCalm;
         }
 
-        if (playerTransform.position.z < posMax)
+        if (activeTiles.Count < maxTile)
         {
                 int Verif = Random.Range(0,tableauListeActuel.Length);
 
-                SpawnTile(Verif);
+                StartCoroutine("SpawnTile", Verif);
 
                 if(Verif == 0 && phase == 4)
                 {
@@ -119,17 +119,15 @@ public class TileManager : MonoBehaviour
                     SpawnTile(ram);
                 }
         }
+
         else
         {
             DeleteTile();
-            posMax = playerTransform.position.z + 30;
         }
-
-
     }
-
-    public void SpawnTile(int tileIndex)
+    IEnumerator SpawnTile(int tileIndex)
     {
+        yield return new WaitForSeconds(1);
         Vector3 pos = transform.forward * zSpawn;
         pos.y = Hauteur * 10;
         GameObject go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
