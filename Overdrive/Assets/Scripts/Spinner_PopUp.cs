@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     private Transform Handle;
+    private RectTransform HandleRect;
     Vector3 cursorPos;
     private bool Dragged;
     private float StartAngle;
@@ -26,11 +27,16 @@ public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     private void Start()
     {
         Handle = GetComponent<Transform>();
+        HandleRect = GetComponent<RectTransform>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         Dragged = true;
+        cursorPos = Input.mousePosition;
+        Vector2 dir = cursorPos - Handle.position;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        StartAngle = angle;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -38,15 +44,16 @@ public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         cursorPos = Input.mousePosition;
         Vector2 dir = cursorPos - Handle.position;
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = (angle <= 0) ? (angle + 360) : angle;
 
-        if (angle <= 0)
+
+        Quaternion newRot = Quaternion.AngleAxis(angle + Offset, Vector3.forward);
+        Handle.rotation = newRot;
+        
+        if (Mathf.Abs(HandleRect.rotation.z) >= Mathf.Abs(((NbTour + 1) % 2)-0.05f))
         {
             NbTour++;
         }
-
-        angle = (angle <= 0) ? (angle + 360) : angle;
-        Quaternion newRot = Quaternion.AngleAxis(angle + Offset, Vector3.forward);
-        Handle.rotation = newRot;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -61,7 +68,7 @@ public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     {
         if(NeededTour <= NbTour && Dragged)
         {
-            Destroy(parent);
+            //Destroy(parent);
         }
 
         if (!Dragged)
