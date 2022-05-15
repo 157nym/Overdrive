@@ -26,7 +26,7 @@ public class TileManager : MonoBehaviour
 
     private int phase = 1;
 
-    public float SpawntileTime, Timer;
+    public float SpawntileTime, Timer, destroyTileTime;
 
     private List<GameObject> activeTiles = new List<GameObject>();
 
@@ -47,6 +47,7 @@ public class TileManager : MonoBehaviour
     void Update()
     {
         SpawntileTime -= Time.deltaTime;
+        destroyTileTime -= Time.deltaTime;
         Timer = Time.time;
 
         if (phase == 1)
@@ -105,9 +106,10 @@ public class TileManager : MonoBehaviour
             }
         }
 
-        else
+        if(destroyTileTime <= 0)
         {
-            //DeleteTile();
+            DeleteTile();
+            destroyTileTime = 1.5f;
         }
     }
     void SpawnTile(int tileIndex)

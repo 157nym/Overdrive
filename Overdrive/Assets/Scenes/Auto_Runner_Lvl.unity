@@ -783,21 +783,22 @@ MonoBehaviour:
   - {fileID: 8737702447422453155, guid: 22e3fe3d9089d754597b11c2eb36cc4b, type: 3}
   - {fileID: 1925604169175082223, guid: 71bdc783176a8aa4b80b3a3cc793258d, type: 3}
   - {fileID: 4938746990108193487, guid: e4cd68e533296bf44805dfbd7bc68bd6, type: 3}
+  - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
+  - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
   tileListeMedium: []
   tileListeHard: []
   tileListeCalm:
   - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
   - {fileID: 0}
-  tileListeHeight:
-  - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
-  - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
   tableauListeActuel: []
   zSpawn: 0
   tileLenght: 30
   playerTransform: {fileID: 960798696}
   Hauteur: 0
-  maxTile: 50
-  SpawntileTime: 0
+  maxTile: 10
+  SpawntileTime: 3
+  Timer: 0
+  destroyTileTime: 3
 --- !u!1 &343378637
 GameObject:
   m_ObjectHideFlags: 0
