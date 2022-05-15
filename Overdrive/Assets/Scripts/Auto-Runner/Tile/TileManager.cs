@@ -12,8 +12,6 @@ public class TileManager : MonoBehaviour
 
     public GameObject[] tileListeCalm;
 
-    public GameObject[] tileListeHeight;
-
     public GameObject[] tableauListeActuel;
 
     public float zSpawn = 50;
@@ -28,9 +26,14 @@ public class TileManager : MonoBehaviour
 
     private int phase = 1;
 
-    public float SpawntileTime;
+    public float SpawntileTime, Timer;
 
     private List<GameObject> activeTiles = new List<GameObject>();
+
+    private void Awake()
+    {
+        tableauListeActuel = tileListeEasy;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +46,10 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(phase == 1)
+        SpawntileTime -= Time.deltaTime;
+        Timer = Time.time;
+
+        if (phase == 1)
         {
             tableauListeActuel = tileListeEasy;
         }
@@ -60,48 +66,48 @@ public class TileManager : MonoBehaviour
 
         if (phase == 4)
         {
-            tableauListeActuel = tileListeHeight;
-        }
-
-        if (phase == 5)
-        {
             tableauListeActuel = tileListeCalm;
         }
 
-        SpawntileTime -= Time.deltaTime;
-
-        if (activeTiles.Count < maxTile)
+        if(Time.time > 30 && Time.time <= 60)
         {
-            if(SpawntileTime <= 0)
+            phase = 2;
+        }
+
+        if (Time.time > 90 && Time.time <= 120)
+        {
+            phase = 3;
+        }
+
+        if (SpawntileTime <= 0)
+        {
+            if(activeTiles.Count < maxTile) 
             {
                 
                 int Verif = Random.Range(0, tableauListeActuel.Length);
+                SpawntileTime = 0.3f;
 
                 SpawnTile(Verif);
 
-                if (Verif == 0 && phase == 4)
+                if (Verif == 9)
                 {
                     Hauteur += 1;
-                    phase = 1;
                     int ram = Random.Range(0, tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
 
-                if (Verif == 1 && phase == 4)
+                if (Verif == 10)
                 {
                     Hauteur -= 1;
-                    phase = 1;
                     int ram = Random.Range(0, tableauListeActuel.Length);
                     SpawnTile(ram);
                 }
-
-                SpawntileTime = 0.8f;
             }
         }
 
         else
         {
-            DeleteTile();
+            //DeleteTile();
         }
     }
     void SpawnTile(int tileIndex)
