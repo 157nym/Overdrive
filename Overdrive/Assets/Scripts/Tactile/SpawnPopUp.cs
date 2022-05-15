@@ -28,7 +28,7 @@ public class SpawnPopUp : MonoBehaviour
 
         Vector2 spawnPosition = new Vector2(spawnX,spawnY);
 
-        RawImage Spawn = Instantiate(popUp[0], spawnPosition , Quaternion.identity, target.transform);
+        RawImage Spawn = Instantiate(popUp[Random.Range(0,popUp.Length)], spawnPosition , Quaternion.identity, target.transform);
         Spawn.rectTransform.anchoredPosition = spawnPosition;
         yield return new WaitForSeconds(SpawnRate);
     }
