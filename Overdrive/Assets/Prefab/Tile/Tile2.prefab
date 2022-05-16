@@ -286,6 +286,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1344522449603208812, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344522449603208812, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3798341897672906717, guid: 6caf2d22f635f244387da9bbb6df562a, type: 3}
       propertyPath: m_Name
       value: tilesv2
