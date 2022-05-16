@@ -89,20 +89,6 @@ public class TileManager : MonoBehaviour
                 SpawntileTime = 0.3f;
 
                 SpawnTile(Verif);
-
-                if (Verif == 9)
-                {
-                    Hauteur += 1;
-                    int ram = Random.Range(0, tableauListeActuel.Length);
-                    SpawnTile(ram);
-                }
-
-                if (Verif == 10)
-                {
-                    Hauteur -= 1;
-                    int ram = Random.Range(0, tableauListeActuel.Length);
-                    SpawnTile(ram);
-                }
             }
         }
 
@@ -114,11 +100,27 @@ public class TileManager : MonoBehaviour
     }
     void SpawnTile(int tileIndex)
     {
+        Debug.Log(tileIndex);
         Vector3 pos = transform.forward * zSpawn;
         pos.y = Hauteur * 10;
         GameObject go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
+
+
+        if (tileIndex == 9)
+        {
+            Hauteur += 1;
+            //int ram = Random.Range(0, tableauListeActuel.Length-2);
+            //SpawnTile(ram);
+        }
+
+        if (tileIndex == 10)
+        {
+            Hauteur -= 1;
+            //int ram = Random.Range(0, tableauListeActuel.Length-2);
+            //SpawnTile(ram);
+        }
     }
 
     void DeleteTile()
