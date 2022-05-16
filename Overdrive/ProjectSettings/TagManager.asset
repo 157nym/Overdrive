@@ -12,6 +12,8 @@ TagManager:
   - BlockJump
   - MainCanvas
   - SoundBarrier
+  - PopUpManager
+  - GameManager
   layers:
   - Default
   - TransparentFX
