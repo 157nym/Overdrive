@@ -100,7 +100,7 @@ public class TileManager : MonoBehaviour
     }
     void SpawnTile(int tileIndex)
     {
-        Debug.Log(tileIndex);
+        //Debug.Log(tileIndex);
         Vector3 pos = transform.forward * zSpawn;
         pos.y = Hauteur * 10;
         GameObject go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);

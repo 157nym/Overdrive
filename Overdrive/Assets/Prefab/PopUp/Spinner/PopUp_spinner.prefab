@@ -166,15 +166,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28065a73a329e264fb0ff7c97948057e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetAngle: 0
   angle: 0
   Offset: 180
-  NeededTour: 2
+  NbTour: 0
+  NeededTour: 4
   Speed: 4
   PopUp:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7d77b7f4f573858449752761330fdb63, type: 2}
   parent: {fileID: 7410204175822939183}
+  StartColor: {r: 1, g: 1, b: 1, a: 1}
+  FinishColor: {r: 1, g: 0.3254717, b: 0.3254717, a: 1}
 --- !u!1 &7410204175822939183
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +207,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7410204175822939183}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
   m_ConstrainProportionsScale: 1
