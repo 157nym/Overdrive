@@ -95,7 +95,7 @@ Material:
     - _DitherLenght: 40
     - _DitherPosition: 100
     - _DstBlend: 0
-    - _Emission: 1
+    - _Emission: 1.5
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
