@@ -33,8 +33,8 @@ public class Restart : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Spawn");
-            StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
+            //Debug.Log("Spawn");
+            //StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
             other.gameObject.GetComponentInChildren<Animation>().Play();
             playerInfo.NbrPop ++; 
             AkSoundEngine.PostEvent("Damage", player.gameObject);
