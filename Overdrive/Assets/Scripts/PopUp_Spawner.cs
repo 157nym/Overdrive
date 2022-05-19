@@ -28,7 +28,7 @@ public class PopUp_Spawner : MonoBehaviour
         for(int i = 0; i < PopUpNumber; i++)
         {
             StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
-            yield return new WaitForSeconds(Random.Range(0,0.2f));
+            yield return new WaitForSeconds(Random.Range(0.05f,0.3f));
         }
     }
 }
