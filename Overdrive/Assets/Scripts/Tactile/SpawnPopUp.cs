@@ -23,12 +23,13 @@ public class SpawnPopUp : MonoBehaviour
 
     public IEnumerator SpawnPop()
     {
-        float spawnX = rt.transform.position.x + Random.Range(-rt.gameObject.transform.position.x + popUp[0].rectTransform.rect.height/2, rt.gameObject.transform.position.x);
-        float spawnY = rt.transform.position.y + Random.Range(-rt.gameObject.transform.position.y + popUp[0].rectTransform.rect.width/2, rt.gameObject.transform.position.y);
+        float spawnX = Random.Range(rt.rect.xMax, rt.rect.xMin);
+        float spawnY = Random.Range(rt.rect.yMax, rt.rect.yMin);
 
         Vector2 spawnPosition = new Vector2(spawnX,spawnY);
 
-        RawImage Spawn = Instantiate(popUp[0], spawnPosition , Quaternion.identity, target.transform);
+        RawImage Spawn = Instantiate(popUp[Random.Range(0,popUp.Length)], spawnPosition , Quaternion.identity, target.transform);
+        Spawn.rectTransform.anchoredPosition = spawnPosition;
         yield return new WaitForSeconds(SpawnRate);
     }
 }

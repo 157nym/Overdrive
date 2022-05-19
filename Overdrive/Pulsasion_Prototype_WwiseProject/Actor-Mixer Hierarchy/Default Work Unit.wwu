@@ -769,6 +769,35 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Slide" ID="{0AAACDC8-46BE-40A3-ABBF-9FCA9CA1A594}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
+										<CustomState Name="" ID="{C0B3D931-8B00-43FD-BE23-B374D31B5BAB}" ShortID="339251315"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Jumping" ID="{8DF183B6-375C-4159-980D-A79301B41A1C}"/>
+										<CustomState Name="" ID="{D34EC22F-BD18-4A0D-8C37-ADFB8E466D7D}" ShortID="568187671">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Sliding" ID="{16732B0A-7806-49E9-AF2E-2C0F3D8BAA40}"/>
+										<CustomState Name="" ID="{83859BBD-0B2B-49C7-A0AB-09BCF2F2CE24}" ShortID="878156248">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<Sound Name="Slide SFX" ID="{DE59115C-972C-4374-BF8F-657ABAA2E567}" ShortID="243772471">
@@ -807,6 +836,14 @@
 									<CustomState>
 										<StateRef Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
 										<CustomState Name="" ID="{C1AEB173-74AC-466E-A96A-8B409BC06BA8}" ShortID="651340830">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Jumping" ID="{8DF183B6-375C-4159-980D-A79301B41A1C}"/>
+										<CustomState Name="" ID="{5C2DC96C-0F96-4D72-97D2-99C596C1AA46}" ShortID="1054761411">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
@@ -1119,7 +1156,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

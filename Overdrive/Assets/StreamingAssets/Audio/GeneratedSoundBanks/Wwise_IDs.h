@@ -37,6 +37,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID JUMPING = 68157183U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID RUNNING = 3863236874U;
                 static const AkUniqueID SLIDING = 472853913U;

@@ -48,15 +48,35 @@ public class CharacterMovementAutoRun : MonoBehaviour
         
         direction.z = forwardSpeed;
 
-        //if (EventSystem.current.IsPointerOverGameObject())
-        //     return;
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            desireLane++;
+            if (desireLane == 3)
+            {
+                desireLane = 2;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
+            }
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            desireLane--;
+            if (desireLane == -1)
+            {
+                desireLane = 0;
+            }
+            else
+            {
+                sound.LaneSwitch.Post(gameObject);
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Slide();
-        }
-        
-        if (SwipeManager.swipeDown)
         {
             Slide();
         }
@@ -68,10 +88,12 @@ public class CharacterMovementAutoRun : MonoBehaviour
             {
                 StartCoroutine(Jump(1f));
             }
-            
 
-            if(SwipeManager.swipeUp)
+
+            if (SwipeManager.swipeUp)
             {
+                if (EventSystem.current.IsPointerOverGameObject())
+                    return;
                 StartCoroutine(Jump(1f));
             }
         }
@@ -80,57 +102,42 @@ public class CharacterMovementAutoRun : MonoBehaviour
             direction.y += gravity * Time.deltaTime;
         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            desireLane ++;
-            if(desireLane == 3)
+            if (SwipeManager.swipeDown)
             {
-                    desireLane =2;
+                Slide();
             }
-            else
+
+            if (SwipeManager.swipeRight)
             {
-                sound.LaneSwitch.Post(gameObject);
+                desireLane++;
+                if (desireLane == 3)
+                {
+                    desireLane = 2;
+                }
+                else
+                {
+                    sound.LaneSwitch.Post(gameObject);
+                }
+            }
+
+            if (SwipeManager.swipeLeft)
+            {
+                desireLane--;
+                if (desireLane == -1)
+                {
+                    desireLane = 0;
+                }
+                else
+                {
+                    sound.LaneSwitch.Post(gameObject);
+                }
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            desireLane --;
-            if(desireLane == -1)
-            {
-                    desireLane =0;
-            }
-            else
-            {
-                sound.LaneSwitch.Post(gameObject);
-            }
-        }
-        
-        if(SwipeManager.swipeRight)
-        {
-            desireLane ++;
-            if(desireLane == 3)
-            {
-                desireLane =2;
-            }
-            else
-            {
-                sound.LaneSwitch.Post(gameObject);
-            }
-        }
 
-        if(SwipeManager.swipeLeft)
-        {
-            desireLane --;
-            if(desireLane == -1)
-            {
-                desireLane =0;
-            }
-            else
-            {
-                sound.LaneSwitch.Post(gameObject);
-            }
-        }
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
 
         if(desireLane ==0)
