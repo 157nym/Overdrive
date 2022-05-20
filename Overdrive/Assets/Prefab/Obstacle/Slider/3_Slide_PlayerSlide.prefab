@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8808128674574535193}
   - component: {fileID: 4442849928024311958}
   - component: {fileID: 8792370905582073363}
+  - component: {fileID: 1449019079998255364}
   m_Layer: 9
   m_Name: 3_Slide_PlayerSlide
   m_TagString: Untagged
@@ -65,8 +66,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4874126678125670354, guid: 8ed9645ca774dfe44ab3c5f81ebae846, type: 3}
-  - {fileID: -8274133419916619345, guid: 8ed9645ca774dfe44ab3c5f81ebae846, type: 3}
+  - {fileID: 2100000, guid: 9249bc5da5bc05a48889598d84b6f8d9, type: 2}
+  - {fileID: 2100000, guid: dd4b0ca048c2257448c75d8800fd4663, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,3 +150,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1449019079998255364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838923706627793581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0505acf50647d594eb9e0380d7c5b60c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ads:
+  - {fileID: 2800000, guid: d372b9dd10cdb004fb7d9039a37ad98e, type: 3}
+  - {fileID: 2800000, guid: 1d9eefa41e4b9d0469b0ef3622326590, type: 3}
