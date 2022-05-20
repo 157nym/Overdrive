@@ -19,6 +19,6 @@ public class Life_Hud : MonoBehaviour
     public void Damage()
     {
         Life--;
-        if(Life >= 0)  bar.sprite = Life_Tex[Life - 1];
+        if(Life > 0)  bar.sprite = Life_Tex[Life - 1];
     }
 }
