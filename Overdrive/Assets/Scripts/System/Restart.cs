@@ -13,9 +13,12 @@ public class Restart : MonoBehaviour
 
     private GameObject player;
 
+    private Animator Hud;
+
     // Start is called before the first frame update
     void Start()
     {
+        Hud = GameObject.FindGameObjectWithTag("HUD").GetComponent<Animator>();
         scene = SceneManager.GetActiveScene();
         PopUpManager = GameObject.FindGameObjectWithTag("PopUpManager");
         player = GameObject.FindGameObjectWithTag("Player");
@@ -33,6 +36,7 @@ public class Restart : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Hud.SetTrigger("Damage");
             //Debug.Log("Spawn");
             //StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
             other.gameObject.GetComponentInChildren<Animation>().Play();
