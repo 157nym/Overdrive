@@ -24,7 +24,7 @@ public class PopUp_Wall : MonoBehaviour
         for (int i = 0; i < Warnings.Length; i++)
         {
             Vector3 newpos = transform.position;
-            newpos.z = Mathf.Lerp(10 * WarningTime, 0 ,(float)(i) / (WarningAmount));
+            newpos.z += Mathf.Lerp(10 * WarningTime, 0 ,(float)(i) / (WarningAmount));
             Warnings[i].position = newpos;
         }
     }
