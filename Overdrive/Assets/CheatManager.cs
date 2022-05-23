@@ -41,5 +41,10 @@ public class CheatManager : MonoBehaviour
         {
             SceneManager.LoadScene(scene.name);
         }
+
+        if(Input.GetKeyDown("[6]"))
+        {
+            gameManager.Death();
+        }
     }
 }
