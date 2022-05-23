@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject PopUpManager,GameOverCanvas, MenuPause;
     private GameObject Hud;
     private Scene scene;
+    private PlayableDirector Director;
+
 
     private void Start()
     {
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
         scene = SceneManager.GetActiveScene(); 
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
+        Director = GetComponent<PlayableDirector>();
     }
 
     public void PauseGame()
@@ -51,7 +55,8 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         Debug.Log("Dead");
-        GameOverCanvas.SetActive(true);
+        //GameOverCanvas.SetActive(true);
+        Director.Play();
     }
 
     public void Restart()
