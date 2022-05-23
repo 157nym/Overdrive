@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d584c14bb10af0409aae373e65b4a17, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0cbc55a4354554a9d6b3bc07fac5f3, type: 3}
   m_Name: EEABE0E5-FDF0-4F0D-A03A-0837F2AE5504
   m_EditorClassIdentifier: 
   objectName: PopUp_Spawn

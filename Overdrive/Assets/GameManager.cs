@@ -1,20 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
+    public int Life;
+    public int Saturation;
+    public int MaxSaturation;
     public int coins;
     public bool Paused = false;
-    public GameObject Continue, Menu, Option, PopUpManager;
-    // Start is called before the first frame update
+    public GameObject PopUpManager,GameOverCanvas, MenuPause;
+    private GameObject Hud;
+    private Scene scene;
+    private PlayableDirector Director;
+
+
+    private void Start()
+    {
+        Hud = GameObject.FindGameObjectWithTag("HUD");
+        scene = SceneManager.GetActiveScene(); 
+        MenuPause.SetActive(Paused);
+        PopUpManager.SetActive(!Paused);
+        Director = GetComponent<PlayableDirector>();
+    }
+
     public void PauseGame()
     {
         Paused = !Paused;
-
-        Continue.SetActive(Paused);
-        Menu.SetActive(Paused);
-        Option.SetActive(Paused);
+        MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
 
         if(Paused)
@@ -25,6 +40,32 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+        
+        if (Saturation > MaxSaturation) Death();
+    }
 
+    public void Damage()
+    {
+        Hud.GetComponent<Life_Hud>().Damage();
+        Life--;
+        if (Life <= 0) Death();
+    }
+
+
+    public void Death()
+    {
+        Debug.Log("Dead");
+        //GameOverCanvas.SetActive(true);
+        Director.Play();
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(scene.name);
+    }
+
+    public void Quitter()
+    {
+        Application.Quit();
     }
 }

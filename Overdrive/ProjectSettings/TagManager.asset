@@ -14,6 +14,7 @@ TagManager:
   - SoundBarrier
   - PopUpManager
   - GameManager
+  - HUD
   layers:
   - Default
   - TransparentFX

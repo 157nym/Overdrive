@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4101353bb6e820c469255db3afd79de8, type: 3}
+  m_Script: {fileID: 11500000, guid: af66cbf10dd080c46a0a95250436a175, type: 3}
   m_Name: 0AAACDC8-46BE-40A3-ABBF-9FCA9CA1A594
   m_EditorClassIdentifier: 
   objectName: Slide

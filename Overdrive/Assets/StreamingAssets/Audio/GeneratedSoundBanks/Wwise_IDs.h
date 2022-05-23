@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID POPUP_SPAWN = 416742853U;
         static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SLIDE = 3686556480U;
+        static const AkUniqueID WARNING = 2176025603U;
     } // namespace EVENTS
 
     namespace STATES
@@ -37,6 +38,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID JUMPING = 68157183U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID RUNNING = 3863236874U;
                 static const AkUniqueID SLIDING = 472853913U;

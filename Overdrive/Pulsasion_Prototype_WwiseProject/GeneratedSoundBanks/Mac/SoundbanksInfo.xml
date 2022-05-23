@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="471604973">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2950437476">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -181,7 +181,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="416742853" Name="PopUp_Spawn" ObjectPath="\Events\Default Work Unit\PopUp\PopUp_Spawn" DurationType="OneShot" DurationMin="1.217868" DurationMax="1.217868">
+				<Event Id="416742853" Name="PopUp_Spawn" ObjectPath="\Events\Default Work Unit\PopUp\PopUp_Spawn" DurationType="OneShot" DurationMin="1.149515" DurationMax="1.290287">
 					<IncludedMemoryFiles>
 						<File Id="540113067" Language="SFX">
 							<ShortName>WinError.wav</ShortName>
@@ -222,6 +222,14 @@
 						<File Id="876530420" Language="SFX">
 							<ShortName>Slide SFX.wav</ShortName>
 							<Path>SFX\Slide SFX_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2176025603" Name="Warning" ObjectPath="\Events\Default Work Unit\PopUp\Warning" DurationType="OneShot" DurationMin="1.689274" DurationMax="1.689274">
+					<IncludedMemoryFiles>
+						<File Id="456702809" Language="SFX">
+							<ShortName>AlarmBeep.wav</ShortName>
+							<Path>SFX\AlarmBeep_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
