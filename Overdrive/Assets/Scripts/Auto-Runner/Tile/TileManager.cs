@@ -113,7 +113,7 @@ public class TileManager : MonoBehaviour
             tileIndex = Random.Range(0,2);
 
             pos = transform.forward * zSpawn;
-            pos.y = Hauteur * 20;
+            pos.y = Hauteur * 19.5f;
             go = Instantiate(tileListeHeight[tileIndex], pos, transform.rotation);
             activeTiles.Add(go);
             zSpawn += tileLenght;
@@ -132,7 +132,7 @@ public class TileManager : MonoBehaviour
         }
 
         pos = transform.forward * zSpawn;
-        pos.y = Hauteur * 20;
+        pos.y = Hauteur * 19.5f;
         go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
