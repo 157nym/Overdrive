@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1291433344	Bass			\Default Work Unit\LD\Bass	
 	1584507803	Click			\Default Work Unit\PopUp\Click	
 	1786804762	Damage			\Default Work Unit\Character\Damage	
+	2176025603	Warning			\Default Work Unit\PopUp\Warning	
 	2181839183	Kick			\Default Work Unit\LD\Kick	
 	2752223339	Jump_End			\Default Work Unit\Character\Jump_End	
 	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
@@ -45,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	394819386	Footsteps, Human, Tile, Jump, Land SND62091 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 3		38628
 	402939866	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312		28508
 	426764607	Footsteps, Human, Rock, Run, Isolated Steps SND62098 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1		37898
+	456702809	AlarmBeep	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\AlarmBeep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\AlarmBeep		298052
 	498025622	Footsteps, Human, Tile, Jump, Land SND62091 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 2		24270
 	540113067	WinError	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\WinError_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\WinError		214896
 	564923823	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1		63512

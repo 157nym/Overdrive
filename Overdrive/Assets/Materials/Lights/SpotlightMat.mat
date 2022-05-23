@@ -41,6 +41,8 @@ Material:
     - Vector1_6aafff9e72bf4ad1b3d58357ccb226ef: 0
     - Vector1_6dbe7ca50582466e888ab931fd659d2a: 1.75
     - Vector1_7e65eddcbf734ed29e6fb5ef4828c89e: -0.388
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_843da8dc5ba44a7ab6f0d78fccd7866f: {r: 0, g: 0.34509805, b: 4, a: 0}
     - SpotLight_Color: {r: 0, g: 0.6901961, b: 8, a: 0}

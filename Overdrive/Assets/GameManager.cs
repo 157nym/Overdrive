@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int Life;
+    public int Saturation;
+    public int MaxSaturation;
     public int coins;
     public bool Paused = false;
     public GameObject Continue, Menu, Option, PopUpManager;
-    // Start is called before the first frame update
+
+    private GameObject Hud;
+
+    private void Start()
+    {
+        Hud = GameObject.FindGameObjectWithTag("HUD");
+    }
+
     public void PauseGame()
     {
         Paused = !Paused;
@@ -26,5 +36,19 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
 
+        if (Saturation > MaxSaturation) Death();
+    }
+
+    public void Damage()
+    {
+        Hud.GetComponent<Life_Hud>().Damage();
+        Life--;
+        if (Life <= 0) Death();
+    }
+
+
+    public void Death()
+    {
+        Debug.Log("Dead");
     }
 }

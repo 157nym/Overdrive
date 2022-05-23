@@ -1191,6 +1191,21 @@
 				<Folder Name="PopUp" ID="{950B8DC4-B5A8-4D63-98C7-09205B071A78}" ShortID="595519653">
 					<ChildrenList>
 						<Sound Name="WinError" ID="{51B49524-68DB-4B27-9ABB-DABFC0057F43}" ShortID="961534066">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AA2BAA13-DAE4-4BA7-BA6B-3D84DD5CBCBA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
@@ -1201,6 +1216,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="WinError" ID="{ACF81F71-5E47-4D38-8AEE-9BF20873DA77}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="0.20591128937124"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>WinError.wav</AudioFile>
 									<MediaIDList>
@@ -1379,6 +1398,36 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="AlarmBeep" ID="{B9321C40-413C-4A61-858A-2131120E1B0D}" ShortID="516356333">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AlarmBeep" ID="{0A4720D5-E887-4C97-9C5F-F7C5B061726F}">
+									<Language>SFX</Language>
+									<AudioFile>AlarmBeep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="456702809"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="AlarmBeep" ID="{0A4720D5-E887-4C97-9C5F-F7C5B061726F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

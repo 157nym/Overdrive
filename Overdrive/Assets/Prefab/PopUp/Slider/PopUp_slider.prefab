@@ -549,9 +549,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1987121418932554861}
           m_TargetAssemblyTypeName: PopUp_Slider, Assembly-CSharp
-          m_MethodName: onUnSelected
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -565,9 +565,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1987121418932554861}
           m_TargetAssemblyTypeName: PopUp_Slider, Assembly-CSharp
-          m_MethodName: onSelected
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

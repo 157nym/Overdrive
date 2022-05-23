@@ -13,6 +13,8 @@ public class Restart : MonoBehaviour
 
     private GameObject player;
 
+    private GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class Restart : MonoBehaviour
         PopUpManager = GameObject.FindGameObjectWithTag("PopUpManager");
         player = GameObject.FindGameObjectWithTag("Player");
         playerInfo = player.GetComponent<CharacterMovementAutoRun>();
-
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -33,10 +35,11 @@ public class Restart : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Spawn");
-            StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
+            //Debug.Log("Spawn");
+            //StartCoroutine(PopUpManager.GetComponent<SpawnPopUp>().SpawnPop());
+            //playerInfo.NbrPop ++; 
+            manager.Damage();
             other.gameObject.GetComponentInChildren<Animation>().Play();
-            playerInfo.NbrPop ++; 
             AkSoundEngine.PostEvent("Damage", player.gameObject);
         }
     }
