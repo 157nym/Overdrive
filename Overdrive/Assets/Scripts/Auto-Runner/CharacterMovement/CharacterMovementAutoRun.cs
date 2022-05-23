@@ -33,7 +33,6 @@ public class CharacterMovementAutoRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         if(NbrPop >= 10)
         {
             SceneManager.LoadScene("Auto_Runner_Lvl");
@@ -42,8 +41,9 @@ public class CharacterMovementAutoRun : MonoBehaviour
         if (forwardSpeed < speedMax)
         {
             forwardSpeed += speedAugmentation * 10 * Time.deltaTime;
-            DuréeAnim = (forwardSpeed*4)/30;
+            DuréeAnim = (forwardSpeed*4)/40;
             animator.SetFloat("AnimSpeed", DuréeAnim);
+            sound.Speed.SetGlobalValue(DuréeAnim/2);
         }
         
         direction.z = forwardSpeed;

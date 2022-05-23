@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID JUMP_END = 2752223339U;
         static const AkUniqueID KICK = 2181839183U;
         static const AkUniqueID LANESWITCH = 699052971U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID POPUP_SPAWN = 416742853U;
         static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SLIDE = 3686556480U;
@@ -46,6 +47,23 @@ namespace AK
         } // namespace SLIDE
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace KEY
+        {
+            static const AkUniqueID GROUP = 1183067778U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID KEY_1 = 3865414090U;
+                static const AkUniqueID KEY_2 = 3865414089U;
+                static const AkUniqueID KEY_3 = 3865414088U;
+                static const AkUniqueID KEY_4 = 3865414095U;
+            } // namespace SWITCH
+        } // namespace KEY
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

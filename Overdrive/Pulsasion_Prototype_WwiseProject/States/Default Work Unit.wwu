@@ -13,6 +13,14 @@
 						<State Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
 						<State Name="Jumping" ID="{8DF183B6-375C-4159-980D-A79301B41A1C}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{2075F066-7BBD-4BE3-9CC5-C3EEA7D981C6}"/>
+							<EndState Name="Running" ID="{B6563CA5-AF86-40FB-B48E-F6E757CF0A45}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

@@ -98,7 +98,7 @@
 								<Action Name="" ID="{325222DC-69A4-49A5-A044-9E9AD7C651DC}" ShortID="844953230">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BlockSlide" ID="{808BC4D8-FD42-4579-A078-6561C994B07F}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="BlockSlide key" ID="{EC677CAD-4AA0-4EB0-A3D3-E3C607F7396E}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -109,7 +109,7 @@
 								<Action Name="" ID="{58E05196-B8BE-4E83-8CDC-94D0BF94D5CA}" ShortID="388302558">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BlockJump" ID="{AD6009B5-2CC4-4F11-BED9-24B84D81A060}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="BlockJump key" ID="{C4D8FF83-C7FD-4593-B32D-0FD6FF724E93}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -143,6 +143,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Bass" ID="{8325D8C2-5E5B-4FC1-BE44-33A479A469F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Music" ID="{4E0DB7DC-94E6-4616-9EB0-347E9EEB479D}">
+							<ChildrenList>
+								<Action Name="" ID="{DBFF3DAF-E891-4641-9105-A0FC4312C081}" ShortID="152217463">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

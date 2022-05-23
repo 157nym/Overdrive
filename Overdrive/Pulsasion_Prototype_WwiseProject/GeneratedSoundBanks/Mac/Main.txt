@@ -14,6 +14,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	3686556480	Slide			\Default Work Unit\Character\Slide	
 	3710956116	BlockJump			\Default Work Unit\LD\BlockJump	
 	3833651337	Jump			\Default Work Unit\Character\Jump	
+	3991942870	Music			\Default Work Unit\LD\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1183067778	Key			\Default Work Unit\Key	
+
+Switch	ID	Name	Switch Group			Notes
+	3865414088	Key_3	Key			
+	3865414089	Key_2	Key			
+	3865414090	Key_1	Key			
+	3865414095	Key_4	Key			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3686556480	Slide			\Default Work Unit\Slide	
@@ -31,43 +41,71 @@ Custom State	ID	Name	State Group	Owner		Notes
 	878156248	Sliding	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps		
 	1054761411	Jumping	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Default Work Unit\Speed	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9032660	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1		35620
+	10699400	Jump 3-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 3\Jump 3-2		705664
+	16018085	Slide 1-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 1\Slide 1-2		352864
 	63739832	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3		53398
-	106000749	Jump 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 3		705664
 	109075288	Footsteps, Human, Rock, Surface, Jump On SND62097	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Surface, Jump On SND62097_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Rock, Surface, Jump On SND62097		37330
 	122599344	Lane change	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Lane change		95768
-	207134929	Slide 4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 4		705664
+	127116205	Drums	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Drum_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 1\Drums		352864
+	128126448	Slide 2-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 2\Slide 2-2		176464
+	238600527	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 1\Basses		1411264
+	242335301	Jump 2-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 2\Jump 2-2		705664
 	272046355	Footsteps, Human, Rock, Run, Isolated Steps SND62098 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2		39354
+	289433015	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 3\Basses		1411264
+	299327766	Drums	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Drum 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 1\Drums		1411264
+	312087443	Jump 2-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 2\Jump 2-3		705664
 	331802635	BlockWall_Ambient	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\BlockWall_Ambient_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockWall_Ambient		352864
 	339796614	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 4		35620
-	342425969	Slide 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 1		705664
-	393747136	Jump 4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 4		705664
+	353354037	Slide 3-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 3-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 3\Slide 3-3		352864
 	394819386	Footsteps, Human, Tile, Jump, Land SND62091 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 3		38628
+	402000859	Jump 3-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 3\Jump 3-3		705664
 	402939866	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312		28508
+	423948285	Slide 3-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 3-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 3\Slide 3-2		352864
 	426764607	Footsteps, Human, Rock, Run, Isolated Steps SND62098 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1		37898
 	456702809	AlarmBeep	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\AlarmBeep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\AlarmBeep		298052
+	473033394	Jump 4-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 4-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 4\Jump 4-1		705664
 	498025622	Footsteps, Human, Tile, Jump, Land SND62091 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 2		24270
+	521102613	Drums	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Drum 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 1\Drums		1411264
 	540113067	WinError	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\WinError_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\WinError		214896
+	553013599	Jump 4-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 4-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 4\Jump 4-3		705664
 	564923823	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 1		63512
+	575587328	Jump 1-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 1-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 1\Jump 1-3		705664
 	579471983	HiHat	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\HiHat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\HiHat		16396
 	580818240	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 2		39176
+	580919558	Jump 3-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 3-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 3\Jump 3-1		705664
+	588918308	Slide 3-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 3-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 3\Slide 3-1		352864
 	604411401	Footsteps, Human, Rock, Run, Isolated Steps SND62098 4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 4		37898
 	629085646	Kick	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Kick_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\Kick		32724
+	637633122	Jump 1-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 1\Jump 1-2		705664
 	653879077	Footsteps, Human, Rock, Run, Isolated Steps SND62098 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 3		34262
-	713869215	Jump 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump\Jump 2		705664
-	720586667	Slide 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 3		705664
+	725999290	Jump 1-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 1\Jump 1-1		705664
+	752994431	Jump 4-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 4-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 4\Jump 4-2		705664
+	782561424	Drums	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Drum 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 1\Drums		1411264
 	795317107	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2		57708
 	822150662	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1		37424
 	833489615	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468		44476
 	837860218	Footsteps, Human, Rock, Run, Isolated Steps SND62098	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098		39354
 	876530420	Slide SFX	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide SFX_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		352864
+	904306471	Slide 1-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 1\Slide 1-1		352864
+	905973738	Slide 1-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 1-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 1\Slide 1-3		352864
 	906194001	Footsteps, Human, Tile, Jump, Land SND62091 4	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Tile, Jump, Land SND62091 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 4		26320
 	910189331	BlockWall_Spawn	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\BlockWall_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockWall_Spawn		176464
-	925500205	Slide 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide\Slide 2		705664
+	920487004	Slide 2-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 2\Slide 2-3		176464
+	923451807	Jump 2-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockJump key\BlockJump 2\Jump 2-1		705664
+	941115794	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 2\Basses		1411264
 	953925162	Bass	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\Bass		501828
+	1001270893	Slide 4-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 4\Slide 4-1		352864
+	1001904608	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Bass 4\Basses		1411264
 	1015557130	Footsteps, Human, Rock, Run, Isolated Steps SND62098 5	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 5		48086
+	1026806184	Slide 4-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 4\Slide 4-2		352864
 	1027541020	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5		35620
 	1035504593	Footsteps, Human, Rock, Surface, Jump On SND62097 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Surface, Jump On SND62097 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Rock, Surface, Jump On SND62097 1		28110
+	1043288033	Slide 2-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 2\Slide 2-1		176464
+	1051159383	Slide 4-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 4-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\BlockSlide key\BlockSlide 4\Slide 4-3		352864
 	1072476667	Damage SFX	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Damage SFX_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Damage SFX		149572
 

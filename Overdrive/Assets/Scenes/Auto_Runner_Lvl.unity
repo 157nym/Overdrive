@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 627599309}
   - component: {fileID: 627599310}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1468,7 +1468,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627599308}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   forwardSpeed: 25
   laneDistance: 3
   gravity: -500
-  "Dur\xE9eAnim": 0.3
+  "Dur\xE9eAnim": 0.8
   speedAugmentation: 0.0001
   speedMax: 100
   NbrPop: 0
@@ -1896,6 +1896,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 690385bbc3de2464fa6385e4e5d8d855, type: 2}
+  Music:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 431ef8f1de8f10b40bd502fa03995965, type: 2}
 --- !u!1 &980486917
 GameObject:
   m_ObjectHideFlags: 0

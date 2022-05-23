@@ -14,15 +14,17 @@ public class CharacterSound : MonoBehaviour
     public AK.Wwise.State running;
     public AK.Wwise.State Jumping;
     public AK.Wwise.RTPC Speed;
+    [SerializeField] private AK.Wwise.Event Music;
 
     private void Awake()
     {
+        Slide.Post(gameObject);
         running.SetValue();
     }
 
     private void Start()
     {
-        Slide.Post(gameObject);
+        Music.Post(gameObject);
     }
 
     public void Step()
