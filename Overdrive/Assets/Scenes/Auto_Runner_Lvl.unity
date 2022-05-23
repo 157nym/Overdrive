@@ -944,6 +944,7 @@ MonoBehaviour:
   playerTransform: {fileID: 960798696}
   Hauteur: 0
   maxTile: 10
+  phase: 1
   SpawntileTime: 3
   Timer: 0
   destroyTileTime: 3
@@ -1739,7 +1740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 25
+  forwardSpeed: 10
   laneDistance: 3
   gravity: -500
   "Dur\xE9eAnim": 0.3
@@ -3075,13 +3076,14 @@ GameObject:
   - component: {fileID: 1906914746}
   - component: {fileID: 1906914745}
   - component: {fileID: 1906914747}
+  - component: {fileID: 1906914748}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1906914745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3136,6 +3138,21 @@ PlayableDirector:
     value: {fileID: 1397467982}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &1906914748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906914744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94cc8366f120664d95f02006d0ab97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1906914745}
+  tileManager: {fileID: 337143085}
+  popUpManager: {fileID: 2130779169}
 --- !u!1 &1975096555
 GameObject:
   m_ObjectHideFlags: 0
@@ -8293,6 +8310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popUp:
   - {fileID: 7410204175822939188, guid: b4f9ab3ac5b75ea40a23e2f25d78f324, type: 3}
+  - {fileID: 7410204175822939188, guid: b11b4282a242f7d48ae0d8363c00b755, type: 3}
+  - {fileID: 7410204175822939188, guid: 00936d2141ef7784191b49618a142899, type: 3}
   target: {fileID: 204695655}
   canvas: {fileID: 104267287}
   SpawnRate: 3
