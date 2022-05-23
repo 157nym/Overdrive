@@ -850,17 +850,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileListeEasy:
-  - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
-  - {fileID: 8865018166442060817, guid: d64230a42fe5b3a41903e0bf17876c3f, type: 3}
-  - {fileID: 4060689631977845950, guid: 881665caa81eba844957a40ec91ab645, type: 3}
-  - {fileID: 7747828928893271371, guid: f0dffa04e5d0a4849bb0f5816cad10a1, type: 3}
-  - {fileID: 2788413365015441279, guid: d8a7f098d53a7d8478fce1379c495681, type: 3}
-  - {fileID: 1684762589704650700, guid: b90beb1547397704c8524f0e67328de5, type: 3}
-  - {fileID: 8737702447422453155, guid: 22e3fe3d9089d754597b11c2eb36cc4b, type: 3}
-  - {fileID: 1925604169175082223, guid: 71bdc783176a8aa4b80b3a3cc793258d, type: 3}
-  - {fileID: 4938746990108193487, guid: e4cd68e533296bf44805dfbd7bc68bd6, type: 3}
-  - {fileID: 511109278823335327, guid: 5e37eaf353840884fb69a30a0530c408, type: 3}
-  - {fileID: 1715704023548186802, guid: ffef1edfb8cf9954ba2dc89ccbfec746, type: 3}
+  - {fileID: 2736563053831555432, guid: 6315cfe1eaa0ef84ea5e0c0febbd2a9a, type: 3}
+  - {fileID: 2736563053831555432, guid: 32bc5db56dc8a96489c35d6b574158c1, type: 3}
+  - {fileID: 5216598579080625441, guid: 3605481c0c451de4fbc15360bcfb5a76, type: 3}
+  - {fileID: 9059259727695747498, guid: 4a2791924021a394ab53f4258369ef32, type: 3}
+  - {fileID: 3450995708188796650, guid: 21d39de92c27e2a47bf1e07dff5f9ba4, type: 3}
+  - {fileID: 9120071672341764852, guid: 1280f646a4192f7479fc0ff8f761e8b6, type: 3}
+  - {fileID: 128038453959723112, guid: 39787baa00c22a944b4df74b7785aa37, type: 3}
+  - {fileID: 8298007072021188613, guid: f6dca0131b5f52b4eb3554aff3c14e1b, type: 3}
+  - {fileID: 7488053819738197785, guid: a22a6b535c05434478b8041be047045c, type: 3}
+  - {fileID: 6969061872914518748, guid: ba6843312567bb44e82b164f0daeeb61, type: 3}
   tileListeMedium:
   - {fileID: 7331742691726705830, guid: 62c17d456dcade44485357a7a5e31b81, type: 3}
   tileListeHard:
@@ -2494,9 +2493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dfbfe0efa25624cbfd98691e259c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 4
+  Life: 3
   Saturation: 0
-  MaxSaturation: 30
+  MaxSaturation: 0
   coins: 0
   Paused: 0
   Continue: {fileID: 2080349968}
@@ -7541,8 +7540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popUp:
   - {fileID: 7410204175822939188, guid: b4f9ab3ac5b75ea40a23e2f25d78f324, type: 3}
-  - {fileID: 7410204175822939188, guid: b11b4282a242f7d48ae0d8363c00b755, type: 3}
-  - {fileID: 7410204175822939188, guid: 00936d2141ef7784191b49618a142899, type: 3}
   target: {fileID: 204695655}
   canvas: {fileID: 104267287}
   SpawnRate: 3
