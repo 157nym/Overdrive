@@ -26,7 +26,7 @@ public class TileManager : MonoBehaviour
 
     public int maxTile;
 
-    private int phase = 1;
+    public int phase = 1;
 
     public float SpawntileTime, Timer, destroyTileTime;
 
