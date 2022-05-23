@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int MaxSaturation;
     public int coins;
     public bool Paused = false;
-    public GameObject Continue, Menu, Option, PopUpManager;
+    public GameObject PopUpManager,GameOverCanvas, MenuPause;
 
     private GameObject Hud;
 
@@ -21,10 +21,7 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         Paused = !Paused;
-
-        Continue.SetActive(Paused);
-        Menu.SetActive(Paused);
-        Option.SetActive(Paused);
+        MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
 
         if(Paused)
@@ -50,5 +47,6 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         Debug.Log("Dead");
+        GameOverCanvas.SetActive(true);
     }
 }
