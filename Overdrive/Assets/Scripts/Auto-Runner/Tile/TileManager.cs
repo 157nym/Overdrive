@@ -12,6 +12,8 @@ public class TileManager : MonoBehaviour
 
     public GameObject[] tileListeCalm;
 
+    public GameObject[] tileListeHeight;
+
     public GameObject[] tableauListeActuel;
 
     public float zSpawn = 50;
@@ -28,7 +30,11 @@ public class TileManager : MonoBehaviour
 
     public float SpawntileTime, Timer, destroyTileTime;
 
-    private List<GameObject> activeTiles = new List<GameObject>();
+    private int ChangeHeight;
+
+    private float distanceMax;
+
+    public List<GameObject> activeTiles = new List<GameObject>();
 
     private void Awake()
     {
@@ -41,6 +47,8 @@ public class TileManager : MonoBehaviour
         SpawnTile(0);
         SpawnTile(0);
         SpawnTile(0);
+
+        distanceMax = playerTransform.transform.position.z + 50;
     }
 
     // Update is called once per frame
@@ -49,6 +57,7 @@ public class TileManager : MonoBehaviour
         SpawntileTime -= Time.deltaTime;
         destroyTileTime -= Time.deltaTime;
         Timer = Time.time;
+
 
         if (phase == 1)
         {
@@ -84,48 +93,57 @@ public class TileManager : MonoBehaviour
         {
             if(activeTiles.Count < maxTile) 
             {
-                
                 int Verif = Random.Range(0, tableauListeActuel.Length);
-                SpawntileTime = 0.3f;
+                SpawntileTime = 1f;
 
                 SpawnTile(Verif);
             }
         }
-
-        if(destroyTileTime <= 0)
-        {
-            DeleteTile();
-            destroyTileTime = 1.5f;
-        }
     }
     void SpawnTile(int tileIndex)
     {
-        //Debug.Log(tileIndex);
-        Vector3 pos = transform.forward * zSpawn;
+        Vector3 pos;
+        GameObject go;
+
+        ChangeHeight = Random.Range(0,11);
+
+        if(ChangeHeight >= 8 && activeTiles.Count >= 3)
+        {
+            tileIndex = Random.Range(0,2);
+
+            pos = transform.forward * zSpawn;
+            pos.y = Hauteur * 10;
+            go = Instantiate(tileListeHeight[tileIndex], pos, transform.rotation);
+            activeTiles.Add(go);
+            zSpawn += tileLenght;
+            DeleteTile();
+
+            if(tileIndex == 0)
+            {
+                Hauteur++;
+            }
+            else
+            {
+                Hauteur--;
+            }
+
+            return;
+        }
+
+        pos = transform.forward * zSpawn;
         pos.y = Hauteur * 10;
-        GameObject go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
+        go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
-
-
-        if (tileIndex == 9)
-        {
-            Hauteur += 1;
-            //int ram = Random.Range(0, tableauListeActuel.Length-2);
-            //SpawnTile(ram);
-        }
-
-        if (tileIndex == 10)
-        {
-            Hauteur -= 1;
-            //int ram = Random.Range(0, tableauListeActuel.Length-2);
-            //SpawnTile(ram);
-        }
+        DeleteTile();
     }
 
     void DeleteTile()
     {
-        Destroy(activeTiles[0]);
-        activeTiles.RemoveAt(0);
+        if(activeTiles.Count > maxTile - 1)
+        {
+            Destroy(activeTiles[0]);
+            activeTiles.RemoveAt(0);
+        }
     }
 }
