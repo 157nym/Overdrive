@@ -32,7 +32,7 @@ public class TileManager : MonoBehaviour
 
     private int ChangeHeight;
 
-    private float distanceMax;
+    public float distanceMax;
 
     public List<GameObject> activeTiles = new List<GameObject>();
 
@@ -48,7 +48,7 @@ public class TileManager : MonoBehaviour
         SpawnTile(0);
         SpawnTile(0);
 
-        distanceMax = playerTransform.transform.position.z + 50;
+        distanceMax = playerTransform.transform.position.z + 30;
     }
 
     // Update is called once per frame
@@ -89,7 +89,7 @@ public class TileManager : MonoBehaviour
             phase = 3;
         }
 
-        if (SpawntileTime <= 0)
+        if (playerTransform.transform.position.z >= distanceMax)
         {
             if(activeTiles.Count < maxTile) 
             {
@@ -97,6 +97,7 @@ public class TileManager : MonoBehaviour
                 SpawntileTime = 1f;
 
                 SpawnTile(Verif);
+                distanceMax = playerTransform.transform.position.z + 40;
             }
         }
     }
