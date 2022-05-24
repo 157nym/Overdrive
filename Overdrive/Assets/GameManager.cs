@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,9 +13,13 @@ public class GameManager : MonoBehaviour
     public int coins;
     public bool Paused = false;
     public GameObject PopUpManager,GameOverCanvas, MenuPause;
+    public CharacterMovementAutoRun playerManager;
+    public TextMeshProUGUI Décompte;
     private GameObject Hud;
     private Scene scene;
     private PlayableDirector Director;
+    private float timeBeforePlay = 3;
+    private bool Go = true;
 
 
     private void Start()
@@ -24,6 +29,24 @@ public class GameManager : MonoBehaviour
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
         Director = GetComponent<PlayableDirector>();
+        playerManager.forwardSpeed = 0;
+        playerManager.speedAugmentation = 0;
+    }
+
+    public void Update()
+    {
+        if (timeBeforePlay < 1 && Go)
+        {
+            Go = false;
+            playerManager.forwardSpeed = 25;
+            playerManager.speedAugmentation = 0.0001f;
+            Décompte.gameObject.SetActive(false);
+        }
+        else
+        {
+            timeBeforePlay -= Time.deltaTime;
+            Décompte.text = Mathf.Round(timeBeforePlay).ToString();
+        }
     }
 
     public void PauseGame()
