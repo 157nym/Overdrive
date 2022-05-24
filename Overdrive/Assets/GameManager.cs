@@ -37,10 +37,9 @@ public class GameManager : MonoBehaviour
     {
         if (timeBeforePlay < 1 && Go)
         {
-            Décompte.text = "GO";
+            Go = false;
             playerManager.forwardSpeed = 25;
             playerManager.speedAugmentation = 0.0001f;
-            Go = false;
             Décompte.gameObject.SetActive(false);
         }
         else
