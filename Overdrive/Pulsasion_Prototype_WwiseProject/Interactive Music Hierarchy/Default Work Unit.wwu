@@ -67,6 +67,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="Basses" ID="{3A8C5D9E-EDA5-4A0D-BF0A-788BE7B83FFA}" ShortID="270077321">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DefaultSwitchOrState">
 											<ObjectRef Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
@@ -84,6 +87,27 @@
 											<AudioFile>Bass 1.wav</AudioFile>
 											<MediaIDList>
 												<MediaID ID="238600527"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Bass 2" ID="{4981AB63-5205-4132-B9A7-8AADD9851F1E}">
+											<Language>SFX</Language>
+											<AudioFile>Bass 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941115794"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Bass 3" ID="{A3764B12-495F-48E0-B845-26B4094B3D2D}">
+											<Language>SFX</Language>
+											<AudioFile>Bass 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="289433015"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Bass 4" ID="{ECA72677-545D-456F-9681-7BD582A208BC}">
+											<Language>SFX</Language>
+											<AudioFile>Bass 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1001904608"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -119,6 +143,17 @@
 																		</MusicClip>
 																	</Local>
 																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{5222AD37-9A2C-4177-8FED-22C2388BFFF9}" ShortID="481185049">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key1Event" ID="{9F1C07FA-4B79-4B95-AA50-BD5AB205F9FE}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
 															</ObjectList>
 														</ObjectLists>
 														<ReferenceList>
@@ -126,6 +161,105 @@
 																<ObjectRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
 															</Reference>
 														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F136976C-5D4A-4453-BF89-86CD69543A1C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Bass 2" ID="{DA1AC471-A33D-47BB-BE49-645E0FCDAE98}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Bass 2" ID="{4981AB63-5205-4132-B9A7-8AADD9851F1E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{7036CE39-C78D-4FD4-B179-1EC1D773206B}" ShortID="6825044">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key2Event" ID="{D2E917DE-04AD-4FD4-9BF8-62AE884A5AF2}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{94D2F861-052A-4EC3-B854-B2686F963ADA}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Bass 3" ID="{3A6914C1-42A8-4690-BA44-D1D0CC9FB038}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Bass 3" ID="{A3764B12-495F-48E0-B845-26B4094B3D2D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{58C00A53-F886-41FE-8667-54DEAE0C192C}" ShortID="50341003">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key3Event" ID="{6DE66B99-5D46-4D96-8DFB-01A174F70185}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{70C7C81F-A04D-42E9-9559-8D41E93E6A56}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Bass 4" ID="{DD92A9A2-EDB6-4E06-88CF-74991B681DA2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Bass 4" ID="{ECA72677-545D-456F-9681-7BD582A208BC}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{F0491CE1-C270-48FE-896E-DFA23F3A5141}" ShortID="581901914">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key4Event" ID="{FA682FA3-3257-49BC-A9F6-A22565171A57}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
 													</MusicTrackSequence>
 												</Local>
 											</Reference>
@@ -350,6 +484,16 @@
 													<Property Name="TimeMs" Type="Real64" Value="8000"/>
 												</PropertyList>
 											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{282FDBB8-56C3-412B-BDEE-BC6830CDE5CB}">
+												<TriggerRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+												<SegmentRef Name="Jump 1" ID="{EE7F2264-1AD4-4899-ADEA-82DAD833B8F7}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+											</MusicStinger>
 										</Local>
 									</Reference>
 								</ObjectList>
@@ -655,6 +799,16 @@
 										</Local>
 									</Reference>
 								</ObjectList>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{870C9A4A-A3A7-4064-BD13-4B041391A733}">
+												<TriggerRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+												<SegmentRef Name="Jump 2" ID="{CAEE3583-BE2F-4338-85F4-D48B3D8122C5}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
 						<MusicSegment Name="Bass 4" ID="{8BC0F0A9-C650-4869-9537-1AD96FA3B068}" ShortID="658482010">
@@ -951,6 +1105,16 @@
 													<Property Name="TimeMs" Type="Real64" Value="8000"/>
 												</PropertyList>
 											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{B90AF257-FB12-4EFC-9E4C-663B83ECBA4C}">
+												<TriggerRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+												<SegmentRef Name="Jump 4" ID="{642BE958-9901-46C8-8574-3AAAD1415789}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+											</MusicStinger>
 										</Local>
 									</Reference>
 								</ObjectList>
@@ -1256,6 +1420,16 @@
 										</Local>
 									</Reference>
 								</ObjectList>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{D24187B5-8B03-439F-9624-81BC40054E10}">
+												<TriggerRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+												<SegmentRef Name="Jump 3" ID="{78F0E28D-7D7E-4922-A02B-42696C8DF0F5}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
@@ -1293,28 +1467,618 @@
 									</PropertyList>
 									<SegmentRef Name="Bass 1" ID="{1E2358A1-53BB-49BE-9CBB-408357BD9C29}"/>
 								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{F7147B41-41E8-4D39-91F4-9318451769BA}" ShortID="371992345">
-									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-									</PropertyList>
-									<SegmentRef Name="Bass 2" ID="{95AA1CF1-C9C0-4D0D-B0B3-871180951F86}"/>
-								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{94E8CBEF-093F-4F9C-8901-41A5C749F26B}" ShortID="821417726">
-									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-									</PropertyList>
-									<SegmentRef Name="Bass 3" ID="{21F0FBCA-899E-417E-B277-27278671A5D9}"/>
-								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{F938F20A-4C5E-4271-871B-CACAAF8A1AB9}" ShortID="482483271">
-									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-									</PropertyList>
-									<SegmentRef Name="Bass 4" ID="{8BC0F0A9-C650-4869-9537-1AD96FA3B068}"/>
-								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
+				<Folder Name="Jumps" ID="{F54FADE9-6CFF-47A4-B871-24D46B1D861A}" ShortID="251822001">
+					<ChildrenList>
+						<MusicSegment Name="Jump 1" ID="{EE7F2264-1AD4-4899-ADEA-82DAD833B8F7}" ShortID="521673005">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="12000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{53B4AC92-8836-42D2-8D46-0C4D8F2F5A89}" ShortID="684082262">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jump 1-1" ID="{8939BE51-D855-4478-8A24-CB9F31B898DC}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 1-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="136820261"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 1-2" ID="{B776AAFC-554C-42DE-B4D4-207D6B250C5C}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 1-2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780641587"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 1-3" ID="{09BAE7D6-889F-4C0B-84C0-7D587319B494}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 1-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="731563400"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D57C75F0-FBEB-4B07-B0F2-94B9FC90B7F4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{80D04162-CBD2-49CB-A656-C9AD5C527E4A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 1-1" ID="{9629E670-471D-440C-99F0-6863254ECF47}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 1-1" ID="{8939BE51-D855-4478-8A24-CB9F31B898DC}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C89C9CA1-0676-4919-BBBB-F859E58C8073}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 1-2" ID="{F945ABFC-623B-4AA6-AF43-C3A07C9A3445}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 1-2" ID="{B776AAFC-554C-42DE-B4D4-207D6B250C5C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E9B28CDF-971F-4E21-9EF6-5AD395F778C4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 1-3" ID="{3E169988-F02D-40B9-A418-A3522C0468A4}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 1-3" ID="{09BAE7D6-889F-4C0B-84C0-7D587319B494}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{0C119DF1-3C4C-49C8-A911-2D7BC17F7C70}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{4ED5A940-5E26-4FEF-9608-75E523BF02D9}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="500"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Jump 2" ID="{CAEE3583-BE2F-4338-85F4-D48B3D8122C5}" ShortID="779966410">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="12000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{C63C0D32-D6D1-4329-80AD-3FEE322AC04F}" ShortID="61465691">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jump 2-1" ID="{3C630CAB-D597-428B-ADDF-6A821F34F099}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 2-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715505283"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 2-2" ID="{C289A016-57FE-4803-85B8-AA347D3E0112}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 2-2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="147825275"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 2-3" ID="{4F484954-04FA-4894-90E5-02024333828A}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 2-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="148872499"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6CB0830E-753B-4DA9-B72D-771EF775A0F3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{329863AE-35B1-4660-A910-041ADFF9582B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 2-1" ID="{6F907856-FEB7-43AF-A68B-98C0EE8914AC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 2-1" ID="{3C630CAB-D597-428B-ADDF-6A821F34F099}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{148E4B7A-15E2-4A0C-8075-00687FFF56DE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 2-2" ID="{78C24A11-5032-4031-9B48-7EFA66F47CE8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 2-2" ID="{C289A016-57FE-4803-85B8-AA347D3E0112}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7386C476-A240-4FA8-B0B5-141F45623870}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 2-3" ID="{8D6F8B1C-5CE3-4804-BE19-4429582DB99F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 2-3" ID="{4F484954-04FA-4894-90E5-02024333828A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{9119C794-4172-4988-9C18-327D29C267BD}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E4613179-6EE3-4384-B7C1-3E87F7812CB0}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Jump 3" ID="{78F0E28D-7D7E-4922-A02B-42696C8DF0F5}" ShortID="68776828">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="12000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{689FE9C0-BCA6-4202-8A10-3F2A5B7B028C}" ShortID="468390378">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jump 3-1" ID="{D91962B5-0DCD-44FD-8724-B8D2881F0EC0}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 3-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="358490508"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 3-2" ID="{391F34BA-3CE6-42CD-9C93-2A0232EBE831}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 3-2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="223621911"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 3-3" ID="{8F267AB8-8BFC-45C9-B34F-835AEBCAC643}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 3-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="71831067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2D71E404-22FF-4965-A84F-20AEAF0C8700}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3CD17B0B-DDA5-453C-BA20-DC8678CD290F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 3-1" ID="{1F0AA4B0-BD5A-483F-BDEA-DCE48648DD2B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 3-1" ID="{D91962B5-0DCD-44FD-8724-B8D2881F0EC0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{6E010D25-84C8-47BE-9A42-1EBA90952A27}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 3-2" ID="{F9CBACB6-0FC7-4808-91C1-23C7794A7DCA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 3-2" ID="{391F34BA-3CE6-42CD-9C93-2A0232EBE831}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{536CA421-E7AF-4389-B3D6-3B52E3E661A8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 3-3" ID="{A3ED5C2F-BD47-46A5-97A0-53C67F6D3FD0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 3-3" ID="{8F267AB8-8BFC-45C9-B34F-835AEBCAC643}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{65215A5D-CE02-4154-8F48-D17EB1D9A5C9}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{637D2FCB-D9FA-4B95-A150-3DAAAFCAE02F}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Jump 4" ID="{642BE958-9901-46C8-8574-3AAAD1415789}" ShortID="28420473">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="12000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{7D9CA908-D8FD-4741-9E08-98FC819105A8}" ShortID="460376584">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jump 4-1" ID="{A644FCC6-E346-4C66-A5A0-8A7DA1005544}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 4-1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452998953"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 4-2" ID="{190B97AE-8B33-4E81-B348-DF1D486BBF1F}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 4-2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="654185853"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Jump 4-3" ID="{AEEF9144-5D84-4B54-86D2-76D176803303}">
+											<Language>SFX</Language>
+											<AudioFile>Jump 4-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="386336132"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3CF050E8-5D60-4989-B1CF-A54A77F62C4F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2BE956BF-84B7-4268-BE5A-745F462EFA32}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 4-1" ID="{34FE849B-02D8-40B2-AC53-1E9A7D5551E5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 4-1" ID="{A644FCC6-E346-4C66-A5A0-8A7DA1005544}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{636362DE-3602-419A-9EDB-F543A77744C6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 4-2" ID="{89A575E7-AB73-4B09-A28A-E77527D1202E}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 4-2" ID="{190B97AE-8B33-4E81-B348-DF1D486BBF1F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{40C2A279-6ECB-4BA4-A4C2-8C383A27636E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Jump 4-3" ID="{0993EAA4-4675-4F68-9687-C70270A9C404}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Jump 4-3" ID="{AEEF9144-5D84-4B54-86D2-76D176803303}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{7254BE88-C279-41BE-89C7-94F36618FE12}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{781A7D45-40EF-4B4D-AACA-2E4664ED2C82}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

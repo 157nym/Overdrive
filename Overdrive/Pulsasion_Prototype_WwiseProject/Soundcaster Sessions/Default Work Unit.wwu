@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4F0188B9-310E-451D-AABE-0F4D7E100909}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{4F0188B9-310E-451D-AABE-0F4D7E100909}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4F0188B9-310E-451D-AABE-0F4D7E100909}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="LD Test" ID="{B2EADB12-4F57-4E87-8DDC-A49FEFAE6A99}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="BlockJump key" ID="{C4D8FF83-C7FD-4593-B32D-0FD6FF724E93}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Speed" ID="{36435725-3E25-4A86-8A63-66120AE09F95}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

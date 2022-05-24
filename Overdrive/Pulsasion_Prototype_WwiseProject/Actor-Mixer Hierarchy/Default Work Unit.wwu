@@ -5,32 +5,6 @@
 			<ChildrenList>
 				<Folder Name="LD" ID="{75FBBCB9-4800-4F1C-897B-DE98234E0EF8}" ShortID="681619213">
 					<ChildrenList>
-						<Sound Name="Kick" ID="{82E88978-AD6E-4C24-86E2-C136FBB16450}" ShortID="614903290">
-							<PropertyList>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Kick" ID="{F9E52676-E92F-4A03-ABE0-CC974C8158BB}">
-									<Language>SFX</Language>
-									<AudioFile>Kick.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="629085646"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Kick" ID="{F9E52676-E92F-4A03-ABE0-CC974C8158BB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="BlockWall_Ambient" ID="{D4723D39-78E0-47D4-9032-450C7626C851}" ShortID="180457376">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -113,32 +87,6 @@
 								<ActiveSource Name="BlockWall_Ambient" ID="{C01E1EA8-993F-4BB4-9946-181CD525732A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="HiHat" ID="{478E051D-FFF6-4880-8C5C-59FD6E608FFB}" ShortID="1065168628">
-							<PropertyList>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HiHat" ID="{C0054DAB-DD5D-4A77-9925-265C6008CAC0}">
-									<Language>SFX</Language>
-									<AudioFile>HiHat.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="579471983"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="HiHat" ID="{C0054DAB-DD5D-4A77-9925-265C6008CAC0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="BlockWall_Spawn" ID="{70BA90B5-7677-4B86-8B54-AF53B450614F}" ShortID="698740219">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -219,29 +167,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="BlockWall_Spawn" ID="{CCBDE033-7B49-4975-9A30-767BCF69C2E8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Bass" ID="{8325D8C2-5E5B-4FC1-BE44-33A479A469F2}" ShortID="454041631">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Bass" ID="{4E07F602-9916-4E96-BDBD-34663FB89576}">
-									<Language>SFX</Language>
-									<AudioFile>Bass.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="953925162"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Bass" ID="{4E07F602-9916-4E96-BDBD-34663FB89576}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="BlockJump key" ID="{C4D8FF83-C7FD-4593-B32D-0FD6FF724E93}" ShortID="435373640">
@@ -2257,7 +2182,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

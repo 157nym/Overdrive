@@ -113,6 +113,22 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{53A82A69-E235-4950-A4B8-4551E80CF424}" ShortID="344601946">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Kick" ID="{86DF8600-581F-4A50-A5CD-A10B9E1E68A5}">
@@ -191,6 +207,66 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="AlarmBeep" ID="{B9321C40-413C-4A61-858A-2131120E1B0D}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="KeyMusicEvent" ID="{DA504035-0FA2-4F17-87E2-8E7041F22375}" ShortID="198776179">
+					<ChildrenList>
+						<Event Name="Key1Event" ID="{9F1C07FA-4B79-4B95-AA50-BD5AB205F9FE}">
+							<ChildrenList>
+								<Action Name="" ID="{A1910D5B-39C9-438F-90E2-6C53D8B75F98}" ShortID="444838607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key2Event" ID="{D2E917DE-04AD-4FD4-9BF8-62AE884A5AF2}">
+							<ChildrenList>
+								<Action Name="" ID="{B8CDDE1F-07FD-4A07-93D5-4D2734C05B9F}" ShortID="273273462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key3Event" ID="{6DE66B99-5D46-4D96-8DFB-01A174F70185}">
+							<ChildrenList>
+								<Action Name="" ID="{0AF0FAE6-3561-488E-A55C-54EC6949CDD2}" ShortID="224640875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_3" ID="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key4Event" ID="{FA682FA3-3257-49BC-A9F6-A22565171A57}">
+							<ChildrenList>
+								<Action Name="" ID="{C387B668-EDED-42A4-8B20-155ED36FAF5E}" ShortID="874250507">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

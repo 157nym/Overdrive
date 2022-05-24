@@ -22,6 +22,10 @@ namespace AK
         static const AkUniqueID HIHAT = 3437592667U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID JUMP_END = 2752223339U;
+        static const AkUniqueID KEY1EVENT = 1896912949U;
+        static const AkUniqueID KEY2EVENT = 3857418364U;
+        static const AkUniqueID KEY3EVENT = 2980983199U;
+        static const AkUniqueID KEY4EVENT = 2025595638U;
         static const AkUniqueID KICK = 2181839183U;
         static const AkUniqueID LANESWITCH = 699052971U;
         static const AkUniqueID MUSIC = 3991942870U;
@@ -72,6 +76,7 @@ namespace AK
 
     namespace TRIGGERS
     {
+        static const AkUniqueID BLOCKJUMP = 3710956116U;
         static const AkUniqueID JUMP = 3833651337U;
     } // namespace TRIGGERS
 
