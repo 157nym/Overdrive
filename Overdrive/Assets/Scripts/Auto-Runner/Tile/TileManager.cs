@@ -46,7 +46,6 @@ public class TileManager : MonoBehaviour
     {
         SpawnTile(0);
         SpawnTile(0);
-        SpawnTile(0);
 
         distanceMax = playerTransform.transform.position.z + 30;
     }
