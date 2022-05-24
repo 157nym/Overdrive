@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
             playerManager.forwardSpeed = 25;
             playerManager.speedAugmentation = 0.0001f;
             Décompte.gameObject.SetActive(false);
+            playerManager.sound.MusicStart();
         }
         else
         {

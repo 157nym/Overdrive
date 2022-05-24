@@ -47,7 +47,7 @@ public class TileManager : MonoBehaviour
         SpawnTile(0);
         SpawnTile(0);
 
-        distanceMax = playerTransform.transform.position.z + 30;
+        distanceMax = playerTransform.transform.position.z + 40;
     }
 
     // Update is called once per frame

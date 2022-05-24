@@ -24,6 +24,10 @@ public class CharacterSound : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    public void MusicStart()
+    {
         Music.Post(gameObject);
     }
 
