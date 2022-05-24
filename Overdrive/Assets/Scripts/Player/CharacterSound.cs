@@ -26,6 +26,11 @@ public class CharacterSound : MonoBehaviour
     {
     }
 
+    private void OnDestroy()
+    {
+        Music.Stop(gameObject);
+    }
+
     public void MusicStart()
     {
         Music.Post(gameObject);
