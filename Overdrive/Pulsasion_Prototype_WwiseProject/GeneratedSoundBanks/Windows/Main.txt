@@ -4,7 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
 	1133184122	ResumeGame			\Default Work Unit\KeyMusicEvent\ResumeGame	
-	1291433344	Bass			\Default Work Unit\LD\Bass	
 	1505888634	CountDown			\Default Work Unit\UI\CountDown	
 	1584507803	Click			\Default Work Unit\PopUp\Click	
 	1589270263	PauseGame			\Default Work Unit\KeyMusicEvent\PauseGame	
@@ -12,12 +11,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1896912949	Key1Event			\Default Work Unit\KeyMusicEvent\Key1Event	
 	2025595638	Key4Event			\Default Work Unit\KeyMusicEvent\Key4Event	
 	2176025603	Warning			\Default Work Unit\PopUp\Warning	
-	2181839183	Kick			\Default Work Unit\LD\Kick	
 	2498214274	DeathGlitch			\Default Work Unit\UI\DeathGlitch	
 	2752223339	Jump_End			\Default Work Unit\Character\Jump_End	
 	2980983199	Key3Event			\Default Work Unit\KeyMusicEvent\Key3Event	
 	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
-	3437592667	HiHat			\Default Work Unit\LD\HiHat	
 	3686556480	Slide			\Default Work Unit\Character\Slide	
 	3710956116	BlockJump			\Default Work Unit\LD\BlockJump	
 	3833651337	Jump			\Default Work Unit\Character\Jump	

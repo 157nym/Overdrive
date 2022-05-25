@@ -16,12 +16,11 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1026885839">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2779318354">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1291433344" Name="Bass" ObjectPath="\Events\Default Work Unit\LD\Bass" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="3." DurationMax="3.">
 					<IncludedMemoryFiles>
 						<File Id="10699400" Language="SFX">
@@ -331,7 +330,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3437592667" Name="HiHat" ObjectPath="\Events\Default Work Unit\LD\HiHat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" DurationType="OneShot" DurationMin="0.203786" DurationMax="0.346098">
 					<IncludedMemoryFiles>
 						<File Id="564923823" Language="SFX">
@@ -396,7 +394,6 @@
 						<ActionSetSwitchEntry Id="3865414095" Name="Key_4" ObjectPath="\Switches\Default Work Unit\Key\Key_4"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="2181839183" Name="Kick" ObjectPath="\Events\Default Work Unit\LD\Kick" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="699052971" Name="LaneSwitch" ObjectPath="\Events\Default Work Unit\Character\LaneSwitch" DurationType="OneShot" DurationMin="0.336158" DurationMax="0.620446">
 					<IncludedMemoryFiles>
 						<File Id="122599344" Language="SFX">
