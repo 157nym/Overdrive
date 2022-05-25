@@ -12,10 +12,8 @@ GameObject:
   - component: {fileID: 6415969755575171883}
   - component: {fileID: 2715939687575781841}
   - component: {fileID: 2019627928070399022}
-  - component: {fileID: 5597063876246506013}
-  - component: {fileID: 812116961498375108}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,64 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2715939687575781841}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7410204175822939183}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812116961498375108}
-        m_TargetAssemblyTypeName: PopUpSound, Assembly-CSharp
-        m_MethodName: close
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &5597063876246506013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674321991696326387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a258ce12f79c7a840972c88bb2933c0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 7410204175822939183}
---- !u!114 &812116961498375108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674321991696326387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0efcfa084e326f44b21eb0f83e0368f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PopUp:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7d77b7f4f573858449752761330fdb63, type: 2}
-  Click:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 45fbf501ac1128c4ba6d3381267db558, type: 2}
+      m_Calls: []
 --- !u!1 &4198391860955855027
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +136,7 @@ GameObject:
   - component: {fileID: 8963224614773467507}
   - component: {fileID: 1937384224017920906}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
