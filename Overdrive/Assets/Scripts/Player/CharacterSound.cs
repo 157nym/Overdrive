@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterMovementAutoRun))]
 public class CharacterSound : MonoBehaviour
 {
+    private CharacterMovementAutoRun player;
     [SerializeField] private AK.Wwise.Event Steps;
     public AK.Wwise.Event LaneSwitch;
     [SerializeField] private AK.Wwise.Event Jump_Start;
@@ -18,6 +19,7 @@ public class CharacterSound : MonoBehaviour
 
     private void Awake()
     {
+        player = GetComponent<CharacterMovementAutoRun>();
         Slide.Post(gameObject);
         running.SetValue();
     }
@@ -38,7 +40,7 @@ public class CharacterSound : MonoBehaviour
 
     public void Step()
     {
-        Steps.Post(gameObject);
+        if(player.forwardSpeed > 5) Steps.Post(gameObject);
     }
 
     public void Sliding()

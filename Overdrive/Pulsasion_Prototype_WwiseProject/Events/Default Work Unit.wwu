@@ -91,6 +91,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{57184412-B1AC-452F-9EF0-CA1A13185734}" ShortID="864004604">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockWall_Key" ID="{E47E1AE7-366F-49B1-97EB-77BB438015E2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}">
