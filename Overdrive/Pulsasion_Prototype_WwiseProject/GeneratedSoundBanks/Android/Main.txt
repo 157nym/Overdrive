@@ -3,14 +3,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	699052971	LaneSwitch			\Default Work Unit\Character\LaneSwitch	
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
+	1133184122	ResumeGame			\Default Work Unit\KeyMusicEvent\ResumeGame	
 	1291433344	Bass			\Default Work Unit\LD\Bass	
 	1505888634	CountDown			\Default Work Unit\UI\CountDown	
 	1584507803	Click			\Default Work Unit\PopUp\Click	
+	1589270263	PauseGame			\Default Work Unit\KeyMusicEvent\PauseGame	
 	1786804762	Damage			\Default Work Unit\Character\Damage	
 	1896912949	Key1Event			\Default Work Unit\KeyMusicEvent\Key1Event	
 	2025595638	Key4Event			\Default Work Unit\KeyMusicEvent\Key4Event	
 	2176025603	Warning			\Default Work Unit\PopUp\Warning	
 	2181839183	Kick			\Default Work Unit\LD\Kick	
+	2498214274	DeathGlitch			\Default Work Unit\UI\DeathGlitch	
 	2752223339	Jump_End			\Default Work Unit\Character\Jump_End	
 	2980983199	Key3Event			\Default Work Unit\KeyMusicEvent\Key3Event	
 	3327154252	BlockWall			\Default Work Unit\LD\BlockWall	
@@ -32,14 +35,24 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3686556480	Slide			\Default Work Unit\Slide	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	68157183	Jumping	Slide			
 	472853913	Sliding	Slide			
 	748895195	None	Slide			
 	3863236874	Running	Slide			
+	319258907	Paused	GameState			
+	655265632	Alive	GameState			
+	748895195	None	GameState			
+	2044049779	Dead	GameState			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	67669960	Dead	GameState	\Interactive Music Hierarchy\Default Work Unit\PausedMusic		
+	255773809	Paused	GameState	\Interactive Music Hierarchy\Default Work Unit\PausedMusic		
+	431605191	Alive	GameState	\Interactive Music Hierarchy\Default Work Unit\PausedMusic		
+	435632879	Paused	GameState	\Interactive Music Hierarchy\Default Work Unit\Music		
+	563566654	Dead	GameState	\Interactive Music Hierarchy\Default Work Unit\Music		
 	568187671	Jumping	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps		
 	651340830	Running	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
 	694398205	Sliding	Slide	\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		
@@ -81,6 +94,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	402939866	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312		28508
 	423948285	Slide 3-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Slide 3-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 3\Slide 3-2		352864
 	426764607	Footsteps, Human, Rock, Run, Isolated Steps SND62098 1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 1		37898
+	436925476	Paused Music	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Paused Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PausedMusic\Paused Music\Paused Music		705664
 	456702809	AlarmBeep	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\AlarmBeep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\AlarmBeep		298052
 	473033394	Jump 4-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Jump 4-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 4\Jump 4-1		529264
 	498025622	Footsteps, Human, Tile, Jump, Land SND62091 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Footsteps, Human, Tile, Jump, Land SND62091 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 2		24270
@@ -99,6 +113,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	656037747	Bass 2-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Bass 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 2\Bass 2-2		176464
 	677233877	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Chord 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Base\Basses		2116864
 	725999290	Jump 1-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Jump 1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 1\Jump 1-1		529264
+	746243162	DeathSound	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\DeathSound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\DeathSound		441064
 	748764489	Bass 4-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Bass 4-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 4\Bass 4-3		176464
 	752994431	Jump 4-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Jump 4-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 4\Jump 4-2		529264
 	763076175	Bass 1-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Android\SFX\Bass 1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 1\Bass 1-1		176464

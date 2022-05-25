@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     private GameObject Hud;
     private Scene scene;
     private PlayableDirector Director;
-    private float timeBeforePlay = 3;
-    private bool Go = true;
+    //private float timeBeforePlay = 3;
+    //private bool Go = true;
 
 
     private void Start()
@@ -68,10 +68,12 @@ public class GameManager : MonoBehaviour
         if(Paused)
         {
             Time.timeScale = 0;
+            playerManager.GetComponent<CharacterSound>().PauseGame();
         }
         else
         {
             Time.timeScale = 1;
+            playerManager.GetComponent<CharacterSound>().ResumeGame();
         }
         
         if (Saturation > MaxSaturation) Death();

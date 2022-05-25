@@ -12,9 +12,14 @@ public class CharacterSound : MonoBehaviour
     [SerializeField] private AK.Wwise.Event Jump_End;
     [SerializeField] private AK.Wwise.Event Slide;
     [SerializeField] private AK.Wwise.Event Countdown;
+    [SerializeField] private AK.Wwise.Event Death;
+    [SerializeField] private AK.Wwise.Event Pause;
+    [SerializeField] private AK.Wwise.Event Resume;
     public AK.Wwise.State sliding;
     public AK.Wwise.State running;
     public AK.Wwise.State Jumping;
+    public AK.Wwise.State Dead;
+    public AK.Wwise.State Alive;
     public AK.Wwise.RTPC Speed;
     [SerializeField] private AK.Wwise.Event Music;
 
@@ -23,6 +28,7 @@ public class CharacterSound : MonoBehaviour
         player = GetComponent<CharacterMovementAutoRun>();
         Slide.Post(gameObject);
         running.SetValue();
+        Alive.SetValue();
     }
 
     public void CountDown()
@@ -33,6 +39,12 @@ public class CharacterSound : MonoBehaviour
     private void OnDestroy()
     {
         Music.Stop(gameObject);
+    }
+
+    public void Glitch()
+    {
+        Death.Post(gameObject);
+        Dead.SetValue();
     }
 
     public void MusicStart()
@@ -63,5 +75,15 @@ public class CharacterSound : MonoBehaviour
     void Running()
     {
         running.SetValue();
+    }
+
+    public void PauseGame()
+    {
+        Pause.Post(gameObject);
+    }
+
+    public void ResumeGame()
+    {
+        Resume.Post(gameObject);
     }
 }

@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1483524290">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3375470667">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="86962755">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1026885839">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -323,6 +323,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2498214274" Name="DeathGlitch" ObjectPath="\Events\Default Work Unit\UI\DeathGlitch" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="746243162" Language="SFX">
+							<ShortName>DeathSound.wav</ShortName>
+							<Path>SFX\DeathSound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3437592667" Name="HiHat" ObjectPath="\Events\Default Work Unit\LD\HiHat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" DurationType="OneShot" DurationMin="0.203786" DurationMax="0.346098">
 					<IncludedMemoryFiles>
@@ -415,6 +423,10 @@
 							<ShortName>Drum 3.wav</ShortName>
 							<Path>SFX\Drum 3_D79FB2B7.wem</Path>
 						</File>
+						<File Id="436925476" Language="SFX">
+							<ShortName>Paused Music.wav</ShortName>
+							<Path>SFX\Paused Music_D79FB2B7.wem</Path>
+						</File>
 						<File Id="521102613" Language="SFX">
 							<ShortName>Drum 2.wav</ShortName>
 							<Path>SFX\Drum 2_D79FB2B7.wem</Path>
@@ -433,6 +445,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1589270263" Name="PauseGame" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\PauseGame" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="416742853" Name="PopUp_Spawn" ObjectPath="\Events\Default Work Unit\PopUp\PopUp_Spawn" DurationType="OneShot" DurationMin="1.149515" DurationMax="1.290287">
 					<IncludedMemoryFiles>
 						<File Id="540113067" Language="SFX">
@@ -440,6 +457,11 @@
 							<Path>SFX\WinError_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1133184122" Name="ResumeGame" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\ResumeGame" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\GameState\Alive"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" DurationType="OneShot" DurationMin="0.356229" DurationMax="0.500229">
 					<IncludedMemoryFiles>
@@ -523,6 +545,14 @@
 			<GameParameters>
 				<GameParameter Id="640949982" Name="Speed" ObjectPath="\Game Parameters\Default Work Unit\Speed"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused" GUID="{F32FC765-2787-41FF-8F3C-817FEFF82BEA}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\GameState\Alive" GUID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="1183067778" Name="Key" ObjectPath="\Switches\Default Work Unit\Key" GUID="{03D90620-F92C-423E-8585-F3EA728B8E89}">
 					<Switches>
