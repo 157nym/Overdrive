@@ -281,6 +281,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI" ID="{1C4082EF-9DFA-46AA-A196-526D4188FE9B}" ShortID="88217562">
+					<ChildrenList>
+						<Event Name="CountDown" ID="{36997C29-1EE7-4035-8534-3A0854A6D81D}">
+							<ChildrenList>
+								<Action Name="" ID="{AA424C66-3353-4E39-BF39-520FDBC25C8B}" ShortID="172012547">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Countdown" ID="{5E16F1BA-4E11-41C8-8B22-B031DE050AD5}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

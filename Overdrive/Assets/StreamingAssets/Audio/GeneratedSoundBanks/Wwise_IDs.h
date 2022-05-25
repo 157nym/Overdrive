@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID BLOCKSLIDE = 764666183U;
         static const AkUniqueID BLOCKWALL = 3327154252U;
         static const AkUniqueID CLICK = 1584507803U;
+        static const AkUniqueID COUNTDOWN = 1505888634U;
         static const AkUniqueID DAMAGE = 1786804762U;
         static const AkUniqueID HIHAT = 3437592667U;
         static const AkUniqueID JUMP = 3833651337U;

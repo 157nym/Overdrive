@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
 	1291433344	Bass			\Default Work Unit\LD\Bass	
+	1505888634	CountDown			\Default Work Unit\UI\CountDown	
 	1584507803	Click			\Default Work Unit\PopUp\Click	
 	1786804762	Damage			\Default Work Unit\Character\Damage	
 	1896912949	Key1Event			\Default Work Unit\KeyMusicEvent\Key1Event	
@@ -65,6 +66,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	124984077	Bass 2-1	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 2-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 2\Bass 2-1		176464
 	127857293	Bass 2-3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Bass 2-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 2\Bass 2-3		176464
 	128126448	Slide 2-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Slide 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 2\Slide 2-2		352864
+	200585360	Countdown	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Countdown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Countdown		705664
 	242335301	Jump 2-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Jump 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 2\Jump 2-2		529264
 	266907184	Basses	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Chord 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Base\Basses		2116864
 	272046355	Footsteps, Human, Rock, Run, Isolated Steps SND62098 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2		39354

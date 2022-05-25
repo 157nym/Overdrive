@@ -11,6 +11,7 @@ public class CharacterSound : MonoBehaviour
     [SerializeField] private AK.Wwise.Event Jump_Start;
     [SerializeField] private AK.Wwise.Event Jump_End;
     [SerializeField] private AK.Wwise.Event Slide;
+    [SerializeField] private AK.Wwise.Event Countdown;
     public AK.Wwise.State sliding;
     public AK.Wwise.State running;
     public AK.Wwise.State Jumping;
@@ -24,8 +25,9 @@ public class CharacterSound : MonoBehaviour
         running.SetValue();
     }
 
-    private void Start()
+    public void CountDown()
     {
+        Countdown.Post(gameObject);
     }
 
     private void OnDestroy()

@@ -158,6 +158,17 @@
 																		</MusicClip>
 																	</Local>
 																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{7E678367-D785-4B65-86BF-50A7409B9F1C}" ShortID="667661361">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key1Event" ID="{9F1C07FA-4B79-4B95-AA50-BD5AB205F9FE}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
 															</ObjectList>
 														</ObjectLists>
 														<ReferenceList>
@@ -185,6 +196,17 @@
 																		</MusicClip>
 																	</Local>
 																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{224FBFC9-35A8-4F57-9536-86899C20A0AC}" ShortID="883906551">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key2Event" ID="{D2E917DE-04AD-4FD4-9BF8-62AE884A5AF2}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
@@ -207,6 +229,17 @@
 																		</MusicClip>
 																	</Local>
 																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{FB72BB6E-919A-4ECB-AFC8-1834553EC5AA}" ShortID="754996829">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key3Event" ID="{6DE66B99-5D46-4D96-8DFB-01A174F70185}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
@@ -227,6 +260,17 @@
 																			</PropertyList>
 																			<AudioSourceRef Name="Chord 4" ID="{9BBFDAC0-E363-47A5-B863-A53849FCD257}"/>
 																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{74A7DCC4-C334-407F-8C58-6CF32CC96B70}" ShortID="822180166">
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Key4Event" ID="{FA682FA3-3257-49BC-A9F6-A22565171A57}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
 																	</Local>
 																</Reference>
 															</ObjectList>

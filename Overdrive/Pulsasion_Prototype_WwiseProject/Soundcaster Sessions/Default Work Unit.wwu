@@ -22,7 +22,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}"/>
+						<CurrentSwitchRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -35,19 +35,28 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (timeBeforePlay < 1 && Go)
-        {
-            Go = false;
-            playerManager.forwardSpeed = 25;
-            playerManager.speedAugmentation = 0.0001f;
-            Décompte.gameObject.SetActive(false);
-            playerManager.sound.MusicStart();
-        }
-        else
-        {
-            timeBeforePlay -= Time.deltaTime;
-            Décompte.text = Mathf.Round(timeBeforePlay).ToString();
-        }
+        //if (timeBeforePlay < 1 && Go)
+        //{
+        //    Go = false;
+        //    playerManager.forwardSpeed = 25;
+        //    playerManager.speedAugmentation = 0.0001f;
+        //    Décompte.gameObject.SetActive(false);
+        //    playerManager.sound.MusicStart();
+        //}
+        //else
+        //{
+        //    timeBeforePlay -= Time.deltaTime;
+        //    Décompte.text = Mathf.Round(timeBeforePlay).ToString();
+        //}
+    }
+
+    public void StartGame()
+    {
+        //Go = false;
+        playerManager.forwardSpeed = 25;
+        playerManager.speedAugmentation = 0.0001f;
+        //Décompte.gameObject.SetActive(false);
+        playerManager.sound.MusicStart();
     }
 
     public void PauseGame()

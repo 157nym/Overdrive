@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="782044334">
+		<SoundBank Id="3161908922" Language="SFX" Hash="86962755">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -304,6 +304,14 @@
 						<File Id="1027541020" Language="SFX">
 							<ShortName>Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5.wav</ShortName>
 							<Path>SFX\Computers, Keyboard &amp; Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1505888634" Name="CountDown" ObjectPath="\Events\Default Work Unit\UI\CountDown" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+					<IncludedMemoryFiles>
+						<File Id="200585360" Language="SFX">
+							<ShortName>Countdown.wav</ShortName>
+							<Path>SFX\Countdown_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

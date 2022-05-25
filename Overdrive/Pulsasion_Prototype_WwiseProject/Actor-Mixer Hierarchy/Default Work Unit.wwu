@@ -3243,6 +3243,33 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI" ID="{6F19C38B-A7F1-451D-B8E4-BF61F017EDCC}" ShortID="6891429">
+					<ChildrenList>
+						<Sound Name="Countdown" ID="{5E16F1BA-4E11-41C8-8B22-B031DE050AD5}" ShortID="575046614">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0F5532C-8917-48AB-8096-794D5D7795AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C3FFA35-415D-43FA-81FA-A1AD0FE580FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Countdown" ID="{89C766FC-AC14-4AF7-BBFB-618ECE5A1B34}">
+									<Language>SFX</Language>
+									<AudioFile>Countdown.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200585360"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Countdown" ID="{89C766FC-AC14-4AF7-BBFB-618ECE5A1B34}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
