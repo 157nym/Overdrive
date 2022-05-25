@@ -138,39 +138,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Kick" ID="{86DF8600-581F-4A50-A5CD-A10B9E1E68A5}">
-							<ChildrenList>
-								<Action Name="" ID="{6F0BCCD3-B7F7-4B44-87BE-0DCAEF096DF1}" ShortID="127686394">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Kick" ID="{82E88978-AD6E-4C24-86E2-C136FBB16450}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="HiHat" ID="{CD969372-A3B7-42A5-BCC9-99A643C2ED82}">
-							<ChildrenList>
-								<Action Name="" ID="{CCD671E2-9ED3-4C8A-8527-CE9AB78660ED}" ShortID="462713997">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="HiHat" ID="{478E051D-FFF6-4880-8C5C-59FD6E608FFB}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Bass" ID="{06027C0F-11AD-48ED-B88B-DE6D87B7DBDF}">
-							<ChildrenList>
-								<Action Name="" ID="{36C5098B-5E1C-4F5D-9AD0-41028E6C1613}" ShortID="434535223">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Bass" ID="{8325D8C2-5E5B-4FC1-BE44-33A479A469F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Music" ID="{4E0DB7DC-94E6-4616-9EB0-347E9EEB479D}">
 							<ChildrenList>
 								<Action Name="" ID="{DBFF3DAF-E891-4641-9105-A0FC4312C081}" ShortID="152217463">
