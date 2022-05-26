@@ -7,6 +7,12 @@
 					<ChildrenList>
 						<ActorMixer Name="LD_Sounds" ID="{B6256DF9-9CD2-4D88-902E-D720C0BEE232}" ShortID="1058954188">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -788,6 +794,7 @@
 												<Value>23</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-15</Value>
@@ -1501,6 +1508,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-17</Value>
@@ -2214,6 +2222,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2296,6 +2305,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
