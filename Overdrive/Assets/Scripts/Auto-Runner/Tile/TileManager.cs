@@ -30,9 +30,11 @@ public class TileManager : MonoBehaviour
 
     public float Timer;
 
-    private int ChangeHeight, CalmPhase;
+    private int ChangeHeight;
 
     public float distanceMax;
+
+    public bool goPhaseCalm;
 
     public List<GameObject> activeTiles = new List<GameObject>();
 
@@ -48,14 +50,13 @@ public class TileManager : MonoBehaviour
         SpawnTile(0);
 
         distanceMax = playerTransform.transform.position.z + 40;
+
+        InvokeRepeating("PhaseCalm", 20, 30);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Timer = Time.time;
-
-
         if (phase == 1)
         {
             tableauListeActuel = tileListeEasy;
@@ -76,12 +77,23 @@ public class TileManager : MonoBehaviour
             tableauListeActuel = tileListeCalm;
         }
 
-        if(Time.time > 30 && Time.time <= 60)
+        if (goPhaseCalm)
+        {
+            Timer -= Time.deltaTime;
+
+            if (Timer <= 0)
+            {
+                goPhaseCalm = false;
+                return;
+            }
+        }
+
+        if (Time.time > 30 && Time.time <= 60 && !goPhaseCalm)
         {
             phase = 2;
         }
 
-        if (Time.time > 90 && Time.time <= 120)
+        if (Time.time > 60 && !goPhaseCalm)
         {
             phase = 3;
         }
@@ -103,7 +115,6 @@ public class TileManager : MonoBehaviour
         GameObject go;
 
         ChangeHeight = Random.Range(0,11);
-        CalmPhase = Random.Range(0, 11);
 
         if (ChangeHeight >= 9 && activeTiles.Count >= 3)
         {
@@ -127,23 +138,19 @@ public class TileManager : MonoBehaviour
             return;
         }
 
-        if(CalmPhase >= 9 && activeTiles.Count >= 3)
-        {
-            pos = transform.forward * zSpawn;
-            pos.y = Hauteur * 19.5f;
-            go = Instantiate(tileListeCalm[tileIndex], pos, transform.rotation);
-            activeTiles.Add(go);
-            zSpawn += tileLenght;
-            DeleteTile();
-            return;
-        }
-
         pos = transform.forward * zSpawn;
         pos.y = Hauteur * 19.5f;
         go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
         DeleteTile();
+    }
+
+    void PhaseCalm()
+    {
+        goPhaseCalm = true;
+        Timer = 10;
+        phase = 4;
     }
 
     void DeleteTile()
