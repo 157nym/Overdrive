@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int MaxSaturation;
     public int coins;
     public bool Paused = false;
-    public GameObject PopUpManager,GameOverCanvas, MenuPause;
+    public GameObject PopUpManager,GameOverCanvas, MenuPause, MenuOption;
     public CharacterMovementAutoRun playerManager;
     public TextMeshProUGUI Décompte;
     private GameObject Hud;
@@ -66,8 +66,10 @@ public class GameManager : MonoBehaviour
         Paused = !Paused;
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
+        
 
-        if(Paused)
+
+        if (Paused)
         {
             Time.timeScale = 0;
             playerManager.GetComponent<CharacterSound>().PauseGame();
@@ -75,6 +77,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Time.timeScale = 1;
+            MenuOption.SetActive(false);
             playerManager.GetComponent<CharacterSound>().ResumeGame();
         }
         
@@ -103,5 +106,17 @@ public class GameManager : MonoBehaviour
     public void Quitter()
     {
         Application.Quit();
+    }
+
+    public void Option()
+    {
+        MenuOption.SetActive(true);
+        MenuPause.SetActive(false);
+    }
+
+    public void Return()
+    {
+        MenuOption.SetActive(false);
+        MenuPause.SetActive(true);
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Volume_Manager : MonoBehaviour
 {
@@ -12,21 +13,21 @@ public class Volume_Manager : MonoBehaviour
     public float music_volume;
     public float sfx_volume;
 
-    public void Set_Main_Volume(float volume)
+    public void Set_Main_Volume(Slider volume)
     {
-        main_volume = volume;
+        main_volume = volume.value;
         Main_Volume.SetValue(gameObject, main_volume);
     }
 
-    public void Set_Music_Volume(float volume)
+    public void Set_Music_Volume(Slider volume)
     {
-        music_volume = volume;
+        music_volume = volume.value;
         Music_Volume.SetValue(gameObject, music_volume);
     }
 
-    public void Set_SFX_Volume(float volume)
+    public void Set_SFX_Volume(Slider volume)
     {
-        sfx_volume = volume;
+        sfx_volume = volume.value;
         SFX_Volume.SetValue(gameObject, sfx_volume);
     }
 
@@ -34,17 +35,17 @@ public class Volume_Manager : MonoBehaviour
     {
         if (main_volume != Main_Volume.GetValue(gameObject))
         {
-            Set_Main_Volume(main_volume);
+            Main_Volume.SetValue(gameObject, main_volume);
         }
 
         if (music_volume != Music_Volume.GetValue(gameObject))
         {
-            Set_Music_Volume(music_volume);
+            Music_Volume.SetValue(gameObject, music_volume);
         }
 
         if (sfx_volume != SFX_Volume.GetValue(gameObject))
         {
-            Set_SFX_Volume(sfx_volume);
+            SFX_Volume.SetValue(gameObject, sfx_volume);
         }
     }
 }
