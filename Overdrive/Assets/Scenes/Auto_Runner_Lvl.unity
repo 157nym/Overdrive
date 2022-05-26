@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 135314819}
   - component: {fileID: 135314818}
   - component: {fileID: 135314817}
+  - component: {fileID: 135314820}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -545,6 +546,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 135314820}
+        m_TargetAssemblyTypeName: UI_Sounds, Assembly-CSharp
+        m_MethodName: Clik
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &135314818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,6 +596,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135314815}
   m_CullTransparentMesh: 1
+--- !u!114 &135314820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135314815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf09ea2b2c19a4ca85c2b323bd2c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Click:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 682e8f430f97cdb498c917e1c8dcdc8a, type: 2}
 --- !u!1 &148207928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,18 +1745,18 @@ MonoBehaviour:
   Main_Volume:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 5f0116b1fb611c2468512cc0cc5665fd, type: 2}
   Music_Volume:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 86fc29deeae49594fac78d8f5eb34874, type: 2}
   SFX_Volume:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  main_volume: 0
-  music_volume: 0
-  sfx_volume: 0
+    WwiseObjectReference: {fileID: 11400000, guid: c013f2b654c45bb439b13757788c388b, type: 2}
+  main_volume: 50
+  music_volume: 50
+  sfx_volume: 50
 --- !u!1 &452249909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4021,7 +4050,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 99.6
+  m_fontSize: 95
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4911,7 +4940,7 @@ MonoBehaviour:
   Click:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 45fbf501ac1128c4ba6d3381267db558, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 682e8f430f97cdb498c917e1c8dcdc8a, type: 2}
 --- !u!1 &1747119790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,7 +5954,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 179.75
+  m_fontSize: 174.35
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
