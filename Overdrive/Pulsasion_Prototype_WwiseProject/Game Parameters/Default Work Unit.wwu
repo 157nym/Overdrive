@@ -9,6 +9,9 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Main_Volume" ID="{BA4291F1-273E-4641-B49E-8B5A4C7AF87B}"/>
+				<GameParameter Name="SFX_Volume" ID="{F32B9ADB-6598-4B5F-BF94-6699912BBEC1}"/>
+				<GameParameter Name="Music_Volume" ID="{3A4AD94F-7E8E-40BF-A2F7-646F3780C577}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
