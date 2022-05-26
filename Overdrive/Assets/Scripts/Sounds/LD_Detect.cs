@@ -22,7 +22,7 @@ public class LD_Detect : MonoBehaviour
                 anim.SetFloat("Speed", (other.gameObject.GetComponentInParent<CharacterMovementAutoRun>().DuréeAnim * 2));
                 anim.SetTrigger("Flash");
             }
-            BlockEvent.Post(gameObject);
+            if(other.GetComponentInParent<CharacterMovementAutoRun>().forwardSpeed > 5) BlockEvent.Post(gameObject);
             //print(BlockEvent.Name);
         }
     }

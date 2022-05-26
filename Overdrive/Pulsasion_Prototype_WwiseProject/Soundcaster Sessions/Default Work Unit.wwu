@@ -17,12 +17,14 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Speed" ID="{36435725-3E25-4A86-8A63-66120AE09F95}"/>
-							<Value>1</Value>
+							<Value>2</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}"/>
+						<CurrentSwitchRef Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -75,6 +75,6 @@ Material:
     - _Base_Color_1: {r: 0, g: 0, b: 0, a: 0}
     - _Base_Color_2: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseScale: {r: 1, g: 1, b: 0, a: 0}
-    - _NoiseSize: {r: 5, g: 5, b: 0, a: 0}
+    - _NoiseSize: {r: 0.5, g: 0.8, b: 0, a: 0}
     - _Stars_Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

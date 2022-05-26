@@ -18,10 +18,6 @@
         },
         {
             "id": "DeploymentPlatforms",
-            "valueId": "Android"
-        },
-        {
-            "id": "DeploymentPlatforms",
             "valueId": "Mac"
         },
         {

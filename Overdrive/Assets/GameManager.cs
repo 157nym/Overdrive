@@ -14,12 +14,12 @@ public class GameManager : MonoBehaviour
     public bool Paused = false;
     public GameObject PopUpManager,GameOverCanvas, MenuPause;
     public CharacterMovementAutoRun playerManager;
-    public TextMeshProUGUI DÈcompte;
+    public TextMeshProUGUI D√©compte;
     private GameObject Hud;
     private Scene scene;
     private PlayableDirector Director;
-    private float timeBeforePlay = 3;
-    private bool Go = true;
+    //private float timeBeforePlay = 3;
+    //private bool Go = true;
     public float playerBaseSpeed;
 
 
@@ -36,19 +36,29 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (timeBeforePlay < 1 && Go) // On fait un dÈcompte de 3 sec avant le lancement de la partie
-        {
-            Go = false;
-            playerManager.forwardSpeed = 25;
-            playerManager.speedAugmentation = 0.0001f;
-            DÈcompte.gameObject.SetActive(false);
-            playerManager.sound.MusicStart();
-        }
-        else
-        {
-            timeBeforePlay -= Time.deltaTime;
-            DÈcompte.text = Mathf.Round(timeBeforePlay).ToString();
-        }
+        //if (timeBeforePlay < 1 && Go)
+        //{
+        //    Go = false;
+        //    playerManager.forwardSpeed = 25;
+        //    playerManager.speedAugmentation = 0.0001f;
+        //    D√©compte.gameObject.SetActive(false);
+        //    playerManager.sound.MusicStart();
+        //}
+        //else
+        //{
+        //    timeBeforePlay -= Time.deltaTime;
+        //    D√©compte.text = Mathf.Round(timeBeforePlay).ToString();
+        //}
+    }
+
+    public void StartGame()
+    {
+        //Go = false;
+        playerManager.forwardSpeed = 25;
+        playerManager.speedAugmentation = 0.0001f;
+        //D√©compte.gameObject.SetActive(false);
+        playerManager.sound.MusicStart();
+
     }
 
     public void PauseGame() // Fonction appeler si le joueur appuie sur le bouton "Pause"
@@ -60,13 +70,15 @@ public class GameManager : MonoBehaviour
         if(Paused)
         {
             Time.timeScale = 0;
+            playerManager.GetComponent<CharacterSound>().PauseGame();
         }
         else
         {
             Time.timeScale = 1;
+            playerManager.GetComponent<CharacterSound>().ResumeGame();
         }
         
-        if (Saturation > MaxSaturation) Death(); // Condition de dÈfaite
+        if (Saturation > MaxSaturation) Death(); // Condition de d√©faite
     }
 
     public void Damage() // Gestion et affichage des point de vie

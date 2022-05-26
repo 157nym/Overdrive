@@ -300,7 +300,7 @@ MonoBehaviour:
   Beep:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 25b8bcfc9174e764089dda44ed17fbd9, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 6e9be18dd9f5366499fd22fd3db5bb29, type: 2}
   WarningTime: 2
   WarningAmount: 3
   Warnings:

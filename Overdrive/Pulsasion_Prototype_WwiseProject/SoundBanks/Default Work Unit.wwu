@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{BE1FBBEA-380D-4222-8280-4A61E4E1D8A2}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Jumps" ID="{F54FADE9-6CFF-47A4-B871-24D46B1D861A}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI" ID="{1C4082EF-9DFA-46AA-A196-526D4188FE9B}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Character" ID="{CDEF2BB1-55B1-4D1D-9EE0-C1765E934716}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PopUp" ID="{F8755671-762D-4DBA-A226-CB5B1C16C4D2}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}" Origin="Manual" Filter="7"/>

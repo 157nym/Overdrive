@@ -11,18 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2901832737">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2622775888">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="38009033">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1560749960">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1291433344" Name="Bass" ObjectPath="\Events\Default Work Unit\LD\Bass" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+				<Event Id="3710956116" Name="BlockJump" ObjectPath="\Events\Default Work Unit\LD\BlockJump" DurationType="OneShot" DurationMin="3." DurationMax="3.">
 					<IncludedMemoryFiles>
 						<File Id="10699400" Language="SFX">
 							<ShortName>Jump 3-2.wav</ShortName>
@@ -105,7 +104,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" DurationType="OneShot" DurationMin="1." DurationMax="2.">
+				<Event Id="764666183" Name="BlockSlide" ObjectPath="\Events\Default Work Unit\LD\BlockSlide" DurationType="OneShot" DurationMin="2." DurationMax="2.">
 					<IncludedMemoryFiles>
 						<File Id="16018085" Language="SFX">
 							<ShortName>Slide 1-2.wav</ShortName>
@@ -190,15 +189,94 @@
 				</Event>
 				<Event Id="3327154252" Name="BlockWall" ObjectPath="\Events\Default Work Unit\LD\BlockWall" DurationType="OneShot" DurationMin="2." DurationMax="2.">
 					<IncludedMemoryFiles>
+						<File Id="78375935" Language="SFX">
+							<ShortName>Bass 1-2.wav</ShortName>
+							<Path>SFX\Bass 1-2_10C4C929.wem</Path>
+						</File>
+						<File Id="107721289" Language="SFX">
+							<ShortName>Bass 4-1.wav</ShortName>
+							<Path>SFX\Bass 4-1_10C4C929.wem</Path>
+						</File>
+						<File Id="124984077" Language="SFX">
+							<ShortName>Bass 2-1.wav</ShortName>
+							<Path>SFX\Bass 2-1_10C4C929.wem</Path>
+						</File>
+						<File Id="127857293" Language="SFX">
+							<ShortName>Bass 2-3.wav</ShortName>
+							<Path>SFX\Bass 2-3_10C4C929.wem</Path>
+						</File>
 						<File Id="331802635" Language="SFX">
 							<ShortName>BlockWall_Ambient.wav</ShortName>
 							<Path>SFX\BlockWall_Ambient_10C4C929.wem</Path>
+						</File>
+						<File Id="377026102" Language="SFX">
+							<ShortName>Bass 3-1.wav</ShortName>
+							<Path>SFX\Bass 3-1_10C4C929.wem</Path>
+						</File>
+						<File Id="656037747" Language="SFX">
+							<ShortName>Bass 2-2.wav</ShortName>
+							<Path>SFX\Bass 2-2_10C4C929.wem</Path>
+						</File>
+						<File Id="748764489" Language="SFX">
+							<ShortName>Bass 4-3.wav</ShortName>
+							<Path>SFX\Bass 4-3_10C4C929.wem</Path>
+						</File>
+						<File Id="763076175" Language="SFX">
+							<ShortName>Bass 1-1.wav</ShortName>
+							<Path>SFX\Bass 1-1_10C4C929.wem</Path>
+						</File>
+						<File Id="785141726" Language="SFX">
+							<ShortName>Bass 3-3.wav</ShortName>
+							<Path>SFX\Bass 3-3_10C4C929.wem</Path>
+						</File>
+						<File Id="881216495" Language="SFX">
+							<ShortName>Bass 4-2.wav</ShortName>
+							<Path>SFX\Bass 4-2_10C4C929.wem</Path>
+						</File>
+						<File Id="888568575" Language="SFX">
+							<ShortName>Bass 1-3.wav</ShortName>
+							<Path>SFX\Bass 1-3_10C4C929.wem</Path>
+						</File>
+						<File Id="906622143" Language="SFX">
+							<ShortName>Bass 3-2.wav</ShortName>
+							<Path>SFX\Bass 3-2_10C4C929.wem</Path>
 						</File>
 						<File Id="910189331" Language="SFX">
 							<ShortName>BlockWall_Spawn.wav</ShortName>
 							<Path>SFX\BlockWall_Spawn_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{2AF32F43-656F-49E0-9F25-63FF94E353B1}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{2AF32F43-656F-49E0-9F25-63FF94E353B1}">
+							<Media>
+								<File Id="78375935"/>
+								<File Id="763076175"/>
+								<File Id="888568575"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}">
+							<Media>
+								<File Id="377026102"/>
+								<File Id="785141726"/>
+								<File Id="906622143"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}">
+							<Media>
+								<File Id="124984077"/>
+								<File Id="127857293"/>
+								<File Id="656037747"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{756B7CBF-E5A5-4762-AC70-F7893872F696}">
+							<Media>
+								<File Id="107721289"/>
+								<File Id="748764489"/>
+								<File Id="881216495"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\PopUp\Click" DurationType="OneShot" DurationMin="0.296292" DurationMax="0.555562">
 					<IncludedMemoryFiles>
@@ -228,6 +306,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1505888634" Name="CountDown" ObjectPath="\Events\Default Work Unit\UI\CountDown" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+					<IncludedMemoryFiles>
+						<File Id="200585360" Language="SFX">
+							<ShortName>Countdown.wav</ShortName>
+							<Path>SFX\Countdown_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1786804762" Name="Damage" ObjectPath="\Events\Default Work Unit\Character\Damage" DurationType="OneShot" DurationMin="0.847551" DurationMax="0.847551">
 					<IncludedMemoryFiles>
 						<File Id="1072476667" Language="SFX">
@@ -236,7 +322,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3437592667" Name="HiHat" ObjectPath="\Events\Default Work Unit\LD\HiHat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2498214274" Name="DeathGlitch" ObjectPath="\Events\Default Work Unit\UI\DeathGlitch" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="746243162" Language="SFX">
+							<ShortName>DeathSound.wav</ShortName>
+							<Path>SFX\DeathSound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" DurationType="OneShot" DurationMin="0.203786" DurationMax="0.346098">
 					<IncludedMemoryFiles>
 						<File Id="564923823" Language="SFX">
@@ -301,7 +394,6 @@
 						<ActionSetSwitchEntry Id="3865414095" Name="Key_4" ObjectPath="\Switches\Default Work Unit\Key\Key_4"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="2181839183" Name="Kick" ObjectPath="\Events\Default Work Unit\LD\Kick" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="699052971" Name="LaneSwitch" ObjectPath="\Events\Default Work Unit\Character\LaneSwitch" DurationType="OneShot" DurationMin="0.336158" DurationMax="0.620446">
 					<IncludedMemoryFiles>
 						<File Id="122599344" Language="SFX">
@@ -312,87 +404,48 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\LD\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="71831067" Language="SFX">
-							<ShortName>Jump 3-3.wav</ShortName>
-							<Path>SFX\Jump 3-3_D79FB2B7.wem</Path>
+						<File Id="50586697" Language="SFX">
+							<ShortName>Drum 1.wav</ShortName>
+							<Path>SFX\Drum 1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="127116205" Language="SFX">
-							<ShortName>Drum.wav</ShortName>
-							<Path>SFX\Drum_D79FB2B7.wem</Path>
+						<File Id="83263438" Language="SFX">
+							<ShortName>Chord 2.wav</ShortName>
+							<Path>SFX\Chord 2_D79FB2B7.wem</Path>
 						</File>
-						<File Id="136820261" Language="SFX">
-							<ShortName>Jump 1-1.wav</ShortName>
-							<Path>SFX\Jump 1-1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="147825275" Language="SFX">
-							<ShortName>Jump 2-2.wav</ShortName>
-							<Path>SFX\Jump 2-2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="148872499" Language="SFX">
-							<ShortName>Jump 2-3.wav</ShortName>
-							<Path>SFX\Jump 2-3_D79FB2B7.wem</Path>
-						</File>
-						<File Id="223621911" Language="SFX">
-							<ShortName>Jump 3-2.wav</ShortName>
-							<Path>SFX\Jump 3-2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="238600527" Language="SFX">
-							<ShortName>Bass 1.wav</ShortName>
-							<Path>SFX\Bass 1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="289433015" Language="SFX">
-							<ShortName>Bass 3.wav</ShortName>
-							<Path>SFX\Bass 3_D79FB2B7.wem</Path>
+						<File Id="266907184" Language="SFX">
+							<ShortName>Chord 3.wav</ShortName>
+							<Path>SFX\Chord 3_D79FB2B7.wem</Path>
 						</File>
 						<File Id="299327766" Language="SFX">
 							<ShortName>Drum 3.wav</ShortName>
 							<Path>SFX\Drum 3_D79FB2B7.wem</Path>
 						</File>
-						<File Id="358490508" Language="SFX">
-							<ShortName>Jump 3-1.wav</ShortName>
-							<Path>SFX\Jump 3-1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="386336132" Language="SFX">
-							<ShortName>Jump 4-3.wav</ShortName>
-							<Path>SFX\Jump 4-3_D79FB2B7.wem</Path>
-						</File>
-						<File Id="452998953" Language="SFX">
-							<ShortName>Jump 4-1.wav</ShortName>
-							<Path>SFX\Jump 4-1_D79FB2B7.wem</Path>
+						<File Id="436925476" Language="SFX">
+							<ShortName>Paused Music.wav</ShortName>
+							<Path>SFX\Paused Music_D79FB2B7.wem</Path>
 						</File>
 						<File Id="521102613" Language="SFX">
 							<ShortName>Drum 2.wav</ShortName>
 							<Path>SFX\Drum 2_D79FB2B7.wem</Path>
 						</File>
-						<File Id="654185853" Language="SFX">
-							<ShortName>Jump 4-2.wav</ShortName>
-							<Path>SFX\Jump 4-2_D79FB2B7.wem</Path>
+						<File Id="545104084" Language="SFX">
+							<ShortName>Chord 4.wav</ShortName>
+							<Path>SFX\Chord 4_D79FB2B7.wem</Path>
 						</File>
-						<File Id="715505283" Language="SFX">
-							<ShortName>Jump 2-1.wav</ShortName>
-							<Path>SFX\Jump 2-1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="731563400" Language="SFX">
-							<ShortName>Jump 1-3.wav</ShortName>
-							<Path>SFX\Jump 1-3_D79FB2B7.wem</Path>
-						</File>
-						<File Id="780641587" Language="SFX">
-							<ShortName>Jump 1-2.wav</ShortName>
-							<Path>SFX\Jump 1-2_D79FB2B7.wem</Path>
+						<File Id="677233877" Language="SFX">
+							<ShortName>Chord 1.wav</ShortName>
+							<Path>SFX\Chord 1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="782561424" Language="SFX">
 							<ShortName>Drum 4.wav</ShortName>
 							<Path>SFX\Drum 4_D79FB2B7.wem</Path>
 						</File>
-						<File Id="941115794" Language="SFX">
-							<ShortName>Bass 2.wav</ShortName>
-							<Path>SFX\Bass 2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="1001904608" Language="SFX">
-							<ShortName>Bass 4.wav</ShortName>
-							<Path>SFX\Bass 4_D79FB2B7.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1589270263" Name="PauseGame" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\PauseGame" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="416742853" Name="PopUp_Spawn" ObjectPath="\Events\Default Work Unit\PopUp\PopUp_Spawn" DurationType="OneShot" DurationMin="1.149515" DurationMax="1.290287">
 					<IncludedMemoryFiles>
@@ -401,6 +454,11 @@
 							<Path>SFX\WinError_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1133184122" Name="ResumeGame" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\ResumeGame" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\GameState\Alive"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="712161704" Name="Run" ObjectPath="\Events\Default Work Unit\Character\Run" DurationType="OneShot" DurationMin="0.356229" DurationMax="0.500229">
 					<IncludedMemoryFiles>
@@ -448,58 +506,50 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="71831067" Language="SFX">
-					<ShortName>Jump 3-3.wav</ShortName>
-					<Path>SFX\Jump 3-3_D79FB2B7.wem</Path>
+				<File Id="50586697" Language="SFX">
+					<ShortName>Drum 1.wav</ShortName>
+					<Path>SFX\Drum 1_D79FB2B7.wem</Path>
 				</File>
-				<File Id="136820261" Language="SFX">
-					<ShortName>Jump 1-1.wav</ShortName>
-					<Path>SFX\Jump 1-1_D79FB2B7.wem</Path>
+				<File Id="83263438" Language="SFX">
+					<ShortName>Chord 2.wav</ShortName>
+					<Path>SFX\Chord 2_D79FB2B7.wem</Path>
 				</File>
-				<File Id="147825275" Language="SFX">
-					<ShortName>Jump 2-2.wav</ShortName>
-					<Path>SFX\Jump 2-2_D79FB2B7.wem</Path>
+				<File Id="266907184" Language="SFX">
+					<ShortName>Chord 3.wav</ShortName>
+					<Path>SFX\Chord 3_D79FB2B7.wem</Path>
 				</File>
-				<File Id="148872499" Language="SFX">
-					<ShortName>Jump 2-3.wav</ShortName>
-					<Path>SFX\Jump 2-3_D79FB2B7.wem</Path>
+				<File Id="299327766" Language="SFX">
+					<ShortName>Drum 3.wav</ShortName>
+					<Path>SFX\Drum 3_D79FB2B7.wem</Path>
 				</File>
-				<File Id="223621911" Language="SFX">
-					<ShortName>Jump 3-2.wav</ShortName>
-					<Path>SFX\Jump 3-2_D79FB2B7.wem</Path>
+				<File Id="521102613" Language="SFX">
+					<ShortName>Drum 2.wav</ShortName>
+					<Path>SFX\Drum 2_D79FB2B7.wem</Path>
 				</File>
-				<File Id="358490508" Language="SFX">
-					<ShortName>Jump 3-1.wav</ShortName>
-					<Path>SFX\Jump 3-1_D79FB2B7.wem</Path>
+				<File Id="545104084" Language="SFX">
+					<ShortName>Chord 4.wav</ShortName>
+					<Path>SFX\Chord 4_D79FB2B7.wem</Path>
 				</File>
-				<File Id="386336132" Language="SFX">
-					<ShortName>Jump 4-3.wav</ShortName>
-					<Path>SFX\Jump 4-3_D79FB2B7.wem</Path>
+				<File Id="677233877" Language="SFX">
+					<ShortName>Chord 1.wav</ShortName>
+					<Path>SFX\Chord 1_D79FB2B7.wem</Path>
 				</File>
-				<File Id="452998953" Language="SFX">
-					<ShortName>Jump 4-1.wav</ShortName>
-					<Path>SFX\Jump 4-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="654185853" Language="SFX">
-					<ShortName>Jump 4-2.wav</ShortName>
-					<Path>SFX\Jump 4-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="715505283" Language="SFX">
-					<ShortName>Jump 2-1.wav</ShortName>
-					<Path>SFX\Jump 2-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="731563400" Language="SFX">
-					<ShortName>Jump 1-3.wav</ShortName>
-					<Path>SFX\Jump 1-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="780641587" Language="SFX">
-					<ShortName>Jump 1-2.wav</ShortName>
-					<Path>SFX\Jump 1-2_D79FB2B7.wem</Path>
+				<File Id="782561424" Language="SFX">
+					<ShortName>Drum 4.wav</ShortName>
+					<Path>SFX\Drum 4_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="640949982" Name="Speed" ObjectPath="\Game Parameters\Default Work Unit\Speed"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\GameState\Paused" GUID="{F32FC765-2787-41FF-8F3C-817FEFF82BEA}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\GameState\Alive" GUID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="1183067778" Name="Key" ObjectPath="\Switches\Default Work Unit\Key" GUID="{03D90620-F92C-423E-8585-F3EA728B8E89}">
 					<Switches>

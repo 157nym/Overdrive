@@ -22,6 +22,37 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="GameState" ID="{A843ED87-D29C-42B3-910B-F5758D317C90}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{500A4757-33E7-46BE-BC2B-F1DDB6C6EE97}"/>
+						<State Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
+						<State Name="Dead" ID="{4C85FCE1-2DB0-41E7-B660-373DFFABF183}"/>
+						<State Name="Paused" ID="{F32FC765-2787-41FF-8F3C-817FEFF82BEA}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
+							<EndState Name="Dead" ID="{4C85FCE1-2DB0-41E7-B660-373DFFABF183}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dead" ID="{4C85FCE1-2DB0-41E7-B660-373DFFABF183}"/>
+							<EndState Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Paused" ID="{F32FC765-2787-41FF-8F3C-817FEFF82BEA}"/>
+							<EndState Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
+							<Time>0</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

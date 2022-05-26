@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Jumping
   id: 68157183
   guid: 8DF183B6-375C-4159-980D-A79301B41A1C
-  WwiseStateGroupReference: {fileID: 11400000, guid: 9fe18e13a248b384aa44e9a491b48c8e, type: 2}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 111af10e017604140b0e193b059bb087, type: 2}
