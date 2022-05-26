@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Sliding
   id: 472853913
   guid: 16732B0A-7806-49E9-AF2E-2C0F3D8BAA40
-  WwiseStateGroupReference: {fileID: 11400000, guid: 9fe18e13a248b384aa44e9a491b48c8e, type: 2}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 111af10e017604140b0e193b059bb087, type: 2}

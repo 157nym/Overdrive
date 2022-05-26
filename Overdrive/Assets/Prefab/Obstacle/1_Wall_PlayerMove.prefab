@@ -127,7 +127,7 @@ MonoBehaviour:
   BlockEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 05fef7ce93fa7ab4c90ea98301299ec6, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1feffa266545148488d10509a645d633, type: 2}
 --- !u!95 &3988483686060732242
 Animator:
   serializedVersion: 4

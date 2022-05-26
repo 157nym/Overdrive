@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Dead
   id: 2044049779
   guid: 4C85FCE1-2DB0-41E7-B660-373DFFABF183
-  WwiseStateGroupReference: {fileID: 11400000, guid: 299d434a70e8ab341b423f7e127ca5cc, type: 2}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 4fc43d8cdc5816b47a7ede016e97ec5d, type: 2}
