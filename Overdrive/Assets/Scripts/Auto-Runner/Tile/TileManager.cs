@@ -28,9 +28,9 @@ public class TileManager : MonoBehaviour
 
     public int phase = 1;
 
-    public float SpawntileTime, Timer, destroyTileTime;
+    public float Timer;
 
-    private int ChangeHeight;
+    private int ChangeHeight, CalmPhase;
 
     public float distanceMax;
 
@@ -53,8 +53,6 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpawntileTime -= Time.deltaTime;
-        destroyTileTime -= Time.deltaTime;
         Timer = Time.time;
 
 
@@ -93,7 +91,6 @@ public class TileManager : MonoBehaviour
             if(activeTiles.Count < maxTile) 
             {
                 int Verif = Random.Range(0, tableauListeActuel.Length);
-                SpawntileTime = 1f;
 
                 SpawnTile(Verif);
                 distanceMax = playerTransform.transform.position.z + 40;
@@ -106,8 +103,9 @@ public class TileManager : MonoBehaviour
         GameObject go;
 
         ChangeHeight = Random.Range(0,11);
+        CalmPhase = Random.Range(0, 11);
 
-        if(ChangeHeight >= 8 && activeTiles.Count >= 3)
+        if (ChangeHeight >= 9 && activeTiles.Count >= 3)
         {
             tileIndex = Random.Range(0,2);
 
@@ -126,7 +124,17 @@ public class TileManager : MonoBehaviour
             {
                 Hauteur--;
             }
+            return;
+        }
 
+        if(CalmPhase >= 9 && activeTiles.Count >= 3)
+        {
+            pos = transform.forward * zSpawn;
+            pos.y = Hauteur * 19.5f;
+            go = Instantiate(tileListeCalm[tileIndex], pos, transform.rotation);
+            activeTiles.Add(go);
+            zSpawn += tileLenght;
+            DeleteTile();
             return;
         }
 

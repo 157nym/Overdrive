@@ -970,11 +970,9 @@ MonoBehaviour:
   tileLenght: 40
   playerTransform: {fileID: 960798696}
   Hauteur: 0
-  maxTile: 10
+  maxTile: 5
   phase: 1
-  SpawntileTime: 3
   Timer: 0
-  destroyTileTime: 3
   distanceMax: 0
   activeTiles: []
 --- !u!1 &343378637
@@ -1818,7 +1816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bf95a13083f154097c2822f49bd55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 25
+  forwardSpeed: 50
   sound: {fileID: 0}
   laneDistance: 3
   gravity: -500
@@ -3305,7 +3303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1906914745
 MonoBehaviour:
   m_ObjectHideFlags: 0
