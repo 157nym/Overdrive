@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     public bool Paused = false;
     public GameObject PopUpManager,GameOverCanvas, MenuPause;
     public CharacterMovementAutoRun playerManager;
-    public TextMeshProUGUI DÈcompte;
+    public TextMeshProUGUI D√©compte;
     private GameObject Hud;
     private Scene scene;
     private PlayableDirector Director;
     //private float timeBeforePlay = 3;
     //private bool Go = true;
+    public float playerBaseSpeed;
 
 
     private void Start()
@@ -40,13 +41,13 @@ public class GameManager : MonoBehaviour
         //    Go = false;
         //    playerManager.forwardSpeed = 25;
         //    playerManager.speedAugmentation = 0.0001f;
-        //    DÈcompte.gameObject.SetActive(false);
+        //    D√©compte.gameObject.SetActive(false);
         //    playerManager.sound.MusicStart();
         //}
         //else
         //{
         //    timeBeforePlay -= Time.deltaTime;
-        //    DÈcompte.text = Mathf.Round(timeBeforePlay).ToString();
+        //    D√©compte.text = Mathf.Round(timeBeforePlay).ToString();
         //}
     }
 
@@ -55,11 +56,12 @@ public class GameManager : MonoBehaviour
         //Go = false;
         playerManager.forwardSpeed = 25;
         playerManager.speedAugmentation = 0.0001f;
-        //DÈcompte.gameObject.SetActive(false);
+        //D√©compte.gameObject.SetActive(false);
         playerManager.sound.MusicStart();
+
     }
 
-    public void PauseGame()
+    public void PauseGame() // Fonction appeler si le joueur appuie sur le bouton "Pause"
     {
         Paused = !Paused;
         MenuPause.SetActive(Paused);
@@ -76,10 +78,10 @@ public class GameManager : MonoBehaviour
             playerManager.GetComponent<CharacterSound>().ResumeGame();
         }
         
-        if (Saturation > MaxSaturation) Death();
+        if (Saturation > MaxSaturation) Death(); // Condition de d√©faite
     }
 
-    public void Damage()
+    public void Damage() // Gestion et affichage des point de vie
     {
         Hud.GetComponent<Life_Hud>().Damage();
         Life--;
@@ -90,7 +92,6 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         Debug.Log("Dead");
-        //GameOverCanvas.SetActive(true);
         Director.Play();
     }
 

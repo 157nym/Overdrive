@@ -23,7 +23,7 @@ public class SpawnPopUp : MonoBehaviour
         Manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
-    public IEnumerator SpawnPop()
+    public IEnumerator SpawnPop() // On fait spawn un popUp avec un pos random situé a l'interieur d'un rect
     {
         float spawnX = Random.Range(rt.rect.xMax, rt.rect.xMin);
         float spawnY = Random.Range(rt.rect.yMax, rt.rect.yMin);

@@ -28,17 +28,21 @@ public class TileManager : MonoBehaviour
 
     public int phase = 1;
 
-    public float SpawntileTime, Timer, destroyTileTime;
+    public float Timer;
 
     private int ChangeHeight;
 
     public float distanceMax;
 
+    public bool goPhaseCalm;
+
+    private int rampeIndex;
+
     public List<GameObject> activeTiles = new List<GameObject>();
 
     private void Awake()
     {
-        tableauListeActuel = tileListeEasy;
+        tableauListeActuel = tileListeEasy; //Au lancement la diffculté est sur Easy
     }
 
     // Start is called before the first frame update
@@ -48,16 +52,13 @@ public class TileManager : MonoBehaviour
         SpawnTile(0);
 
         distanceMax = playerTransform.transform.position.z + 40;
+
+        InvokeRepeating("PhaseCalm", 20, 30); // Au bout de X sec et toute les X sec il ya une phase Calm pour les PopUps qui dure 10s;
     }
 
     // Update is called once per frame
     void Update()
     {
-        SpawntileTime -= Time.deltaTime;
-        destroyTileTime -= Time.deltaTime;
-        Timer = Time.time;
-
-
         if (phase == 1)
         {
             tableauListeActuel = tileListeEasy;
@@ -78,22 +79,32 @@ public class TileManager : MonoBehaviour
             tableauListeActuel = tileListeCalm;
         }
 
-        if(Time.time > 30 && Time.time <= 60)
+        if (goPhaseCalm)
+        {
+            Timer -= Time.deltaTime;
+
+            if (Timer <= 0)
+            {
+                goPhaseCalm = false;
+                return;
+            }
+        }
+
+        if (Time.time > 30 && Time.time <= 60 && !goPhaseCalm) // Passage à la phase 2
         {
             phase = 2;
         }
 
-        if (Time.time > 90 && Time.time <= 120)
+        if (Time.time > 60 && !goPhaseCalm) // Passage à la phase 3 au bout de x secondes
         {
             phase = 3;
         }
 
-        if (playerTransform.transform.position.z >= distanceMax)
+        if (playerTransform.transform.position.z >= distanceMax) // Si le player dépasse X distance on fait spawn une tile devant lui et ont supprime une tiles derrière lui
         {
-            if(activeTiles.Count < maxTile) 
+            if(activeTiles.Count < maxTile) // on check s'il y a moin de tile présente que de tile maximum autorisé
             {
                 int Verif = Random.Range(0, tableauListeActuel.Length);
-                SpawntileTime = 1f;
 
                 SpawnTile(Verif);
                 distanceMax = playerTransform.transform.position.z + 40;
@@ -103,22 +114,22 @@ public class TileManager : MonoBehaviour
     void SpawnTile(int tileIndex)
     {
         Vector3 pos;
-        GameObject go;
+        GameObject go; 
 
-        ChangeHeight = Random.Range(0,11);
-
-        if(ChangeHeight >= 8 && activeTiles.Count >= 3)
+        if (activeTiles.Count >= 3 && rampeIndex <= 0) // Si ChangeHeight et = à 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
         {
             tileIndex = Random.Range(0,2);
+            rampeIndex = Random.Range(4, 10);
 
             pos = transform.forward * zSpawn;
             pos.y = Hauteur * 19.5f;
             go = Instantiate(tileListeHeight[tileIndex], pos, transform.rotation);
             activeTiles.Add(go);
             zSpawn += tileLenght;
+
             DeleteTile();
 
-            if(tileIndex == 0)
+            if(tileIndex == 0) // On vérifie si c'est une rampe qui monte ou qui descend
             {
                 Hauteur++;
             }
@@ -126,7 +137,6 @@ public class TileManager : MonoBehaviour
             {
                 Hauteur--;
             }
-
             return;
         }
 
@@ -135,7 +145,15 @@ public class TileManager : MonoBehaviour
         go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
+        rampeIndex--;
         DeleteTile();
+    }
+
+    void PhaseCalm()
+    {
+        goPhaseCalm = true;
+        Timer = 10;
+        phase = 4;
     }
 
     void DeleteTile()
