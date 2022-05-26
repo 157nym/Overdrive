@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (timeBeforePlay < 1 && Go)
+        if (timeBeforePlay < 1 && Go) // On fait un décompte de 3 sec avant le lancement de la partie
         {
             Go = false;
             playerManager.forwardSpeed = 25;
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PauseGame()
+    public void PauseGame() // Fonction appeler si le joueur appuie sur le bouton "Pause"
     {
         Paused = !Paused;
         MenuPause.SetActive(Paused);
@@ -65,10 +65,10 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
         
-        if (Saturation > MaxSaturation) Death();
+        if (Saturation > MaxSaturation) Death(); // Condition de défaite
     }
 
-    public void Damage()
+    public void Damage() // Gestion et affichage des point de vie
     {
         Hud.GetComponent<Life_Hud>().Damage();
         Life--;
@@ -79,7 +79,6 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         Debug.Log("Dead");
-        //GameOverCanvas.SetActive(true);
         Director.Play();
     }
 

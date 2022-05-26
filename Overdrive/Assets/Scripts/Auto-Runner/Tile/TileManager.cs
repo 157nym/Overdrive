@@ -40,7 +40,7 @@ public class TileManager : MonoBehaviour
 
     private void Awake()
     {
-        tableauListeActuel = tileListeEasy;
+        tableauListeActuel = tileListeEasy; //Au lancement la diffculté est sur Easy
     }
 
     // Start is called before the first frame update
@@ -51,7 +51,7 @@ public class TileManager : MonoBehaviour
 
         distanceMax = playerTransform.transform.position.z + 40;
 
-        InvokeRepeating("PhaseCalm", 20, 30);
+        InvokeRepeating("PhaseCalm", 20, 30); // Au bout de X sec et toute les X sec il ya une phase Calm pour les PopUps qui dure 10s;
     }
 
     // Update is called once per frame
@@ -88,19 +88,19 @@ public class TileManager : MonoBehaviour
             }
         }
 
-        if (Time.time > 30 && Time.time <= 60 && !goPhaseCalm)
+        if (Time.time > 30 && Time.time <= 60 && !goPhaseCalm) // Passage à la phase 2
         {
             phase = 2;
         }
 
-        if (Time.time > 60 && !goPhaseCalm)
+        if (Time.time > 60 && !goPhaseCalm) // Passage à la phase 3 au bout de x secondes
         {
             phase = 3;
         }
 
-        if (playerTransform.transform.position.z >= distanceMax)
+        if (playerTransform.transform.position.z >= distanceMax) // Si le player dépasse X distance on fait spawn une tile devant lui et ont supprime une tiles derrière lui
         {
-            if(activeTiles.Count < maxTile) 
+            if(activeTiles.Count < maxTile) // on check s'il y a moin de tile présente que de tile maximum autorisé
             {
                 int Verif = Random.Range(0, tableauListeActuel.Length);
 
@@ -114,9 +114,9 @@ public class TileManager : MonoBehaviour
         Vector3 pos;
         GameObject go;
 
-        ChangeHeight = Random.Range(0,11);
+        ChangeHeight = Random.Range(0,11); 
 
-        if (ChangeHeight >= 9 && activeTiles.Count >= 3)
+        if (ChangeHeight >= 9 && activeTiles.Count >= 3) // Si ChangeHeight et = à 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
         {
             tileIndex = Random.Range(0,2);
 
@@ -127,7 +127,7 @@ public class TileManager : MonoBehaviour
             zSpawn += tileLenght;
             DeleteTile();
 
-            if(tileIndex == 0)
+            if(tileIndex == 0) // On vérifie si c'est une rampe qui monte ou qui descend
             {
                 Hauteur++;
             }
