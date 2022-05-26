@@ -36,6 +36,8 @@ public class TileManager : MonoBehaviour
 
     public bool goPhaseCalm;
 
+    private int rampeIndex;
+
     public List<GameObject> activeTiles = new List<GameObject>();
 
     private void Awake()
@@ -112,19 +114,19 @@ public class TileManager : MonoBehaviour
     void SpawnTile(int tileIndex)
     {
         Vector3 pos;
-        GameObject go;
+        GameObject go; 
 
-        ChangeHeight = Random.Range(0,11); 
-
-        if (ChangeHeight >= 9 && activeTiles.Count >= 3) // Si ChangeHeight et = à 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
+        if (activeTiles.Count >= 3 && rampeIndex <= 0) // Si ChangeHeight et = à 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
         {
             tileIndex = Random.Range(0,2);
+            rampeIndex = Random.Range(4, 10);
 
             pos = transform.forward * zSpawn;
             pos.y = Hauteur * 19.5f;
             go = Instantiate(tileListeHeight[tileIndex], pos, transform.rotation);
             activeTiles.Add(go);
             zSpawn += tileLenght;
+
             DeleteTile();
 
             if(tileIndex == 0) // On vérifie si c'est une rampe qui monte ou qui descend
@@ -143,6 +145,7 @@ public class TileManager : MonoBehaviour
         go = Instantiate(tableauListeActuel[tileIndex], pos, transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLenght;
+        rampeIndex--;
         DeleteTile();
     }
 

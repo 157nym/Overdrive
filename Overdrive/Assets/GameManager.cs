@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private PlayableDirector Director;
     private float timeBeforePlay = 3;
     private bool Go = true;
+    public float playerBaseSpeed;
 
 
     private void Start()
