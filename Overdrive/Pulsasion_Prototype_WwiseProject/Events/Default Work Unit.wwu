@@ -91,6 +91,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{57184412-B1AC-452F-9EF0-CA1A13185734}" ShortID="864004604">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockWall_Key" ID="{E47E1AE7-366F-49B1-97EB-77BB438015E2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}">
@@ -98,7 +105,7 @@
 								<Action Name="" ID="{325222DC-69A4-49A5-A044-9E9AD7C651DC}" ShortID="844953230">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BlockSlide" ID="{808BC4D8-FD42-4579-A078-6561C994B07F}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="BlockSlide key" ID="{EC677CAD-4AA0-4EB0-A3D3-E3C607F7396E}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -109,40 +116,41 @@
 								<Action Name="" ID="{58E05196-B8BE-4E83-8CDC-94D0BF94D5CA}" ShortID="388302558">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BlockJump" ID="{AD6009B5-2CC4-4F11-BED9-24B84D81A060}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="BlockJump key" ID="{C4D8FF83-C7FD-4593-B32D-0FD6FF724E93}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{53A82A69-E235-4950-A4B8-4551E80CF424}" ShortID="344601946">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Kick" ID="{86DF8600-581F-4A50-A5CD-A10B9E1E68A5}">
+						<Event Name="Music" ID="{4E0DB7DC-94E6-4616-9EB0-347E9EEB479D}">
 							<ChildrenList>
-								<Action Name="" ID="{6F0BCCD3-B7F7-4B44-87BE-0DCAEF096DF1}" ShortID="127686394">
+								<Action Name="" ID="{DBFF3DAF-E891-4641-9105-A0FC4312C081}" ShortID="152217463">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Kick" ID="{82E88978-AD6E-4C24-86E2-C136FBB16450}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="HiHat" ID="{CD969372-A3B7-42A5-BCC9-99A643C2ED82}">
-							<ChildrenList>
-								<Action Name="" ID="{CCD671E2-9ED3-4C8A-8527-CE9AB78660ED}" ShortID="462713997">
+								<Action Name="" ID="{45E4B081-9179-4B80-8217-AC67CEFAEF98}" ShortID="97772300">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="HiHat" ID="{478E051D-FFF6-4880-8C5C-59FD6E608FFB}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Bass" ID="{06027C0F-11AD-48ED-B88B-DE6D87B7DBDF}">
-							<ChildrenList>
-								<Action Name="" ID="{36C5098B-5E1C-4F5D-9AD0-41028E6C1613}" ShortID="434535223">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Bass" ID="{8325D8C2-5E5B-4FC1-BE44-33A479A469F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+											<ObjectRef Name="PausedMusic" ID="{8C71C6C1-0383-41A2-A194-DE677B3C5916}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -180,6 +188,142 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="AlarmBeep" ID="{B9321C40-413C-4A61-858A-2131120E1B0D}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="KeyMusicEvent" ID="{DA504035-0FA2-4F17-87E2-8E7041F22375}" ShortID="198776179">
+					<ChildrenList>
+						<Event Name="Key1Event" ID="{9F1C07FA-4B79-4B95-AA50-BD5AB205F9FE}">
+							<ChildrenList>
+								<Action Name="" ID="{A1910D5B-39C9-438F-90E2-6C53D8B75F98}" ShortID="444838607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key2Event" ID="{D2E917DE-04AD-4FD4-9BF8-62AE884A5AF2}">
+							<ChildrenList>
+								<Action Name="" ID="{B8CDDE1F-07FD-4A07-93D5-4D2734C05B9F}" ShortID="273273462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key3Event" ID="{6DE66B99-5D46-4D96-8DFB-01A174F70185}">
+							<ChildrenList>
+								<Action Name="" ID="{0AF0FAE6-3561-488E-A55C-54EC6949CDD2}" ShortID="224640875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_3" ID="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Key4Event" ID="{FA682FA3-3257-49BC-A9F6-A22565171A57}">
+							<ChildrenList>
+								<Action Name="" ID="{C387B668-EDED-42A4-8B20-155ED36FAF5E}" ShortID="874250507">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PauseGame" ID="{5C7392E4-9430-48C8-AAB7-E5FB2BF68F33}">
+							<ChildrenList>
+								<Action Name="" ID="{3D72A9B5-F42A-4A99-8ADE-041F7E1EA82B}" ShortID="456741518">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9C5BE8F3-0E03-4C22-BA1F-60140ACFB458}" ShortID="84728864">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Paused" ID="{F32FC765-2787-41FF-8F3C-817FEFF82BEA}" WorkUnitID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ResumeGame" ID="{0B1025E0-E2B7-4609-B799-A18A242B78BA}">
+							<ChildrenList>
+								<Action Name="" ID="{AD01B98F-880E-4796-BFE1-B318BAC8AB8E}" ShortID="264259378">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3E3BE7EC-1D9A-43D5-BFC2-CF42826C2D9D}" ShortID="157619854">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}" WorkUnitID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{1C4082EF-9DFA-46AA-A196-526D4188FE9B}" ShortID="88217562">
+					<ChildrenList>
+						<Event Name="CountDown" ID="{36997C29-1EE7-4035-8534-3A0854A6D81D}">
+							<ChildrenList>
+								<Action Name="" ID="{AA424C66-3353-4E39-BF39-520FDBC25C8B}" ShortID="172012547">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Countdown" ID="{5E16F1BA-4E11-41C8-8B22-B031DE050AD5}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DeathGlitch" ID="{2A7DB8F3-CA88-45A1-A248-927080BF161A}">
+							<ChildrenList>
+								<Action Name="" ID="{5B6F50B5-C9EF-4125-8095-C33E2FD3F8F0}" ShortID="617573166">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DeathSound" ID="{70ED3D2E-740A-4421-A49A-9859959DE6D1}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

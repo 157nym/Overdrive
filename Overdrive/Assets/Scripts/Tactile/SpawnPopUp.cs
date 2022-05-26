@@ -13,12 +13,14 @@ public class SpawnPopUp : MonoBehaviour
 
     public float SpawnRate;
 
-     public RectTransform rt;
-    // Update is called once per frame
+    public RectTransform rt;
+
+    private GameManager Manager;
+
 
     public void Start()
     {
-
+        Manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     public IEnumerator SpawnPop()
@@ -30,6 +32,7 @@ public class SpawnPopUp : MonoBehaviour
 
         RawImage Spawn = Instantiate(popUp[Random.Range(0,popUp.Length)], spawnPosition , Quaternion.identity, target.transform);
         Spawn.rectTransform.anchoredPosition = spawnPosition;
+        Manager.Saturation++;
         yield return new WaitForSeconds(SpawnRate);
     }
 }

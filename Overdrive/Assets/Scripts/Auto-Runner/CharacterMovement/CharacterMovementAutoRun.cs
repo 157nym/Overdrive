@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class CharacterMovementAutoRun : MonoBehaviour
 {
+    private ParticleSystem SpeedEffect;
     private CharacterController controller;
     private Vector3 direction;
     public float forwardSpeed;
 
-    CharacterSound sound;
+    public CharacterSound sound;
 
     private int desireLane = 1;
     public float laneDistance = 4f;
@@ -28,12 +29,14 @@ public class CharacterMovementAutoRun : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         sound = GetComponent<CharacterSound>();
+        SpeedEffect = Camera.main.GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        SpeedEffect.emissionRate = forwardSpeed;
+
         if(NbrPop >= 10)
         {
             SceneManager.LoadScene("Auto_Runner_Lvl");
@@ -42,8 +45,9 @@ public class CharacterMovementAutoRun : MonoBehaviour
         if (forwardSpeed < speedMax)
         {
             forwardSpeed += speedAugmentation * 10 * Time.deltaTime;
-            DuréeAnim = (forwardSpeed*4)/30;
+            DuréeAnim = (forwardSpeed*4)/40;
             animator.SetFloat("AnimSpeed", DuréeAnim);
+            sound.Speed.SetGlobalValue(DuréeAnim/2);
         }
         
         direction.z = forwardSpeed;

@@ -1,10 +1,25 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1183067778	Key			\Default Work Unit\Key	
+
+Switch	ID	Name	Switch Group			Notes
+	3865414088	Key_3	Key			
+	3865414089	Key_2	Key			
+	3865414090	Key_1	Key			
+	3865414095	Key_4	Key			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	3686556480	Slide			\Default Work Unit\Slide	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
+	68157183	Jumping	Slide			
 	472853913	Sliding	Slide			
 	748895195	None	Slide			
 	3863236874	Running	Slide			
+	319258907	Paused	GameState			
+	655265632	Alive	GameState			
+	748895195	None	GameState			
+	2044049779	Dead	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

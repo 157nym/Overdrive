@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Key" ID="{03D90620-F92C-423E-8585-F3EA728B8E89}">
+					<ChildrenList>
+						<Switch Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}"/>
+						<Switch Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}"/>
+						<Switch Name="Key_3" ID="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}"/>
+						<Switch Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Speed" ID="{36435725-3E25-4A86-8A63-66120AE09F95}"/>
+						<Curve Name="" ID="{1BB00AF7-6E03-4F82-A81C-00A42FD5E2BE}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{E9ED1989-981E-49AC-9D98-321183CF47E6}" PersistMode="Standalone">
 			<ChildrenList>
 				<Trigger Name="Jump" ID="{F788043B-D498-44B0-96A1-20B6FFD7C5E8}"/>
+				<Trigger Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

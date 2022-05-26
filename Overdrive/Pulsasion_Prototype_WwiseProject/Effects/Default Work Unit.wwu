@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8C6494C7-2885-42EA-8AE7-6909A8D33DF7}" SchemaVersion="103">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{8C6494C7-2885-42EA-8AE7-6909A8D33DF7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8C6494C7-2885-42EA-8AE7-6909A8D33DF7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Music_Tempo_Time_Stretch" ID="{FFE10706-CCBD-4254-B0B0-F0F13A3212AF}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{A05523E7-B4E8-42C5-9029-13F446E8E4F1}" ShortID="685193218">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Speed" ID="{36435725-3E25-4A86-8A63-66120AE09F95}" WorkUnitID="{139B6C78-F005-4FB6-9146-6C1076F0FFD5}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5C1E5C0F-A998-4714-946C-5F0921E84406}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>95.58824</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>100</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>4</XPos>
+												<YPos>25</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>25</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
