@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         //Go = false;
-        playerManager.forwardSpeed = 25;
+        playerManager.forwardSpeed = playerBaseSpeed;
         playerManager.speedAugmentation = 0.0001f;
         //Décompte.gameObject.SetActive(false);
         playerManager.sound.MusicStart();
