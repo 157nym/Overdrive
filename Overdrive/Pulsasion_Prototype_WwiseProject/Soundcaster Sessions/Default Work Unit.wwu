@@ -40,7 +40,7 @@
 						<CurrentStateRef Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}"/>
+						<CurrentSwitchRef Name="Key_3" ID="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

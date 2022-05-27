@@ -25,6 +25,6 @@ public class Final_Score : MonoBehaviour
             {
                 Score.text = currentScore.PlayerScore.ToString("0.0");
             }
-        }
+        }        
     }
 }
