@@ -2421,7 +2421,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098" ID="{9EE06DB7-EA13-421D-B1DB-745994996E1A}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.015728582866293"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.024008628627372"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -2448,7 +2448,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 1" ID="{0E6FDDE1-5EBD-4A46-9532-14D50F73A4F2}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0132525020016013"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.021225707685609"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -2475,7 +2475,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 2" ID="{BF368C4E-052A-42CA-9126-9131435E3AB5}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0275250200160128"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0482251344187103"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -2556,7 +2556,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Footsteps, Human, Rock, Run, Isolated Steps SND62098 5" ID="{E1C8010F-FAE4-49E6-A53F-4A1C1223DE3F}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0492619595676541"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0535992066774807"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>

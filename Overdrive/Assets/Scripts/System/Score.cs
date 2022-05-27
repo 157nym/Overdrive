@@ -8,24 +8,23 @@ public class Score : MonoBehaviour
 {
     CharacterMovementAutoRun speeds;
     Text vitesse;
-    public float vitessejoueur;
+    public float PlayerScore;
+    private GameManager Manager;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         vitesse = GetComponent<Text>();
-        vitessejoueur = 0;
+        PlayerScore = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        vitesse.text = "Score Corpo = " + vitessejoueur.ToString("f1");
-
-        vitessejoueur = vitessejoueur + 1f*Time.deltaTime;
+        vitesse.text = "Score Corpo = " + PlayerScore.ToString("f1");
+        if(Manager.GamePlaying) PlayerScore = PlayerScore + 1f*Time.deltaTime;
     }
 
 }

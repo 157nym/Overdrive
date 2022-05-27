@@ -6,25 +6,41 @@
 				<SoundcasterSession Name="LD Test" ID="{B2EADB12-4F57-4E87-8DDC-A49FEFAE6A99}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="BlockJump key" ID="{C4D8FF83-C7FD-4593-B32D-0FD6FF724E93}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+							<ObjectRef Name="BlockJump" ID="{112C1D34-173D-4C9E-BFE1-7DC5C42B12B6}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music" ID="{1DB834B9-DBB9-4BA0-8529-21B8992DB90F}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+							<ObjectRef Name="Run" ID="{1F50E8CD-2497-4591-BD25-7162D29BDA4C}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{4E0DB7DC-94E6-4616-9EB0-347E9EEB479D}" WorkUnitID="{05DA9C43-1045-440B-89C5-59928575C7F9}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{3A4AD94F-7E8E-40BF-A2F7-646F3780C577}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Main_Volume" ID="{BA4291F1-273E-4641-B49E-8B5A4C7AF87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Speed" ID="{36435725-3E25-4A86-8A63-66120AE09F95}"/>
-							<Value>2</Value>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{F32B9ADB-6598-4B5F-BF94-6699912BBEC1}"/>
+							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Alive" ID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Key_1" ID="{2AF32F43-656F-49E0-9F25-63FF94E353B1}"/>
+						<CurrentSwitchRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

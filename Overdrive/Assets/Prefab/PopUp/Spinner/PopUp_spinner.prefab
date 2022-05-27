@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetAngle: 0
   angle: 0
-  Offset: 180
+  Offset: 270
   NbTour: 0
   NeededTour: 4
   Speed: 4
