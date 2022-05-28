@@ -11,8 +11,9 @@ public class Random_Pic : MonoBehaviour
     private void Start()
     {
         Mat = GetComponent<Renderer>().materials[1];
-        Mat.SetTexture("_BaseMap", Ads[Random.Range(0, Ads.Length)]);
+        //choose a random sprite from Ads
+        Texture AD = Ads[Random.Range(0, Ads.Length)];
+        Mat.SetTexture("_BaseMap", AD);
+        Mat.SetTexture("_EmissionMap", AD);
     }
-
-
 }
