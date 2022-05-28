@@ -165,3 +165,6 @@ MonoBehaviour:
   Ads:
   - {fileID: 2800000, guid: d372b9dd10cdb004fb7d9039a37ad98e, type: 3}
   - {fileID: 2800000, guid: 1d9eefa41e4b9d0469b0ef3622326590, type: 3}
+  - {fileID: 2800000, guid: ff177a6b7ded6494796f5262585c68a3, type: 3}
+  - {fileID: 2800000, guid: aca45206ccdf0cf449640f34aa9f880a, type: 3}
+  - {fileID: 2800000, guid: 3e2cd4a4d94073945adf26b1f39f9878, type: 3}
