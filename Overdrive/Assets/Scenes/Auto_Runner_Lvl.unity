@@ -5859,6 +5859,7 @@ MonoBehaviour:
   playerManager: {fileID: 960798695}
   "D\xE9compte": {fileID: 0}
   playerBaseSpeed: 20
+  GamePlaying: 0
 --- !u!4 &1906914746
 Transform:
   m_ObjectHideFlags: 0
