@@ -66,14 +66,15 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Base_Gradient_Power: 3
+    - _Base_Gradient_Power: 0.42
     - _Noise_Rotation_Speed: 10
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Stars_Offset: 0.571
     m_Colors:
-    - _Base_Color_1: {r: 0, g: 0, b: 0, a: 0}
-    - _Base_Color_2: {r: 0, g: 0, b: 0, a: 0}
+    - _Base_Color_1: {r: 0.002124689, g: 0.000607054, b: 0.014443844, a: 0}
+    - _Base_Color_2: {r: 0.027320892, g: 0.003676507, b: 0.09989874, a: 0}
+    - _Base_Color_3: {r: 0.37254903, g: 0.06666667, b: 0.4666667, a: 0}
     - _NoiseScale: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseSize: {r: 5, g: 5, b: 0, a: 0}
     - _Stars_Color: {r: 1, g: 1, b: 1, a: 1}

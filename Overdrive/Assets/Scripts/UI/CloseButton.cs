@@ -11,7 +11,7 @@ public class CloseButton : MonoBehaviour
         
     }
 
-    void Close()
+    public void Close()
     {
         Destroy(parent);
     }
