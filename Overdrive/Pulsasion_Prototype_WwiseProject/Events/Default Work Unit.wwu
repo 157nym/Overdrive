@@ -98,6 +98,20 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{F4E0E517-8C59-442A-8DDF-3A3EF89FB923}" ShortID="630554254">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockWall Stinger" ID="{418C865F-5FD5-4DAA-9DA9-0FF65DE18746}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="BlockSlide" ID="{9A40E025-C501-4CD8-A76F-9958971602BC}">
@@ -106,6 +120,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="BlockSlide key" ID="{EC677CAD-4AA0-4EB0-A3D3-E3C607F7396E}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{84479163-79AF-49D5-92B1-9DC8875281D9}" ShortID="607742470">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockSlide Stinger" ID="{A04C18BF-81CA-4CD9-86D4-42D277DEE28D}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -133,6 +161,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="BlockJump" ID="{D6408806-00BC-49C8-A482-5382A7BF64F3}" WorkUnitID="{E9ED1989-981E-49AC-9D98-321183CF47E6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A29C4311-67FD-4472-9705-AEA819D02797}" ShortID="401332525">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlockJump Stinger" ID="{EAEA9574-DE58-484E-831C-1541DC47ACF1}" WorkUnitID="{A1D5BC3E-0BA3-483C-8EF9-9FC5DBFA8ECD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

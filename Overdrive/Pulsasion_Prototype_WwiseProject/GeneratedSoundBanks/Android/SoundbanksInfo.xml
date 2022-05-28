@@ -21,7 +21,7 @@
 				<GameParameter Id="2312172015" Name="Main_Volume" ObjectPath="\Game Parameters\Default Work Unit\Main_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2039970036">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4143148832">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -511,6 +511,10 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="50147037" Language="SFX">
+					<ShortName>Jump 1-2.wav</ShortName>
+					<Path>SFX\Jump 1-2_D79FB2B7.wem</Path>
+				</File>
 				<File Id="50586697" Language="SFX">
 					<ShortName>Drum 1.wav</ShortName>
 					<Path>SFX\Drum 1_D79FB2B7.wem</Path>
@@ -519,29 +523,173 @@
 					<ShortName>Chord 2.wav</ShortName>
 					<Path>SFX\Chord 2_D79FB2B7.wem</Path>
 				</File>
+				<File Id="180489970" Language="SFX">
+					<ShortName>Jump 3-2.wav</ShortName>
+					<Path>SFX\Jump 3-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="207931524" Language="SFX">
+					<ShortName>Slide 1-3.wav</ShortName>
+					<Path>SFX\Slide 1-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="209658416" Language="SFX">
+					<ShortName>Slide 3-2.wav</ShortName>
+					<Path>SFX\Slide 3-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="250603723" Language="SFX">
+					<ShortName>Bass 3-1.wav</ShortName>
+					<Path>SFX\Bass 3-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="253595216" Language="SFX">
+					<ShortName>Bass 4-1.wav</ShortName>
+					<Path>SFX\Bass 4-1_D79FB2B7.wem</Path>
+				</File>
 				<File Id="266907184" Language="SFX">
 					<ShortName>Chord 3.wav</ShortName>
 					<Path>SFX\Chord 3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="272360429" Language="SFX">
+					<ShortName>Slide 1-2.wav</ShortName>
+					<Path>SFX\Slide 1-2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="299327766" Language="SFX">
 					<ShortName>Drum 3.wav</ShortName>
 					<Path>SFX\Drum 3_D79FB2B7.wem</Path>
 				</File>
+				<File Id="319587268" Language="SFX">
+					<ShortName>Jump 4-3.wav</ShortName>
+					<Path>SFX\Jump 4-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="368799112" Language="SFX">
+					<ShortName>Bass 3-2.wav</ShortName>
+					<Path>SFX\Bass 3-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="396381267" Language="SFX">
+					<ShortName>Bass 3-3.wav</ShortName>
+					<Path>SFX\Bass 3-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="404250127" Language="SFX">
+					<ShortName>Slide 3-3.wav</ShortName>
+					<Path>SFX\Slide 3-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="405349586" Language="SFX">
+					<ShortName>Bass 1-3.wav</ShortName>
+					<Path>SFX\Bass 1-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="421253357" Language="SFX">
+					<ShortName>Bass 2-1.wav</ShortName>
+					<Path>SFX\Bass 2-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="436925476" Language="SFX">
+					<ShortName>Paused Music.wav</ShortName>
+					<Path>SFX\Paused Music_D79FB2B7.wem</Path>
+				</File>
+				<File Id="452324403" Language="SFX">
+					<ShortName>Slide 3-1.wav</ShortName>
+					<Path>SFX\Slide 3-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="514728704" Language="SFX">
+					<ShortName>Slide 2-3.wav</ShortName>
+					<Path>SFX\Slide 2-3_D79FB2B7.wem</Path>
+				</File>
 				<File Id="521102613" Language="SFX">
 					<ShortName>Drum 2.wav</ShortName>
 					<Path>SFX\Drum 2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="537488805" Language="SFX">
+					<ShortName>Jump 3-3.wav</ShortName>
+					<Path>SFX\Jump 3-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="539561302" Language="SFX">
+					<ShortName>Slide 4-2.wav</ShortName>
+					<Path>SFX\Slide 4-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="543718399" Language="SFX">
+					<ShortName>Jump 4-2.wav</ShortName>
+					<Path>SFX\Jump 4-2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="545104084" Language="SFX">
 					<ShortName>Chord 4.wav</ShortName>
 					<Path>SFX\Chord 4_D79FB2B7.wem</Path>
 				</File>
+				<File Id="562969231" Language="SFX">
+					<ShortName>Jump 4-1.wav</ShortName>
+					<Path>SFX\Jump 4-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="607179468" Language="SFX">
+					<ShortName>Bass 2-3.wav</ShortName>
+					<Path>SFX\Bass 2-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="616661954" Language="SFX">
+					<ShortName>Bass 4-3.wav</ShortName>
+					<Path>SFX\Bass 4-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="655835395" Language="SFX">
+					<ShortName>Jump 1-1.wav</ShortName>
+					<Path>SFX\Jump 1-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="662059020" Language="SFX">
+					<ShortName>Jump 2-1.wav</ShortName>
+					<Path>SFX\Jump 2-1_D79FB2B7.wem</Path>
+				</File>
 				<File Id="677233877" Language="SFX">
 					<ShortName>Chord 1.wav</ShortName>
 					<Path>SFX\Chord 1_D79FB2B7.wem</Path>
 				</File>
+				<File Id="679636763" Language="SFX">
+					<ShortName>Slide 4-1.wav</ShortName>
+					<Path>SFX\Slide 4-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="758482929" Language="SFX">
+					<ShortName>Jump 2-2.wav</ShortName>
+					<Path>SFX\Jump 2-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="777187335" Language="SFX">
+					<ShortName>Jump 3-1.wav</ShortName>
+					<Path>SFX\Jump 3-1_D79FB2B7.wem</Path>
+				</File>
 				<File Id="782561424" Language="SFX">
 					<ShortName>Drum 4.wav</ShortName>
 					<Path>SFX\Drum 4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="808585115" Language="SFX">
+					<ShortName>Bass 1-2.wav</ShortName>
+					<Path>SFX\Bass 1-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="883864826" Language="SFX">
+					<ShortName>Slide 4-3.wav</ShortName>
+					<Path>SFX\Slide 4-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="919335856" Language="SFX">
+					<ShortName>Slide 2-2.wav</ShortName>
+					<Path>SFX\Slide 2-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="939070277" Language="SFX">
+					<ShortName>Slide 2-1.wav</ShortName>
+					<Path>SFX\Slide 2-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="941232651" Language="SFX">
+					<ShortName>Jump 1-3.wav</ShortName>
+					<Path>SFX\Jump 1-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="960137391" Language="SFX">
+					<ShortName>Bass 4-2.wav</ShortName>
+					<Path>SFX\Bass 4-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="989021524" Language="SFX">
+					<ShortName>Slide 1-1.wav</ShortName>
+					<Path>SFX\Slide 1-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1023108926" Language="SFX">
+					<ShortName>Jump 2-3.wav</ShortName>
+					<Path>SFX\Jump 2-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1054341842" Language="SFX">
+					<ShortName>Bass 2-2.wav</ShortName>
+					<Path>SFX\Bass 2-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1067854586" Language="SFX">
+					<ShortName>Bass 1-1.wav</ShortName>
+					<Path>SFX\Bass 1-1_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
@@ -577,9 +725,6 @@
 					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
-			<Triggers>
-				<Trigger Id="3710956116" Name="BlockJump" ObjectPath="\Triggers\Default Work Unit\BlockJump"/>
-			</Triggers>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     //private float timeBeforePlay = 3;
     //private bool Go = true;
     public float playerBaseSpeed;
+    public bool GamePlaying = false;
 
 
     private void Start()
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
         playerManager.speedAugmentation = 0.0001f;
         //Décompte.gameObject.SetActive(false);
         playerManager.sound.MusicStart();
-
+        GamePlaying = true;
     }
 
     public void PauseGame() // Fonction appeler si le joueur appuie sur le bouton "Pause"
@@ -96,7 +97,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Dead");
         Director.Play();
+        GamePlaying = false;
     }
+
 
     public void Restart()
     {
