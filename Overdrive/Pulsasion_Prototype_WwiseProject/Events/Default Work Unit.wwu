@@ -251,6 +251,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{091CC45C-D615-4AE6-8341-70FAC8A7BF54}" ShortID="141978585">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_1" ID="{30C6D066-78D8-4582-96F2-DEF8786C40F8}" WorkUnitID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Key2Event" ID="{D2E917DE-04AD-4FD4-9BF8-62AE884A5AF2}">
@@ -262,6 +272,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Key_2" ID="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2E307708-E41A-44F5-9C7F-A846A9B029AC}" ShortID="432419074">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_2" ID="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}" WorkUnitID="{D1AD2152-FB37-4C01-92DF-1898EB4EF099}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -279,11 +299,31 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{2EC0C6EE-3699-4642-A974-0F067197ADA0}" ShortID="549276902">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_3" ID="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Key4Event" ID="{FA682FA3-3257-49BC-A9F6-A22565171A57}">
 							<ChildrenList>
 								<Action Name="" ID="{C387B668-EDED-42A4-8B20-155ED36FAF5E}" ShortID="874250507">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Key_4" ID="{756B7CBF-E5A5-4762-AC70-F7893872F696}" WorkUnitID="{C82E80C2-2B45-427B-96B8-FBA7B2AEF4F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{98A8A25F-4DFA-4CEC-A6DE-5683F6BB0E73}" ShortID="49141441">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
 									</PropertyList>
@@ -371,6 +411,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="mainMenu" ID="{FB8682F3-7471-486A-A691-4EDF34B8E55B}" ShortID="536259630">
+							<ChildrenList>
+								<Event Name="DecoSounds" ID="{37BF646F-ED2A-4136-B9AC-B523E1E275D4}">
+									<ChildrenList>
+										<Action Name="" ID="{802CB956-B049-4D9F-BC09-FBA6AE9B7148}" ShortID="636239131">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DecoSounds" ID="{02096349-A908-4CD5-B33A-4E72561A60F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MenuAppear" ID="{83B39763-6D9D-438B-BDE6-27F6C0B1B861}">
+									<ChildrenList>
+										<Action Name="" ID="{38D3B0F1-5DF6-4CD7-8F23-0E9463EEECC9}" ShortID="859862793">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Floppy Drive Sound Start" ID="{1D394B1E-2535-4804-9EE7-AD74DA553DC4}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StartGame" ID="{B2056DC4-7CAB-4115-ADB3-02F0159786EE}">
+									<ChildrenList>
+										<Action Name="" ID="{DCCB97C5-5700-40E0-95DC-CE7D0ED9D231}" ShortID="511093669">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Floppy Drive Sound Start 2" ID="{24BB38F9-E454-4D80-AE6B-E3315789F1BF}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

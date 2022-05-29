@@ -6,9 +6,18 @@ public class SpawnBuilding : MonoBehaviour
 {
     public GameObject[] Buildings;
 
+    public bool AlwaysSpawn;
     void Start()
     {
-        int i = Random.Range(0, Buildings.Length + 1);
+        int i;
+        if (AlwaysSpawn)
+        {
+            i = Random.Range(0, Buildings.Length);
+        }
+        else
+        {
+            i = Random.Range(0, Buildings.Length + 1);
+        }
 
         if(i < Buildings.Length)
         {

@@ -1032,6 +1032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5566909850591665478, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
+      propertyPath: AlwaysSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5566909850591665479, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_Name
       value: Building (9)
@@ -1253,6 +1257,10 @@ PrefabInstance:
     - target: {fileID: 5566909850591665477, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566909850591665478, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
+      propertyPath: AlwaysSpawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5566909850591665479, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_Name
@@ -1840,6 +1848,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5566909850591665478, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
+      propertyPath: AlwaysSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5566909850591665479, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_Name
       value: Building (6)
@@ -1921,6 +1933,10 @@ PrefabInstance:
     - target: {fileID: 5566909850591665477, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566909850591665478, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
+      propertyPath: AlwaysSpawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5566909850591665479, guid: c06a48f7ff42aff4386eedc40467a201, type: 3}
       propertyPath: m_Name

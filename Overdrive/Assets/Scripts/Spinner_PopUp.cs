@@ -33,6 +33,7 @@ public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         Handle = GetComponent<Transform>();
         HandleRect = GetComponent<RectTransform>();
         Image = GetComponent<Image>();
+        PopUp.Post(gameObject); 
     }
 
     public void OnBeginDrag(PointerEventData eventData)
