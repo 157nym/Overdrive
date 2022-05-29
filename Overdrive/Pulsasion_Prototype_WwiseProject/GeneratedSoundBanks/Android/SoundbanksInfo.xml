@@ -21,7 +21,7 @@
 				<GameParameter Id="2312172015" Name="Main_Volume" ObjectPath="\Game Parameters\Default Work Unit\Main_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="336236891">
+		<SoundBank Id="3161908922" Language="SFX" Hash="326671867">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -335,6 +335,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4009259254" Name="DecoSounds" ObjectPath="\Events\Default Work Unit\UI\mainMenu\DecoSounds" DurationType="OneShot" DurationMin="0.601655" DurationMax="2.27771">
+					<IncludedMemoryFiles>
+						<File Id="218581728" Language="SFX">
+							<ShortName>Floppy Drive Sound Deco-002.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Deco-002_10C4C929.wem</Path>
+						</File>
+						<File Id="796779491" Language="SFX">
+							<ShortName>Floppy Drive Sound Deco-001.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Deco-001_10C4C929.wem</Path>
+						</File>
+						<File Id="814793814" Language="SFX">
+							<ShortName>Floppy Drive Sound Deco-003.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Deco-003_10C4C929.wem</Path>
+						</File>
+						<File Id="828324614" Language="SFX">
+							<ShortName>Floppy Drive Sound Deco-004.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Deco-004_10C4C929.wem</Path>
+						</File>
+						<File Id="890302013" Language="SFX">
+							<ShortName>Floppy Drive Sound Deco-005.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Deco-005_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Jump" DurationType="OneShot" DurationMin="0.203786" DurationMax="0.346098">
 					<IncludedMemoryFiles>
 						<File Id="564923823" Language="SFX">
@@ -410,6 +434,14 @@
 						<File Id="122599344" Language="SFX">
 							<ShortName>Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3.wav</ShortName>
 							<Path>SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="918314131" Name="MenuAppear" ObjectPath="\Events\Default Work Unit\UI\mainMenu\MenuAppear" DurationType="OneShot" DurationMin="5.002494" DurationMax="5.002494">
+					<IncludedMemoryFiles>
+						<File Id="807547725" Language="SFX">
+							<ShortName>Floppy Drive Sound Start.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Start_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -504,6 +536,14 @@
 						<File Id="876530420" Language="SFX">
 							<ShortName>Slide SFX.wav</ShortName>
 							<Path>SFX\Slide SFX_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\UI\mainMenu\StartGame" DurationType="OneShot" DurationMin="3.223175" DurationMax="3.223175">
+					<IncludedMemoryFiles>
+						<File Id="69454415" Language="SFX">
+							<ShortName>Floppy Drive Sound Start 2.wav</ShortName>
+							<Path>SFX\Floppy Drive Sound Start 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

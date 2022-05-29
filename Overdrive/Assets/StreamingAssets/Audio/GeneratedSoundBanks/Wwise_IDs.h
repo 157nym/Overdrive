@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID COUNTDOWN = 1505888634U;
         static const AkUniqueID DAMAGE = 1786804762U;
         static const AkUniqueID DEATHGLITCH = 2498214274U;
+        static const AkUniqueID DECOSOUNDS = 4009259254U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID JUMP_END = 2752223339U;
         static const AkUniqueID KEY1EVENT = 1896912949U;
@@ -27,12 +28,14 @@ namespace AK
         static const AkUniqueID KEY3EVENT = 2980983199U;
         static const AkUniqueID KEY4EVENT = 2025595638U;
         static const AkUniqueID LANESWITCH = 699052971U;
+        static const AkUniqueID MENUAPPEAR = 918314131U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PAUSEGAME = 1589270263U;
         static const AkUniqueID POPUP_SPAWN = 416742853U;
         static const AkUniqueID RESUMEGAME = 1133184122U;
         static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SLIDE = 3686556480U;
+        static const AkUniqueID STARTGAME = 1521187885U;
         static const AkUniqueID WARNING = 2176025603U;
     } // namespace EVENTS
 

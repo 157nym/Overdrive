@@ -333,9 +333,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 132285037}
-  - {fileID: 204695655}
-  - {fileID: 1699290868}
   - {fileID: 555687700}
+  - {fileID: 1699290868}
+  - {fileID: 204695655}
   - {fileID: 1220324923}
   - {fileID: 411910107}
   - {fileID: 148207929}
@@ -358,7 +358,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 100ab85e1928f6e4f8bc37e317738658, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -374,6 +374,12 @@ PlayableDirector:
     value: {fileID: 1906914751}
   - key: {fileID: -5969868791802254981, guid: 100ab85e1928f6e4f8bc37e317738658, type: 2}
     value: {fileID: 960798698}
+  - key: {fileID: -7613200033438284642, guid: 100ab85e1928f6e4f8bc37e317738658, type: 2}
+    value: {fileID: 1397467982}
+  - key: {fileID: 4528739224510575110, guid: 100ab85e1928f6e4f8bc37e317738658, type: 2}
+    value: {fileID: 960798692}
+  - key: {fileID: -6529303133915507183, guid: 100ab85e1928f6e4f8bc37e317738658, type: 2}
+    value: {fileID: 337143082}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &132285036
@@ -1182,7 +1188,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 104267288}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2005,7 +2011,7 @@ RectTransform:
   - {fileID: 1789109835}
   - {fileID: 1252098827}
   m_Father: {fileID: 104267288}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2673,23 +2679,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet :
-
-
-    Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit.
-
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing
-
-    elit. 
-    Curabitur gravida congue massa, a ornare eros
-
-    mollis vel. In vitae diam.
-
-
-    Score
-    : '
+  m_text: "A fatal error occurred :\n\narceus os had to stop due to an error : Index
+    out of range.\r\n\r\nGameManager(:58) the parameter LIFE is out of\nits original
+    scope due to too many user errors. \nThe application caused a stack overflow
+    and crashed.\n\nScore : "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2854,8 +2847,11 @@ GameObject:
   - component: {fileID: 864339205}
   - component: {fileID: 864339204}
   - component: {fileID: 864339203}
-  - component: {fileID: 864339206}
   - component: {fileID: 864339207}
+  - component: {fileID: 864339208}
+  - component: {fileID: 864339209}
+  - component: {fileID: 864339210}
+  - component: {fileID: 864339211}
   m_Layer: 5
   m_Name: MENU
   m_TagString: Untagged
@@ -2952,6 +2948,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 864339209}
+        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 864339211}
+        m_TargetAssemblyTypeName: TimeScale, Assembly-CSharp
+        m_MethodName: TimeReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &864339204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,18 +3010,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864339201}
   m_CullTransparentMesh: 1
---- !u!114 &864339206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864339201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a783c6ef4a53d341877bfb450fbf9b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &864339207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,6 +3026,113 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 682e8f430f97cdb498c917e1c8dcdc8a, type: 2}
+--- !u!114 &864339208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864339201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a0349aed3790c47a9d5f1b761f5ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameScene: Main_Menu
+--- !u!320 &864339209
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864339201}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 0
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6176917951965519923, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 1397467982}
+  - key: {fileID: 211092900682745039, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 960798692}
+  - key: {fileID: -5842875389246611088, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 960798698}
+  - key: {fileID: 5795779427310656126, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 555687703}
+  - key: {fileID: -3302997763248137549, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 555687699}
+  - key: {fileID: -1355989860051663019, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 1906914750}
+  - key: {fileID: 3081848743748320446, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 2062176168}
+  - key: {fileID: -6623793472104642807, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 864339210}
+  - key: {fileID: 3370471622645875680, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 153739284}
+  - key: {fileID: -3992795122621752506, guid: ec5340cffe1d00e40af63c956e4412b7, type: 2}
+    value: {fileID: 1903828390}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &864339210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864339201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 3f020f5c7c81f404dac54bb625c0dca2, type: 2}
+    - {fileID: 11400000, guid: caa96b1922e87e3438ff260ba25cdcff, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 864339208}
+          m_TargetAssemblyTypeName: scene_Loader, Assembly-CSharp
+          m_MethodName: StartGame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 864339208}
+          m_TargetAssemblyTypeName: scene_Loader, Assembly-CSharp
+          m_MethodName: closeScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &864339211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864339201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7cb8020ea57174499fbd4947e753b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957684614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,7 +4103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1220324923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5905,7 +6020,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 7168eb1f231585f49a78080b52ba2c62, type: 2}
   m_InitialState: 0
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -5958,8 +6073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8217ecde0eb5e434fabf98be81e711c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dither_Length: 20
-  Dither_Distance: 80
+  Dither_Length: 0
+  Dither_Distance: 0
 --- !u!95 &1906914750
 Animator:
   serializedVersion: 4

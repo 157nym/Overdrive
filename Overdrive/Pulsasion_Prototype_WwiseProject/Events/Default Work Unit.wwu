@@ -411,6 +411,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="mainMenu" ID="{FB8682F3-7471-486A-A691-4EDF34B8E55B}" ShortID="536259630">
+							<ChildrenList>
+								<Event Name="DecoSounds" ID="{37BF646F-ED2A-4136-B9AC-B523E1E275D4}">
+									<ChildrenList>
+										<Action Name="" ID="{802CB956-B049-4D9F-BC09-FBA6AE9B7148}" ShortID="636239131">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DecoSounds" ID="{02096349-A908-4CD5-B33A-4E72561A60F2}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MenuAppear" ID="{83B39763-6D9D-438B-BDE6-27F6C0B1B861}">
+									<ChildrenList>
+										<Action Name="" ID="{38D3B0F1-5DF6-4CD7-8F23-0E9463EEECC9}" ShortID="859862793">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Floppy Drive Sound Start" ID="{1D394B1E-2535-4804-9EE7-AD74DA553DC4}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StartGame" ID="{B2056DC4-7CAB-4115-ADB3-02F0159786EE}">
+									<ChildrenList>
+										<Action Name="" ID="{DCCB97C5-5700-40E0-95DC-CE7D0ED9D231}" ShortID="511093669">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Floppy Drive Sound Start 2" ID="{24BB38F9-E454-4D80-AE6B-E3315789F1BF}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

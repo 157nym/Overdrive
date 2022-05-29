@@ -3,8 +3,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	699052971	LaneSwitch			\Default Work Unit\Character\LaneSwitch	
 	712161704	Run			\Default Work Unit\Character\Run	
 	764666183	BlockSlide			\Default Work Unit\LD\BlockSlide	
+	918314131	MenuAppear			\Default Work Unit\UI\mainMenu\MenuAppear	
 	1133184122	ResumeGame			\Default Work Unit\KeyMusicEvent\ResumeGame	
 	1505888634	CountDown			\Default Work Unit\UI\CountDown	
+	1521187885	StartGame			\Default Work Unit\UI\mainMenu\StartGame	
 	1584507803	Click			\Default Work Unit\PopUp\Click	
 	1589270263	PauseGame			\Default Work Unit\KeyMusicEvent\PauseGame	
 	1786804762	Damage			\Default Work Unit\Character\Damage	
@@ -20,6 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3833651337	Jump			\Default Work Unit\Character\Jump	
 	3857418364	Key2Event			\Default Work Unit\KeyMusicEvent\Key2Event	
 	3991942870	Music			\Default Work Unit\LD\Music	
+	4009259254	DecoSounds			\Default Work Unit\UI\mainMenu\DecoSounds	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1183067778	Key			\Default Work Unit\Key	
@@ -62,6 +65,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16018085	Slide 1-2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 1\Slide 1-2		352864
 	50586697	Drums	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Drum 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music\Base\Drums		1411264
 	63739832	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3		53398
+	69454415	Floppy Drive Sound Start 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Start 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\Floppy Drive Sound Start 2		568632
 	78375935	Bass 1-2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 1\Bass 1-2		176464
 	83263438	Basses	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Chord 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music\Base\Basses		2116864
 	107721289	Bass 4-1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 4-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 4\Bass 4-1		176464
@@ -71,6 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	127857293	Bass 2-3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 2-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 2\Bass 2-3		176464
 	128126448	Slide 2-2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 2\Slide 2-2		352864
 	200585360	Countdown	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Countdown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Countdown		705664
+	218581728	Floppy Drive Sound Deco-002	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Deco-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\DecoSounds\Floppy Drive Sound Deco-002		166844
 	242335301	Jump 2-2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Jump 2-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 2\Jump 2-2		529264
 	266907184	Basses	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Chord 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music\Base\Basses		2116864
 	272046355	Footsteps, Human, Rock, Run, Isolated Steps SND62098 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098 2		39354
@@ -111,12 +116,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	782561424	Drums	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Drum 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music\Base\Drums		1411264
 	785141726	Bass 3-3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 3-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 3\Bass 3-3		176464
 	795317107	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 2		57708
+	796779491	Floppy Drive Sound Deco-001	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Deco-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\DecoSounds\Floppy Drive Sound Deco-001		280556
+	807547725	Floppy Drive Sound Start	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\Floppy Drive Sound Start		882504
+	814793814	Floppy Drive Sound Deco-003	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Deco-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\DecoSounds\Floppy Drive Sound Deco-003		333624
 	822150662	Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Low Mid, Rattling Thin Wood, Dry 02 SND55459 1		37424
+	828324614	Floppy Drive Sound Deco-004	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Deco-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\DecoSounds\Floppy Drive Sound Deco-004		106196
 	833489615	Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\JumpStart\Swooshes, Whoosh, Short, Mid Freq, Dry 03 SND55468		44476
 	837860218	Footsteps, Human, Rock, Run, Isolated Steps SND62098	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Footsteps, Human, Rock, Run, Isolated Steps SND62098_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Steps\Footsteps, Human, Rock, Run, Isolated Steps SND62098		39354
 	876530420	Slide SFX	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide SFX_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Slide SFX		352864
 	881216495	Bass 4-2	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 4-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 4\Bass 4-2		176464
 	888568575	Bass 1-3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 1-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 1\Bass 1-3		176464
+	890302013	Floppy Drive Sound Deco-005	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Deco-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\DecoSounds\Floppy Drive Sound Deco-005		401852
 	904306471	Slide 1-1	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide 1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 1\Slide 1-1		352864
 	905973738	Slide 1-3	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide 1-3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 1\Slide 1-3		352864
 	906194001	Footsteps, Human, Tile, Jump, Land SND62091 4	C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Footsteps, Human, Tile, Jump, Land SND62091 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump_Land\Footsteps, Human, Tile, Jump, Land SND62091 4		26320
