@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
+        scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
