@@ -35,4 +35,9 @@ public class UIManager : MonoBehaviour
         MenuOption.SetActive(false);
         MenuPause.SetActive(true);
     }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("Main_Menu");
+    }
 }
