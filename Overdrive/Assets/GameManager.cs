@@ -48,11 +48,6 @@ public class GameManager : MonoBehaviour
         //    timeBeforePlay -= Time.deltaTime;
         //    Décompte.text = Mathf.Round(timeBeforePlay).ToString();
         //}
-
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            PauseGame();
-        }
     }
 
     public void StartGame()
