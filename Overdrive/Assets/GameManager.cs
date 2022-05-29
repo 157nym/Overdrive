@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
         //    timeBeforePlay -= Time.deltaTime;
         //    Décompte.text = Mathf.Round(timeBeforePlay).ToString();
         //}
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            PauseGame();
+        }
     }
 
     public void StartGame()
@@ -62,6 +67,8 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame() // Fonction appeler si le joueur appuie sur le bouton "Pause"
     {
+        if (!GamePlaying) return;
+        
         Paused = !Paused;
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);

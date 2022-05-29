@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 				<GameParameter Id="2312172015" Name="Main_Volume" ObjectPath="\Game Parameters\Default Work Unit\Main_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="326671867">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2401765609">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
