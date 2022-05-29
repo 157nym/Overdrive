@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\iOS</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\titou\Documents\Unity\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\GeneratedSoundBanks\iOS</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1470044042">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2700687867">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<GameParameter Id="2312172015" Name="Main_Volume" ObjectPath="\Game Parameters\Default Work Unit\Main_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4143148832">
+		<SoundBank Id="3161908922" Language="SFX" Hash="336236891">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -77,34 +77,34 @@
 							<Path>SFX\Jump 2-1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{2AF32F43-656F-49E0-9F25-63FF94E353B1}</DefaultSwitchValue>
+					<DefaultSwitchValue>{30C6D066-78D8-4582-96F2-DEF8786C40F8}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{2AF32F43-656F-49E0-9F25-63FF94E353B1}">
+						<SwitchContainer SwitchValue="{08DF6D3C-D343-467D-AC16-48E3C6F8DA60}">
+							<Media>
+								<File Id="473033394"/>
+								<File Id="553013599"/>
+								<File Id="752994431"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{30C6D066-78D8-4582-96F2-DEF8786C40F8}">
 							<Media>
 								<File Id="575587328"/>
 								<File Id="637633122"/>
 								<File Id="725999290"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}">
-							<Media>
-								<File Id="10699400"/>
-								<File Id="402000859"/>
-								<File Id="580919558"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}">
+						<SwitchContainer SwitchValue="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}">
 							<Media>
 								<File Id="242335301"/>
 								<File Id="312087443"/>
 								<File Id="923451807"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{756B7CBF-E5A5-4762-AC70-F7893872F696}">
+						<SwitchContainer SwitchValue="{5B7048E8-C7DA-4BA0-AF3A-4BD07EBA6326}">
 							<Media>
-								<File Id="473033394"/>
-								<File Id="553013599"/>
-								<File Id="752994431"/>
+								<File Id="10699400"/>
+								<File Id="402000859"/>
+								<File Id="580919558"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -160,34 +160,34 @@
 							<Path>SFX\Slide 4-3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{2AF32F43-656F-49E0-9F25-63FF94E353B1}</DefaultSwitchValue>
+					<DefaultSwitchValue>{30C6D066-78D8-4582-96F2-DEF8786C40F8}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{2AF32F43-656F-49E0-9F25-63FF94E353B1}">
+						<SwitchContainer SwitchValue="{08DF6D3C-D343-467D-AC16-48E3C6F8DA60}">
+							<Media>
+								<File Id="1001270893"/>
+								<File Id="1026806184"/>
+								<File Id="1051159383"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{30C6D066-78D8-4582-96F2-DEF8786C40F8}">
 							<Media>
 								<File Id="16018085"/>
 								<File Id="904306471"/>
 								<File Id="905973738"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}">
-							<Media>
-								<File Id="353354037"/>
-								<File Id="423948285"/>
-								<File Id="588918308"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}">
+						<SwitchContainer SwitchValue="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}">
 							<Media>
 								<File Id="128126448"/>
 								<File Id="920487004"/>
 								<File Id="1043288033"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{756B7CBF-E5A5-4762-AC70-F7893872F696}">
+						<SwitchContainer SwitchValue="{5B7048E8-C7DA-4BA0-AF3A-4BD07EBA6326}">
 							<Media>
-								<File Id="1001270893"/>
-								<File Id="1026806184"/>
-								<File Id="1051159383"/>
+								<File Id="353354037"/>
+								<File Id="423948285"/>
+								<File Id="588918308"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -251,34 +251,34 @@
 							<Path>SFX\BlockWall_Spawn_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{2AF32F43-656F-49E0-9F25-63FF94E353B1}</DefaultSwitchValue>
+					<DefaultSwitchValue>{30C6D066-78D8-4582-96F2-DEF8786C40F8}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{2AF32F43-656F-49E0-9F25-63FF94E353B1}">
+						<SwitchContainer SwitchValue="{08DF6D3C-D343-467D-AC16-48E3C6F8DA60}">
+							<Media>
+								<File Id="107721289"/>
+								<File Id="748764489"/>
+								<File Id="881216495"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{30C6D066-78D8-4582-96F2-DEF8786C40F8}">
 							<Media>
 								<File Id="78375935"/>
 								<File Id="763076175"/>
 								<File Id="888568575"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{8FF33F5C-2D60-4C3D-9296-52F19B6E24C7}">
-							<Media>
-								<File Id="377026102"/>
-								<File Id="785141726"/>
-								<File Id="906622143"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0EDC2F98-5827-427F-8FBF-BE85D57DA14B}">
+						<SwitchContainer SwitchValue="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}">
 							<Media>
 								<File Id="124984077"/>
 								<File Id="127857293"/>
 								<File Id="656037747"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{756B7CBF-E5A5-4762-AC70-F7893872F696}">
+						<SwitchContainer SwitchValue="{5B7048E8-C7DA-4BA0-AF3A-4BD07EBA6326}">
 							<Media>
-								<File Id="107721289"/>
-								<File Id="748764489"/>
-								<File Id="881216495"/>
+								<File Id="377026102"/>
+								<File Id="785141726"/>
+								<File Id="906622143"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -380,11 +380,17 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1896912949" Name="Key1Event" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\Key1Event" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3865414090" Name="Key_1" ObjectPath="\States\Default Work Unit\Key\Key_1"/>
+					</ActionSetState>
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry Id="3865414090" Name="Key_1" ObjectPath="\Switches\Default Work Unit\Key\Key_1"/>
 					</ActionSetSwitch>
 				</Event>
 				<Event Id="3857418364" Name="Key2Event" ObjectPath="\Events\Default Work Unit\KeyMusicEvent\Key2Event" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3865414089" Name="Key_2" ObjectPath="\States\Default Work Unit\Key\Key_2"/>
+					</ActionSetState>
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry Id="3865414089" Name="Key_2" ObjectPath="\Switches\Default Work Unit\Key\Key_2"/>
 					</ActionSetSwitch>
@@ -511,10 +517,6 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="50147037" Language="SFX">
-					<ShortName>Jump 1-2.wav</ShortName>
-					<Path>SFX\Jump 1-2_D79FB2B7.wem</Path>
-				</File>
 				<File Id="50586697" Language="SFX">
 					<ShortName>Drum 1.wav</ShortName>
 					<Path>SFX\Drum 1_D79FB2B7.wem</Path>
@@ -523,173 +525,33 @@
 					<ShortName>Chord 2.wav</ShortName>
 					<Path>SFX\Chord 2_D79FB2B7.wem</Path>
 				</File>
-				<File Id="180489970" Language="SFX">
-					<ShortName>Jump 3-2.wav</ShortName>
-					<Path>SFX\Jump 3-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="207931524" Language="SFX">
-					<ShortName>Slide 1-3.wav</ShortName>
-					<Path>SFX\Slide 1-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="209658416" Language="SFX">
-					<ShortName>Slide 3-2.wav</ShortName>
-					<Path>SFX\Slide 3-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="250603723" Language="SFX">
-					<ShortName>Bass 3-1.wav</ShortName>
-					<Path>SFX\Bass 3-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="253595216" Language="SFX">
-					<ShortName>Bass 4-1.wav</ShortName>
-					<Path>SFX\Bass 4-1_D79FB2B7.wem</Path>
-				</File>
 				<File Id="266907184" Language="SFX">
 					<ShortName>Chord 3.wav</ShortName>
 					<Path>SFX\Chord 3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="272360429" Language="SFX">
-					<ShortName>Slide 1-2.wav</ShortName>
-					<Path>SFX\Slide 1-2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="299327766" Language="SFX">
 					<ShortName>Drum 3.wav</ShortName>
 					<Path>SFX\Drum 3_D79FB2B7.wem</Path>
 				</File>
-				<File Id="319587268" Language="SFX">
-					<ShortName>Jump 4-3.wav</ShortName>
-					<Path>SFX\Jump 4-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="368799112" Language="SFX">
-					<ShortName>Bass 3-2.wav</ShortName>
-					<Path>SFX\Bass 3-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="396381267" Language="SFX">
-					<ShortName>Bass 3-3.wav</ShortName>
-					<Path>SFX\Bass 3-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="404250127" Language="SFX">
-					<ShortName>Slide 3-3.wav</ShortName>
-					<Path>SFX\Slide 3-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="405349586" Language="SFX">
-					<ShortName>Bass 1-3.wav</ShortName>
-					<Path>SFX\Bass 1-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="421253357" Language="SFX">
-					<ShortName>Bass 2-1.wav</ShortName>
-					<Path>SFX\Bass 2-1_D79FB2B7.wem</Path>
-				</File>
 				<File Id="436925476" Language="SFX">
 					<ShortName>Paused Music.wav</ShortName>
 					<Path>SFX\Paused Music_D79FB2B7.wem</Path>
-				</File>
-				<File Id="452324403" Language="SFX">
-					<ShortName>Slide 3-1.wav</ShortName>
-					<Path>SFX\Slide 3-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="514728704" Language="SFX">
-					<ShortName>Slide 2-3.wav</ShortName>
-					<Path>SFX\Slide 2-3_D79FB2B7.wem</Path>
 				</File>
 				<File Id="521102613" Language="SFX">
 					<ShortName>Drum 2.wav</ShortName>
 					<Path>SFX\Drum 2_D79FB2B7.wem</Path>
 				</File>
-				<File Id="537488805" Language="SFX">
-					<ShortName>Jump 3-3.wav</ShortName>
-					<Path>SFX\Jump 3-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="539561302" Language="SFX">
-					<ShortName>Slide 4-2.wav</ShortName>
-					<Path>SFX\Slide 4-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="543718399" Language="SFX">
-					<ShortName>Jump 4-2.wav</ShortName>
-					<Path>SFX\Jump 4-2_D79FB2B7.wem</Path>
-				</File>
 				<File Id="545104084" Language="SFX">
 					<ShortName>Chord 4.wav</ShortName>
 					<Path>SFX\Chord 4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="562969231" Language="SFX">
-					<ShortName>Jump 4-1.wav</ShortName>
-					<Path>SFX\Jump 4-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="607179468" Language="SFX">
-					<ShortName>Bass 2-3.wav</ShortName>
-					<Path>SFX\Bass 2-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="616661954" Language="SFX">
-					<ShortName>Bass 4-3.wav</ShortName>
-					<Path>SFX\Bass 4-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="655835395" Language="SFX">
-					<ShortName>Jump 1-1.wav</ShortName>
-					<Path>SFX\Jump 1-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="662059020" Language="SFX">
-					<ShortName>Jump 2-1.wav</ShortName>
-					<Path>SFX\Jump 2-1_D79FB2B7.wem</Path>
 				</File>
 				<File Id="677233877" Language="SFX">
 					<ShortName>Chord 1.wav</ShortName>
 					<Path>SFX\Chord 1_D79FB2B7.wem</Path>
 				</File>
-				<File Id="679636763" Language="SFX">
-					<ShortName>Slide 4-1.wav</ShortName>
-					<Path>SFX\Slide 4-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="758482929" Language="SFX">
-					<ShortName>Jump 2-2.wav</ShortName>
-					<Path>SFX\Jump 2-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="777187335" Language="SFX">
-					<ShortName>Jump 3-1.wav</ShortName>
-					<Path>SFX\Jump 3-1_D79FB2B7.wem</Path>
-				</File>
 				<File Id="782561424" Language="SFX">
 					<ShortName>Drum 4.wav</ShortName>
 					<Path>SFX\Drum 4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="808585115" Language="SFX">
-					<ShortName>Bass 1-2.wav</ShortName>
-					<Path>SFX\Bass 1-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="883864826" Language="SFX">
-					<ShortName>Slide 4-3.wav</ShortName>
-					<Path>SFX\Slide 4-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="919335856" Language="SFX">
-					<ShortName>Slide 2-2.wav</ShortName>
-					<Path>SFX\Slide 2-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="939070277" Language="SFX">
-					<ShortName>Slide 2-1.wav</ShortName>
-					<Path>SFX\Slide 2-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="941232651" Language="SFX">
-					<ShortName>Jump 1-3.wav</ShortName>
-					<Path>SFX\Jump 1-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="960137391" Language="SFX">
-					<ShortName>Bass 4-2.wav</ShortName>
-					<Path>SFX\Bass 4-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="989021524" Language="SFX">
-					<ShortName>Slide 1-1.wav</ShortName>
-					<Path>SFX\Slide 1-1_D79FB2B7.wem</Path>
-				</File>
-				<File Id="1023108926" Language="SFX">
-					<ShortName>Jump 2-3.wav</ShortName>
-					<Path>SFX\Jump 2-3_D79FB2B7.wem</Path>
-				</File>
-				<File Id="1054341842" Language="SFX">
-					<ShortName>Bass 2-2.wav</ShortName>
-					<Path>SFX\Bass 2-2_D79FB2B7.wem</Path>
-				</File>
-				<File Id="1067854586" Language="SFX">
-					<ShortName>Bass 1-1.wav</ShortName>
-					<Path>SFX\Bass 1-1_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
@@ -700,6 +562,21 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\GameState\Alive" GUID="{54FEEFF5-FCE0-4FA2-9358-96A260376875}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1183067778" Name="Key" ObjectPath="\States\Default Work Unit\Key" GUID="{A3737816-1400-4559-8DFB-B1EA29C7511D}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Key\None" GUID="{B6292F0C-B461-4605-B9C8-7A6601373B55}"/>
+						<State Id="3865414090" Name="Key_1" ObjectPath="\States\Default Work Unit\Key\Key_1" GUID="{30C6D066-78D8-4582-96F2-DEF8786C40F8}"/>
+						<State Id="3865414089" Name="Key_2" ObjectPath="\States\Default Work Unit\Key\Key_2" GUID="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}"/>
+						<State Id="3865414088" Name="Key_3" ObjectPath="\States\Default Work Unit\Key\Key_3" GUID="{5B7048E8-C7DA-4BA0-AF3A-4BD07EBA6326}"/>
+						<State Id="3865414095" Name="Key_4" ObjectPath="\States\Default Work Unit\Key\Key_4" GUID="{08DF6D3C-D343-467D-AC16-48E3C6F8DA60}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3865414089" Name="Key_2" ObjectPath="\States\Default Work Unit\Key\Key_2" GUID="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3865414090" Name="Key_1" ObjectPath="\States\Default Work Unit\Key\Key_1" GUID="{30C6D066-78D8-4582-96F2-DEF8786C40F8}">
 					<States/>
 				</StateGroup>
 			</StateGroups>

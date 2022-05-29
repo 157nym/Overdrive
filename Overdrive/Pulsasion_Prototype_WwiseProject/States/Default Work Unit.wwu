@@ -53,6 +53,15 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Key" ID="{A3737816-1400-4559-8DFB-B1EA29C7511D}">
+					<ChildrenList>
+						<State Name="None" ID="{B6292F0C-B461-4605-B9C8-7A6601373B55}"/>
+						<State Name="Key_1" ID="{30C6D066-78D8-4582-96F2-DEF8786C40F8}"/>
+						<State Name="Key_2" ID="{1EEDD28F-BA97-4FA5-9F77-17B11F94A387}"/>
+						<State Name="Key_3" ID="{5B7048E8-C7DA-4BA0-AF3A-4BD07EBA6326}"/>
+						<State Name="Key_4" ID="{08DF6D3C-D343-467D-AC16-48E3C6F8DA60}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

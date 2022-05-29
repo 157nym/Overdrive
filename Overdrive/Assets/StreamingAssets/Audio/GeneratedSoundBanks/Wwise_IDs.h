@@ -51,6 +51,20 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATE
 
+        namespace KEY
+        {
+            static const AkUniqueID GROUP = 1183067778U;
+
+            namespace STATE
+            {
+                static const AkUniqueID KEY_1 = 3865414090U;
+                static const AkUniqueID KEY_2 = 3865414089U;
+                static const AkUniqueID KEY_3 = 3865414088U;
+                static const AkUniqueID KEY_4 = 3865414095U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace KEY
+
         namespace SLIDE
         {
             static const AkUniqueID GROUP = 3686556480U;
