@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     public CharacterMovementAutoRun playerManager;
     public TextMeshProUGUI Décompte;
     private GameObject Hud;
-    private Scene scene;
     private PlayableDirector Director;
     //private float timeBeforePlay = 3;
     //private bool Go = true;
@@ -27,7 +26,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Hud = GameObject.FindGameObjectWithTag("HUD");
-        scene = SceneManager.GetActiveScene(); 
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
         Director = GetComponent<PlayableDirector>();
@@ -68,8 +66,6 @@ public class GameManager : MonoBehaviour
         MenuPause.SetActive(Paused);
         PopUpManager.SetActive(!Paused);
         
-
-
         if (Paused)
         {
             Time.timeScale = 0;
@@ -98,28 +94,5 @@ public class GameManager : MonoBehaviour
         Debug.Log("Dead");
         Director.Play();
         GamePlaying = false;
-    }
-
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(scene.name);
-    }
-
-    public void Quitter()
-    {
-        Application.Quit();
-    }
-
-    public void Option()
-    {
-        MenuOption.SetActive(true);
-        MenuPause.SetActive(false);
-    }
-
-    public void Return()
-    {
-        MenuOption.SetActive(false);
-        MenuPause.SetActive(true);
     }
 }

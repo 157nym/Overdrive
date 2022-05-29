@@ -337,8 +337,9 @@ RectTransform:
   - {fileID: 1220324923}
   - {fileID: 411910107}
   - {fileID: 148207929}
+  - {fileID: 1740695452}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -532,8 +533,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1906914745}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 197050944}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
         m_Arguments:
@@ -1112,8 +1113,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 197050943}
+  - component: {fileID: 197050944}
   m_Layer: 0
-  m_Name: UiManager
+  m_Name: UI_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,6 +1136,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197050944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197050942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ef27f68e1be784fa7b20644a21a2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverCanvas: {fileID: 148207928}
+  MenuPause: {fileID: 1220324922}
+  MenuOption: {fileID: 411910106}
 --- !u!1 &204695654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,8 +1779,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1906914745}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 197050944}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Quitter
         m_Mode: 1
         m_Arguments:
@@ -1977,7 +1994,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 153739286}
   m_PlaneDistance: 0.48
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -2001,7 +2018,7 @@ RectTransform:
   - {fileID: 1699290868}
   - {fileID: 555687700}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2087,7 +2104,6 @@ RectTransform:
   - {fileID: 184932783}
   - {fileID: 1789109835}
   - {fileID: 1252098827}
-  - {fileID: 1740695452}
   m_Father: {fileID: 421585591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3012,9 +3028,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 864339206}
-        m_TargetAssemblyTypeName: OnQuit, Assembly-CSharp
-        m_MethodName: Quit
+      - m_Target: {fileID: 197050944}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Quitter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3991,8 +4007,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1906914745}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 197050944}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Option
         m_Mode: 1
         m_Arguments:
@@ -4490,7 +4506,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 99.6
+  m_fontSize: 18
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5064,7 +5080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1699290868
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5217,7 +5233,6 @@ GameObject:
   - component: {fileID: 1740695456}
   - component: {fileID: 1740695455}
   - component: {fileID: 1740695454}
-  - component: {fileID: 1740695453}
   - component: {fileID: 1740695457}
   m_Layer: 5
   m_Name: Pause
@@ -5234,31 +5249,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740695451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.7939093}
+  m_LocalScale: {x: 0.0053431145, y: 0.0053431145, z: 0.0053431145}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 555687700}
-  m_RootOrder: 3
+  m_Father: {fileID: 104267288}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1792.3464, y: -981.6461}
   m_SizeDelta: {x: 27, y: 27}
   m_Pivot: {x: 1, y: 1}
---- !u!114 &1740695453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740695451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00c324eb4ebe004195b8ac5e14140fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Manager: {fileID: 1906914745}
 --- !u!114 &1740695454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5303,9 +5305,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1740695453}
-        m_TargetAssemblyTypeName: OnPause, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1906914745}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: PauseGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5479,7 +5481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 44.020004, y: 37}
+  m_AnchoredPosition: {x: 44.02002, y: 37}
   m_SizeDelta: {x: 123.15, y: 25.31}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1789109836
@@ -5737,7 +5739,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 322.5
+  m_fontSize: 18
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6193,8 +6195,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1906914745}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 197050944}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -6395,7 +6397,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 179.75
+  m_fontSize: 18
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
