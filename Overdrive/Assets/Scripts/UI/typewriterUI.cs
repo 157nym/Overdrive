@@ -45,6 +45,8 @@ public class typewriterUI : MonoBehaviour
 		}
 	}
 
+
+
     private void OnEnable()
 	{
         
