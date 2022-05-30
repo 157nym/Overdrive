@@ -30,6 +30,8 @@ public class TileManager : MonoBehaviour
 
     public float Timer;
 
+    public float TimeGo;
+
     private int ChangeHeight;
 
     public float distanceMax;
@@ -38,11 +40,13 @@ public class TileManager : MonoBehaviour
 
     private int rampeIndex;
 
+    public GameManager gameManager;
+
     public List<GameObject> activeTiles = new List<GameObject>();
 
     private void Awake()
     {
-        tableauListeActuel = tileListeEasy; //Au lancement la diffculté est sur Easy
+        tableauListeActuel = tileListeEasy; //Au lancement la diffcultï¿½ est sur Easy
     }
 
     // Start is called before the first frame update
@@ -61,6 +65,11 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(gameManager.GamePlaying)
+        {
+            TimeGo += Time.deltaTime; 
+        }
+
         if (phase == 1)
         {
             tableauListeActuel = tileListeEasy;
@@ -92,19 +101,19 @@ public class TileManager : MonoBehaviour
             }
         }
 
-        if (Time.time > 30 && Time.time <= 60 && !goPhaseCalm) // Passage à la phase 2
+        if (TimeGo > 30 && Time.time <= 60 && !goPhaseCalm) // Passage ï¿½ la phase 2
         {
             phase = 2;
         }
 
-        if (Time.time > 60 && !goPhaseCalm) // Passage à la phase 3 au bout de x secondes
+        if (TimeGo > 60 && !goPhaseCalm) // Passage ï¿½ la phase 3 au bout de x secondes
         {
             phase = 3;
         }
 
-        if (playerTransform.transform.position.z >= distanceMax) // Si le player dépasse X distance on fait spawn une tile devant lui et ont supprime une tiles derrière lui
+        if (playerTransform.transform.position.z >= distanceMax) // Si le player dï¿½passe X distance on fait spawn une tile devant lui et ont supprime une tiles derriï¿½re lui
         {
-            if(activeTiles.Count < maxTile) // on check s'il y a moin de tile présente que de tile maximum autorisé
+            if(activeTiles.Count < maxTile) // on check s'il y a moin de tile prï¿½sente que de tile maximum autorisï¿½
             {
                 int Verif = Random.Range(0, tableauListeActuel.Length);
 
@@ -118,7 +127,7 @@ public class TileManager : MonoBehaviour
         Vector3 pos;
         GameObject go; 
 
-        if (activeTiles.Count >= 3 && rampeIndex <= 0) // Si ChangeHeight et = à 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
+        if (activeTiles.Count >= 3 && rampeIndex <= 0) // Si ChangeHeight et = ï¿½ 9 ou 10 alors on fait spawn une rampe sinon on fait spawn une tile normal
         {
             tileIndex = Random.Range(0,2);
             rampeIndex = Random.Range(4, 10);
@@ -131,7 +140,7 @@ public class TileManager : MonoBehaviour
 
             DeleteTile();
 
-            if(tileIndex == 0) // On vérifie si c'est une rampe qui monte ou qui descend
+            if(tileIndex == 0) // On vï¿½rifie si c'est une rampe qui monte ou qui descend
             {
                 Hauteur++;
             }
