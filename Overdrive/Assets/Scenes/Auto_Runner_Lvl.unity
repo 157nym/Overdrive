@@ -1635,7 +1635,7 @@ MonoBehaviour:
   TimeGo: 0
   distanceMax: 20
   goPhaseCalm: 0
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1906914745}
   activeTiles: []
 --- !u!1 &343378637
 GameObject:
