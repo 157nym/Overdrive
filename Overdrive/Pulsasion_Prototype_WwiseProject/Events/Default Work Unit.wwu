@@ -446,6 +446,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Quitting" ID="{C574E671-E57E-47DA-A068-DD776F8B8E21}">
+									<ChildrenList>
+										<Action Name="" ID="{BBBA47F8-0022-4E03-8DF2-286285E109F2}" ShortID="633551857">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Quitting" ID="{7235A9A4-4AB1-4A33-A897-6E0849434A9E}" WorkUnitID="{DD16B91C-1C90-459F-8935-51653FC5BC44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

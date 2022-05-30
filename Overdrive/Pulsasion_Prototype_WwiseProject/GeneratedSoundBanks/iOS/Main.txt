@@ -23,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3857418364	Key2Event			\Default Work Unit\KeyMusicEvent\Key2Event	
 	3991942870	Music			\Default Work Unit\LD\Music	
 	4009259254	DecoSounds			\Default Work Unit\UI\mainMenu\DecoSounds	
+	4172439308	Quitting			\Default Work Unit\UI\mainMenu\Quitting	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1183067778	Key			\Default Work Unit\Key	
@@ -64,6 +65,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	10699400	Jump 3-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Jump 3-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockJump key\BlockJump 3\Jump 3-2		529264
 	16018085	Slide 1-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Slide 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockSlide key\BlockSlide 1\Slide 1-2		352864
 	50586697	Drums	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Drum 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music\Base\Drums		1411264
+	63432794	Quitting	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Quitting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\Quitting		528940
 	63739832	Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PopUp\Clicks\Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 3		53398
 	69454415	Floppy Drive Sound Start 2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Floppy Drive Sound Start 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainMenu\Floppy Drive Sound Start 2		568632
 	78375935	Bass 1-2	D:\Projet\Overdrive\Overdrive\Pulsasion_Prototype_WwiseProject\.cache\iOS\SFX\Bass 1-2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LD\LD_Sounds\BlockWall_Key\BlockWall 1\Bass 1-2		176464

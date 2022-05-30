@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PAUSEGAME = 1589270263U;
         static const AkUniqueID POPUP_SPAWN = 416742853U;
+        static const AkUniqueID QUITTING = 4172439308U;
         static const AkUniqueID RESUMEGAME = 1133184122U;
         static const AkUniqueID RUN = 712161704U;
         static const AkUniqueID SLIDE = 3686556480U;
