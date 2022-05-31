@@ -4,100 +4,66 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Spinner_PopUp : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+[ExecuteInEditMode]
+public class Spinner_PopUp : MonoBehaviour
 {
-    private Transform Handle;
-    private RectTransform HandleRect;
-    Vector3 cursorPos;
-    private bool Dragged;
-    public float TargetAngle;
-    private Image Image;
-
-    public float angle;
-
-    [Range(0,360)]public float Offset;
-
-    public int NbTour;
-    public int NeededTour;
-    public float Speed;
-
     public AK.Wwise.Event PopUp;
 
-    public GameObject parent;
+    public GameObject Parent;
+
+    [Header("Filler")]
+
+    public GameObject Filler;
+    [Range(0, 100)] public float Fill;
+    public int FillTime;
 
     public Color StartColor;
-    public Color FinishColor;
+    public Color EndColor;
+
+    private bool isDragging;
 
     private void Start()
     {
-        Handle = GetComponent<Transform>();
-        HandleRect = GetComponent<RectTransform>();
-        Image = GetComponent<Image>();
         PopUp.Post(gameObject); 
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void StartDrag()
     {
-        Dragged = true;
-
-        cursorPos = Input.mousePosition;
-        Vector2 dir = cursorPos - Handle.position;
-        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        angle = (angle <= 0) ? (angle + 360) : angle;
-
-
-        Quaternion newRot = Quaternion.AngleAxis(angle + Offset, Vector3.forward);
-        Handle.rotation = newRot;
-
-        TargetAngle = Handle.rotation.z + .5f;
-        if (TargetAngle > 1) TargetAngle -= 2;
+        isDragging = true;
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void EndDrag()
     {
-        cursorPos = Input.mousePosition;
-        Vector2 dir = cursorPos - Handle.position;
-        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        angle = (angle <= 0) ? (angle + 360) : angle;
-
-
-        Quaternion newRot = Quaternion.AngleAxis(angle + Offset, Vector3.forward);
-        Handle.rotation = newRot;
-
-
-        if (-0.05f <= HandleRect.rotation.z - TargetAngle && HandleRect.rotation.z - TargetAngle <= 0.05f)
-        {
-            NbTour++;
-            TargetAngle += .5f;
-            if (TargetAngle > 1) TargetAngle -= 2;
-        }
-
-        if (NeededTour <= NbTour && Dragged)
-        {
-            Destroy(parent);
-        }
-        float t = (float)NbTour / (float)NeededTour;
-        Image.color = Color.Lerp(StartColor, FinishColor, t);
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        Dragged = false;
-        angle = (angle <= 0) ? (angle + 360) : angle;
-        angle += Offset;
-        NbTour = 0;
-        Image.color = StartColor;
+        isDragging = false;
     }
 
     private void Update()
     {
-
-        if (!Dragged)
+        //empty fill if not dragging
+        if (!isDragging && Fill > 0)
         {
-            angle = Mathf.Lerp(angle, (angle > 180) ? 360 : 0, Speed * Time.deltaTime);
-            Quaternion newRot = Quaternion.AngleAxis(angle, Vector3.forward);
-            Handle.rotation = newRot;
+            Fill -= (500 / FillTime) * Time.deltaTime;
+        }
+        else
+        {
+            Fill = Mathf.Clamp(Fill, 0, 100);
         }
 
+        if (isDragging)
+        {
+            //fill fill in filltime
+            Fill += (100 / FillTime) * Time.deltaTime;
+        }
+
+        if (Fill >= 100)
+        {
+            Destroy(Parent);
+        }
+
+        //filler size from fill
+        Filler.GetComponent<RectTransform>().localScale = new Vector3(Fill / 100, Fill / 100, 1);
+
+        //lerp Color from size
+        Filler.GetComponent<Image>().color = Color.Lerp(StartColor, EndColor, Fill / 100);
     }
 }
