@@ -5256,10 +5256,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 41c6a2ab5d64d7e40ba81fededbe42e1, type: 2}
+  Click:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 682e8f430f97cdb498c917e1c8dcdc8a, type: 2}
   Parent: {fileID: 7410204175822939183}
   Filler: {fileID: 7542931308126007176}
   Fill: 0
-  FillTime: 1
+  FillTime: 0.5
   StartColor: {r: 0.9622642, g: 0.8770844, b: 0, a: 1}
   EndColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &4652802555685282225

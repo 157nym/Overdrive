@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class Spinner_PopUp : MonoBehaviour
 {
     public AK.Wwise.Event PopUp;
+    public AK.Wwise.Event Click;
 
     public GameObject Parent;
 
@@ -15,7 +16,7 @@ public class Spinner_PopUp : MonoBehaviour
 
     public GameObject Filler;
     [Range(0, 100)] public float Fill;
-    public int FillTime;
+    public float FillTime;
 
     public Color StartColor;
     public Color EndColor;
@@ -65,5 +66,10 @@ public class Spinner_PopUp : MonoBehaviour
 
         //lerp Color from size
         Filler.GetComponent<Image>().color = Color.Lerp(StartColor, EndColor, Fill / 100);
+    }
+
+    private void OnDestroy()
+    {
+        Click.Post(gameObject);
     }
 }

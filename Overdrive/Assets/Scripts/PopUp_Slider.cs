@@ -9,6 +9,7 @@ public class PopUp_Slider : MonoBehaviour
     private bool selected;
 
     public AK.Wwise.Event PopUp;
+    public AK.Wwise.Event Click;
 
     public float speed;
 
@@ -39,6 +40,11 @@ public class PopUp_Slider : MonoBehaviour
     public void onUnSelected()
     {
         selected = false;
+    }
+
+    public void onClick()
+    {
+        Click.Post(gameObject);
     }
 
 }

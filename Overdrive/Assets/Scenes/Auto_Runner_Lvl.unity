@@ -6136,8 +6136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8217ecde0eb5e434fabf98be81e711c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dither_Length: 0
-  Dither_Distance: 0
+  Dither_Length: 80
+  Dither_Distance: 80
 --- !u!95 &1906914750
 Animator:
   serializedVersion: 4
